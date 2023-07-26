@@ -1,0 +1,6 @@
+
+OCI Connection Pool Trace: Date - 4/23/2020 Time - 9:8:12:335
+[04/23/2020-09:08:12:335][00002074] kpntdisp::init() - entering.
+[04/23/2020-09:08:12:335][00002074] kpntdisp::init() - exiting.
+[04/23/2020-09:17:12:894][000023d4] kpntsvcdeinit() - entering
+[04/23/2020-09:17:12:894][000023d4] kpntsvcdeinit() - exiting

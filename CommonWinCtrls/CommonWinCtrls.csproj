@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{053112CA-AD80-4C5C-8593-001BEB316E0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS2010.CommonWinCtrls</RootNamespace>
+    <AssemblyName>CommonWinCtrls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TMGDevelopment.PrintAdapters, Version=2.1.0.2, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+    <Reference Include="TMGDevelopment.Shared, Version=1.0.0.4, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsControlConfig.cs" />
+    <Compile Include="ClsDisplay.cs" />
+    <Compile Include="ClsGridExUtils.cs" />
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddress.Designer.cs">
+      <DependentUpon>frmAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressLookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressLookup.Designer.cs">
+      <DependentUpon>frmAddressLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressPlus.Designer.cs">
+      <DependentUpon>frmAddressPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChildBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChildBase.Designer.cs">
+      <DependentUpon>frmChildBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboSelect.Designer.cs">
+      <DependentUpon>frmComboSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControl.Designer.cs">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCRUD.Designer.cs">
+      <DependentUpon>frmCRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateSelector.Designer.cs">
+      <DependentUpon>frmDateSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDateTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDateTextBox.Designer.cs">
+      <DependentUpon>frmDateTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDialogBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDialogBase.Designer.cs">
+      <DependentUpon>frmDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditRichText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditRichText.designer.cs">
+      <DependentUpon>frmEditRichText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmail.Designer.cs">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailList.Designer.cs">
+      <DependentUpon>frmEmailList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportOptions.Designer.cs">
+      <DependentUpon>frmExportOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginBase.Designer.cs">
+      <DependentUpon>frmLoginBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainBase.Designer.cs">
+      <DependentUpon>frmMainBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaintenance.Designer.cs">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemo.Designer.cs">
+      <DependentUpon>frmMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchEdit.Designer.cs">
+      <DependentUpon>frmSearchEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebBrowser.Designer.cs">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucCalendarCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucCalendarCombo.Designer.cs">
+      <DependentUpon>ucCalendarCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucCheckedComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucCheckedComboBox.Designer.cs">
+      <DependentUpon>ucCheckedComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucEditBox.Designer.cs">
+      <DependentUpon>ucEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucGenericCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucGenericCombo.Designer.cs">
+      <DependentUpon>ucGenericCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucGridEX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucGridEX.Designer.cs">
+      <DependentUpon>ucGridEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucGridEXExporter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucGridEXExporter.Designer.cs">
+      <DependentUpon>ucGridEXExporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucGridEXFieldChooserControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucGridEXFieldChooserControl.Designer.cs">
+      <DependentUpon>ucGridEXFieldChooserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucGridEXPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucGridEXPrintDocument.Designer.cs">
+      <DependentUpon>ucGridEXPrintDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucIntegerUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucIntegerUpDown.Designer.cs">
+      <DependentUpon>ucIntegerUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucMaskedEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucMaskedEditBox.Designer.cs">
+      <DependentUpon>ucMaskedEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucMultiColumnCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucMultiColumnCombo.Designer.cs">
+      <DependentUpon>ucMultiColumnCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucNumericEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucNumericEditBox.Designer.cs">
+      <DependentUpon>ucNumericEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucValueListUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucValueListUpDown.Designer.cs">
+      <DependentUpon>ucValueListUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Janus\ucVisualStyleManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Janus\ucVisualStyleManager.Designer.cs">
+      <DependentUpon>ucVisualStyleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="System\ucComboBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucComboBoxBase.Designer.cs">
+      <DependentUpon>ucComboBoxBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucTextBoxPK.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucTextBoxPK.Designer.cs">
+      <DependentUpon>ucTextBoxPK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucCollapsibleSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucCollapsibleSplitter.Designer.cs">
+      <DependentUpon>ucCollapsibleSplitter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucDateGroupBoxMMddyy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\ucDateGroupBoxMMddyy.Designer.cs">
+      <DependentUpon>ucDateGroupBoxMMddyy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucButton.Designer.cs">
+      <DependentUpon>ucButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucCheckBox.Designer.cs">
+      <DependentUpon>ucCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucCheckedListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucCheckedListBox.Designer.cs">
+      <DependentUpon>ucCheckedListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucComboBox.Designer.cs">
+      <DependentUpon>ucComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucDateGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="System\ucDateGroupBox.Designer.cs">
+      <DependentUpon>ucDateGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucDateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucDateTextBox.Designer.cs">
+      <DependentUpon>ucDateTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucDateTimePicker.Designer.cs">
+      <DependentUpon>ucDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucGridToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucGridToolStrip.Designer.cs">
+      <DependentUpon>ucGridToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucGroupBox.Designer.cs">
+      <DependentUpon>ucGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucLabel.Designer.cs">
+      <DependentUpon>ucLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucLabelExtender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucLabelExtender.Designer.cs">
+      <DependentUpon>ucLabelExtender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucLinkLabel.Designer.cs">
+      <DependentUpon>ucLinkLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucListBox.Designer.cs">
+      <DependentUpon>ucListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucListView.Designer.cs">
+      <DependentUpon>ucListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucMaskedTextBox.Designer.cs">
+      <DependentUpon>ucMaskedTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucMonthCalendar.Designer.cs">
+      <DependentUpon>ucMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucNumericUpDown.Designer.cs">
+      <DependentUpon>ucNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucPanel.Designer.cs">
+      <DependentUpon>ucPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucPictureBox.Designer.cs">
+      <DependentUpon>ucPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucProgressBar.Designer.cs">
+      <DependentUpon>ucProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucRadioButton.Designer.cs">
+      <DependentUpon>ucRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucRichTextBox.Designer.cs">
+      <DependentUpon>ucRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucSplitContainer.Designer.cs">
+      <DependentUpon>ucSplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucTabControl.Designer.cs">
+      <DependentUpon>ucTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucTextBox.Designer.cs">
+      <DependentUpon>ucTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucTreeView.Designer.cs">
+      <DependentUpon>ucTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddressBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddressBox.Designer.cs">
+      <DependentUpon>ucAddressBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContactBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucContactBox.Designer.cs">
+      <DependentUpon>ucContactBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ucSearchContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System\ucSearchContainer.Designer.cs">
+      <DependentUpon>ucSearchContainer.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddress.resx">
+      <DependentUpon>frmAddress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressLookup.resx">
+      <DependentUpon>frmAddressLookup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressPlus.resx">
+      <DependentUpon>frmAddressPlus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChildBase.resx">
+      <DependentUpon>frmChildBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboSelect.resx">
+      <DependentUpon>frmComboSelect.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControl.resx">
+      <DependentUpon>frmControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCRUD.resx">
+      <DependentUpon>frmCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateSelector.resx">
+      <DependentUpon>frmDateSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDateTextBox.resx">
+      <DependentUpon>frmDateTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDialogBase.resx">
+      <DependentUpon>frmDialogBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditRichText.resx">
+      <DependentUpon>frmEditRichText.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmail.resx">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailList.resx">
+      <DependentUpon>frmEmailList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportOptions.resx">
+      <DependentUpon>frmExportOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginBase.resx">
+      <DependentUpon>frmLoginBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainBase.resx">
+      <DependentUpon>frmMainBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemo.resx">
+      <DependentUpon>frmMemo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearchEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Janus\ucGenericCombo.resx">
+      <DependentUpon>ucGenericCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Janus\ucGridEX.resx">
+      <DependentUpon>ucGridEX.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucTextBoxPK.resx">
+      <DependentUpon>ucTextBoxPK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucDateGroupBoxMMddyy.resx">
+      <DependentUpon>ucDateGroupBoxMMddyy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucDateGroupBox.resx">
+      <DependentUpon>ucDateGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucDateTextBox.resx">
+      <DependentUpon>ucDateTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucTextBox.resx">
+      <DependentUpon>ucTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddressBox.resx">
+      <DependentUpon>ucAddressBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContactBox.resx">
+      <DependentUpon>ucContactBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\ucSearchContainer.resx">
+      <DependentUpon>ucSearchContainer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{41277667-E5CF-421E-BFF0-E2E82D06CE54}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

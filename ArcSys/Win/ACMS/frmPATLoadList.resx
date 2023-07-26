@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsbSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbCreateNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbLoad.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbSentToPat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbTestPat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="miniToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>116, 17</value>
+  </metadata>
+  <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>314, 17</value>
+  </metadata>
+  <data name="tsbNewRow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="tsbDeleteRow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="grdLOB_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="chx"&gt;&lt;Caption&gt;chx&lt;/Caption&gt;&lt;TypeNameNullValue&gt;System.Boolean&lt;/TypeNameNullValue&gt;&lt;CheckBoxNullValue&gt;False&lt;/CheckBoxNullValue&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;chx&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;Key&gt;chx&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;29&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;DefaultValue&gt;False&lt;/DefaultValue&gt;&lt;DefaultValueType&gt;System.Boolean&lt;/DefaultValueType&gt;&lt;/Column0&gt;&lt;Column1 ID="DataStatusTxt"&gt;&lt;Caption&gt;Data Status&lt;/Caption&gt;&lt;DataMember&gt;DataStatusTxt&lt;/DataMember&gt;&lt;Key&gt;DataStatusTxt&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="NumberOfErrors"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;# of Errors&lt;/Caption&gt;&lt;DataMember&gt;NumberOfErrors&lt;/DataMember&gt;&lt;Key&gt;NumberOfErrors&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="lobDetail.cargo_status"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Cargo&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.cargo_status&lt;/DataMember&gt;&lt;Key&gt;lobDetail.cargo_status&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column3&gt;&lt;Column4 ID="lobDetail.van_type"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Van Type&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.van_type&lt;/DataMember&gt;&lt;Key&gt;lobDetail.van_type&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column4&gt;&lt;Column5 ID="lobDetail.tcn"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;TCN&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.tcn&lt;/DataMember&gt;&lt;Key&gt;lobDetail.tcn&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="lobDetail.container_no"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Container #&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.container_no&lt;/DataMember&gt;&lt;Key&gt;lobDetail.container_no&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;/Column6&gt;&lt;Column7 ID="lobDetail.consignor_dodaac"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Consignor&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.consignor_dodaac&lt;/DataMember&gt;&lt;Key&gt;lobDetail.consignor_dodaac&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column7&gt;&lt;Column8 ID="lobDetail.pod_location_cd"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;lobDetail.pod_location_cd&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;/Column8&gt;&lt;Column9 ID="lobDetail.booking_no"&gt;&lt;Caption&gt;Booking #&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.booking_no&lt;/DataMember&gt;&lt;Key&gt;lobDetail.booking_no&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column9&gt;&lt;Column10 ID="lobDetail.bol_no"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Bill of Lading&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.bol_no&lt;/DataMember&gt;&lt;Key&gt;lobDetail.bol_no&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;/Column10&gt;&lt;Column11 ID="lobDetail.pcfn"&gt;&lt;Caption&gt;PCFN&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.pcfn&lt;/DataMember&gt;&lt;Key&gt;lobDetail.pcfn&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column11&gt;&lt;Column12 ID="lobDetail.vessel_status_cd"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Vessel Status&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.vessel_status_cd&lt;/DataMember&gt;&lt;Key&gt;lobDetail.vessel_status_cd&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;/Column12&gt;&lt;Column13 ID="lobDetail.consignee_dodaac"&gt;&lt;Caption&gt;Consignee&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.consignee_dodaac&lt;/DataMember&gt;&lt;Key&gt;lobDetail.consignee_dodaac&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column13&gt;&lt;Column14 ID="lobDetail.cargo_dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.cargo_dsc&lt;/DataMember&gt;&lt;Key&gt;lobDetail.cargo_dsc&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column14&gt;&lt;Column15 ID="lobDetail.Cube_Nbr_Computed"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Cube (Computed)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.Cube_Nbr_Computed&lt;/DataMember&gt;&lt;Key&gt;lobDetail.Cube_Nbr_Computed&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column15&gt;&lt;Column16 ID="lobDetail.cube_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Cube&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.cube_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.cube_nbr&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column16&gt;&lt;Column17 ID="lobDetail.length_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Length&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.length_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.length_nbr&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;/Column17&gt;&lt;Column18 ID="lobDetail.width_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Width&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.width_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.width_nbr&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;/Column18&gt;&lt;Column19 ID="lobDetail.height_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Height&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.height_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.height_nbr&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;/Column19&gt;&lt;Column20 ID="lobDetail.weight_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Weight&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.weight_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.weight_nbr&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;/Column20&gt;&lt;Column21 ID="lobDetail.MTON_Nbr_Computed"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;MTON (Computed)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.MTON_Nbr_Computed&lt;/DataMember&gt;&lt;Key&gt;lobDetail.MTON_Nbr_Computed&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column21&gt;&lt;Column22 ID="lobDetail.mton_nbr"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;MTON&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.mton_nbr&lt;/DataMember&gt;&lt;Key&gt;lobDetail.mton_nbr&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column22&gt;&lt;Column23 ID="lobDetail.comment_one"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Comment # 1&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.comment_one&lt;/DataMember&gt;&lt;Key&gt;lobDetail.comment_one&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column23&gt;&lt;Column24 ID="lobDetail.comment_two"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Comment # 2&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.comment_two&lt;/DataMember&gt;&lt;Key&gt;lobDetail.comment_two&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;CellStyleIndex&gt;0&lt;/CellStyleIndex&gt;&lt;/Column24&gt;&lt;Column25 ID="lobDetail.commodity_cd"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Commodity&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.commodity_cd&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;Key&gt;lobDetail.commodity_cd&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;DropDownIndex&gt;0&lt;/DropDownIndex&gt;&lt;/Column25&gt;&lt;Column26 ID="lobDetail.rdd_dt"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;RDD&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.rdd_dt&lt;/DataMember&gt;&lt;Key&gt;lobDetail.rdd_dt&lt;/Key&gt;&lt;Position&gt;26&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column26&gt;&lt;Column27 ID="lobDetail.booked_flg"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Booked (?)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.booked_flg&lt;/DataMember&gt;&lt;Key&gt;lobDetail.booked_flg&lt;/Key&gt;&lt;Position&gt;27&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column27&gt;&lt;Column28 ID="lobDetail.si_flg"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Shipping Instructions (?)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.si_flg&lt;/DataMember&gt;&lt;Key&gt;lobDetail.si_flg&lt;/Key&gt;&lt;Position&gt;28&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column28&gt;&lt;Column29 ID="lobDetail.manifested_flg"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Manifested (?)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.manifested_flg&lt;/DataMember&gt;&lt;Key&gt;lobDetail.manifested_flg&lt;/Key&gt;&lt;Position&gt;29&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column29&gt;&lt;Column30 ID="lobDetail.vd_flg"&gt;&lt;ButtonStyle&gt;Ellipsis&lt;/ButtonStyle&gt;&lt;Caption&gt;Vessel Depart (?)&lt;/Caption&gt;&lt;DataMember&gt;lobDetail.vd_flg&lt;/DataMember&gt;&lt;Key&gt;lobDetail.vd_flg&lt;/Key&gt;&lt;Position&gt;30&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column30&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;8&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;/Groups&gt;&lt;/RootTable&gt;&lt;FormatStyles Collection="true" ElementName="Style"&gt;&lt;Style0 ID="NormalStyle"&gt;&lt;Font&gt;Microsoft Sans Serif, 9pt&lt;/Font&gt;&lt;Key&gt;NormalStyle&lt;/Key&gt;&lt;/Style0&gt;&lt;/FormatStyles&gt;&lt;DropDowns Collection="true" ElementName="DropDown"&gt;&lt;DropDown0 ID="dd_commodity_cd"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="commodity_cd"&gt;&lt;Caption&gt;commodity_cd&lt;/Caption&gt;&lt;DataMember&gt;commodity_cd&lt;/DataMember&gt;&lt;Key&gt;commodity_cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;Font&gt;Microsoft Sans Serif, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;dd_commodity_cd&lt;/Key&gt;&lt;DisplayMember&gt;commodity_cd&lt;/DisplayMember&gt;&lt;ValueMember&gt;commodity_cd&lt;/ValueMember&gt;&lt;/DropDown0&gt;&lt;/DropDowns&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdLobRemoved_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="chx"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;Key&gt;chx&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;20&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="lobExtract.tcn"&gt;&lt;Caption&gt;TCN&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.tcn&lt;/DataMember&gt;&lt;Key&gt;lobExtract.tcn&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column1&gt;&lt;Column2 ID="lobExtract.cargo_status"&gt;&lt;Caption&gt;Cargo Status&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.cargo_status&lt;/DataMember&gt;&lt;Key&gt;lobExtract.cargo_status&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column2&gt;&lt;Column3 ID="lobExtract.van_type"&gt;&lt;Caption&gt;Van Type&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.van_type&lt;/DataMember&gt;&lt;Key&gt;lobExtract.van_type&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column3&gt;&lt;Column4 ID="lobExtract.container_no"&gt;&lt;Caption&gt;Container&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.container_no&lt;/DataMember&gt;&lt;Key&gt;lobExtract.container_no&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column4&gt;&lt;Column5 ID="lobExtract.voyage_no"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.voyage_no&lt;/DataMember&gt;&lt;Key&gt;lobExtract.voyage_no&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column5&gt;&lt;Column6 ID="lobExtract.booking_no"&gt;&lt;Caption&gt;Booking&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.booking_no&lt;/DataMember&gt;&lt;Key&gt;lobExtract.booking_no&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column6&gt;&lt;Column7 ID="lobExtract.cargo_bol_no"&gt;&lt;Caption&gt;Bol&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.cargo_bol_no&lt;/DataMember&gt;&lt;Key&gt;lobExtract.cargo_bol_no&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column7&gt;&lt;Column8 ID="lobExtract.pcfn"&gt;&lt;Caption&gt;PCFN&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.pcfn&lt;/DataMember&gt;&lt;Key&gt;lobExtract.pcfn&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column8&gt;&lt;Column9 ID="lobExtract.pol_location_cd"&gt;&lt;Caption&gt;POL&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.pol_location_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.pol_location_cd&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column9&gt;&lt;Column10 ID="lobExtract.pol_berth_cd"&gt;&lt;Caption&gt;POL Berth&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.pol_berth_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.pol_berth_cd&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column10&gt;&lt;Column11 ID="lobExtract.pod_location_cd"&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.pod_location_cd&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column11&gt;&lt;Column12 ID="lobExtract.plod"&gt;&lt;Caption&gt;PLOD&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.plod&lt;/DataMember&gt;&lt;Key&gt;lobExtract.plod&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column12&gt;&lt;Column13 ID="lobExtract.consignor_dodaac"&gt;&lt;Caption&gt;Consignor&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.consignor_dodaac&lt;/DataMember&gt;&lt;Key&gt;lobExtract.consignor_dodaac&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column13&gt;&lt;Column14 ID="lobExtract.consignee_dodaac"&gt;&lt;Caption&gt;Consignee&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.consignee_dodaac&lt;/DataMember&gt;&lt;Key&gt;lobExtract.consignee_dodaac&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column14&gt;&lt;Column15 ID="lobExtract.vessel_status_cd"&gt;&lt;Caption&gt;Vessel Status&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.vessel_status_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.vessel_status_cd&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column15&gt;&lt;Column16 ID="lobExtract.cargo_dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.cargo_dsc&lt;/DataMember&gt;&lt;Key&gt;lobExtract.cargo_dsc&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column16&gt;&lt;Column17 ID="lobExtract.cube_nbr"&gt;&lt;Caption&gt;Cube&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.cube_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.cube_nbr&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column17&gt;&lt;Column18 ID="lobExtract.length_nbr"&gt;&lt;Caption&gt;Length&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.length_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.length_nbr&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column18&gt;&lt;Column19 ID="lobExtract.width_nbr"&gt;&lt;Caption&gt;Width&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.width_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.width_nbr&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column19&gt;&lt;Column20 ID="lobExtract.height_nbr"&gt;&lt;Caption&gt;Height&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.height_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.height_nbr&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column20&gt;&lt;Column21 ID="lobExtract.weight_nbr"&gt;&lt;Caption&gt;Weight&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.weight_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.weight_nbr&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column21&gt;&lt;Column22 ID="lobExtract.mton_nbr"&gt;&lt;Caption&gt;MTON&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.mton_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.mton_nbr&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column22&gt;&lt;Column23 ID="lobExtract.booked_flg"&gt;&lt;Caption&gt;Booked (?)&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.booked_flg&lt;/DataMember&gt;&lt;Key&gt;lobExtract.booked_flg&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column23&gt;&lt;Column24 ID="lobExtract.si_flg"&gt;&lt;Caption&gt;Shipping Instructions (?)&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.si_flg&lt;/DataMember&gt;&lt;Key&gt;lobExtract.si_flg&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column24&gt;&lt;Column25 ID=" lobExtract.comment_one"&gt;&lt;Caption&gt;Comment # 1&lt;/Caption&gt;&lt;DataMember&gt; lobExtract.comment_one&lt;/DataMember&gt;&lt;Key&gt; lobExtract.comment_one&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column25&gt;&lt;Column26 ID=" lobExtract.comment_two"&gt;&lt;Caption&gt;Comment # 2&lt;/Caption&gt;&lt;DataMember&gt; lobExtract.comment_two&lt;/DataMember&gt;&lt;Key&gt; lobExtract.comment_two&lt;/Key&gt;&lt;Position&gt;26&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column26&gt;&lt;Column27 ID="lobExtract.commodity_cd"&gt;&lt;Caption&gt;Commodity&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.commodity_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.commodity_cd&lt;/Key&gt;&lt;Position&gt;27&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column27&gt;&lt;Column28 ID="lobExtract.rdd_dt"&gt;&lt;Caption&gt;RDD&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.rdd_dt&lt;/DataMember&gt;&lt;Key&gt;lobExtract.rdd_dt&lt;/Key&gt;&lt;Position&gt;28&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column28&gt;&lt;Column29 ID="lobExtract.lifton_dt"&gt;&lt;Caption&gt;Lift-On Date&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.lifton_dt&lt;/DataMember&gt;&lt;Key&gt;lobExtract.lifton_dt&lt;/Key&gt;&lt;Position&gt;29&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column29&gt;&lt;Column30 ID="lobExtract.pcs_nbr"&gt;&lt;Caption&gt;Pieces&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.pcs_nbr&lt;/DataMember&gt;&lt;Key&gt;lobExtract.pcs_nbr&lt;/Key&gt;&lt;Position&gt;30&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column30&gt;&lt;Column31 ID="lobExtract.req_pod_location_cd"&gt;&lt;Caption&gt;Required POD&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.req_pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.req_pod_location_cd&lt;/Key&gt;&lt;Position&gt;31&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column31&gt;&lt;Column32 ID="lobExtract.sddc_cbft"&gt;&lt;Caption&gt;SDDC Cube&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.sddc_cbft&lt;/DataMember&gt;&lt;Key&gt;lobExtract.sddc_cbft&lt;/Key&gt;&lt;Position&gt;32&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column32&gt;&lt;Column33 ID="lobExtract.move_type_cd"&gt;&lt;Caption&gt;Move Type&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.move_type_cd&lt;/DataMember&gt;&lt;Key&gt;lobExtract.move_type_cd&lt;/Key&gt;&lt;Position&gt;33&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column33&gt;&lt;Column34 ID="lobExtract.manifested_flg"&gt;&lt;Caption&gt;Manifested (?)&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.manifested_flg&lt;/DataMember&gt;&lt;Key&gt;lobExtract.manifested_flg&lt;/Key&gt;&lt;Position&gt;34&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column34&gt;&lt;Column35 ID="lobExtract.vd_flg"&gt;&lt;Caption&gt;Vessel Depart (?)&lt;/Caption&gt;&lt;DataMember&gt;lobExtract.vd_flg&lt;/DataMember&gt;&lt;Key&gt;lobExtract.vd_flg&lt;/Key&gt;&lt;Position&gt;35&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column35&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;7&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="toolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>413, 17</value>
+  </metadata>
+  <data name="tsbAddtoLoadList.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgxJREFUOE+lkvtL
+        U2EYx+0PEbtpFwnBKPGKiJImGP0gYhIYs1E5GF5gIxkpA00JRSmMEF0ohMh+GaRWYlqabMVcNdS2QpaI
+        VqiDIYhk397vA6fXhCjyhYdzeM/5fp7vczkAdeL2cwho7v/wWzT1zcN+Pwhr51uY2/y41PQaF+wzKKiZ
+        QvaN58g0jyLd5KEUcQbg+84P/Cm2tncQjW3j68YWIqubCC3FcOJc478BAuGoZM6zvoRnakXEruEIjhc4
+        /g5gZop9c+voGAyLbQIfeBZxLL9BA1jzXvuGbWamuKh+GmmVbswE19A59FEBbmoAG7YbsLtm2mZmiml9
+        cvabNDwpz6YB7LYBoMXCumkJr7LOmnnHzBQ/9X2Bo2cOibm1GsBREbAQiYmw/8lnuCeWkVzcgnZlnw1j
+        3HV/wuNXK6i/9x5Hc6wawDlTXHbLJ+LZUBQPRyKwdQdxutwl1h+NLXHh5Ht1ewBHsiwawCW57HyDAfWR
+        dvl0uhZQ1eqX8aVc7EKLqrum651ATLf9OJx5XQM4KmY0xPzZ0hFAiQJnXB0WwME0E3IsL5B17ZlADqWb
+        NYDrOepdlcysmTWWOrxqbceRWtaLk0VO1XW72D5Vckd2gMBfq8zdpmUG62NJvKM4+XyziDk24xmfWoGE
+        s1c0gHPmbrPTpHNJKOCo2G1mZs20zcwUJ5yp1AB5+8/zEwgF5GMVDxh4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>38</value>
+  </metadata>
+</root>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sbrChild.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 13</value>
+  </metadata>
+  <data name="cmbPOL_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Selector"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Selector&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="Location_Dsc"&gt;&lt;Caption&gt;Location&lt;/Caption&gt;&lt;DataMember&gt;Location_Dsc&lt;/DataMember&gt;&lt;Key&gt;Location_Dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;300&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Location_Type_Cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;Location_Type_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Type_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;Column3 ID="Location_Cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Cd&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Active_Flg"&gt;&lt;Caption&gt;Active&lt;/Caption&gt;&lt;TypeNameFalseValue&gt;System.String&lt;/TypeNameFalseValue&gt;&lt;CheckBoxFalseValue&gt;N&lt;/CheckBoxFalseValue&gt;&lt;TypeNameTrueValue&gt;System.String&lt;/TypeNameTrueValue&gt;&lt;CheckBoxTrueValue&gt;Y&lt;/CheckBoxTrueValue&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Active_Flg&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;HeaderAlignment&gt;Center&lt;/HeaderAlignment&gt;&lt;Key&gt;Active_Flg&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Location_Dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;Location_Cd&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbVoyages_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Selector"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Voyage_Cd&lt;/DataMember&gt;&lt;Key&gt;Selector&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="Voyage_Cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;Voyage_Cd&lt;/DataMember&gt;&lt;Key&gt;Voyage_Cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="Vessel_Cd"&gt;&lt;Caption&gt;Vessel&lt;/Caption&gt;&lt;DataMember&gt;Vessel_Cd&lt;/DataMember&gt;&lt;Key&gt;Vessel_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;300&lt;/Width&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Voyage_Cd&lt;/DisplayMember&gt;&lt;ValueMember&gt;Voyage_Cd&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbPLOD_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Selector"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Selector&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="Location_Dsc"&gt;&lt;Caption&gt;Location&lt;/Caption&gt;&lt;DataMember&gt;Location_Dsc&lt;/DataMember&gt;&lt;Key&gt;Location_Dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;300&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Location_Type_Cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;Location_Type_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Type_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;Column3 ID="Location_Cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Cd&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Active_Flg"&gt;&lt;Caption&gt;Active&lt;/Caption&gt;&lt;TypeNameFalseValue&gt;System.String&lt;/TypeNameFalseValue&gt;&lt;CheckBoxFalseValue&gt;N&lt;/CheckBoxFalseValue&gt;&lt;TypeNameTrueValue&gt;System.String&lt;/TypeNameTrueValue&gt;&lt;CheckBoxTrueValue&gt;Y&lt;/CheckBoxTrueValue&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Active_Flg&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;HeaderAlignment&gt;Center&lt;/HeaderAlignment&gt;&lt;Key&gt;Active_Flg&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Location_Dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;Location_Cd&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbPOD_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Selector"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Selector&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="Location_Dsc"&gt;&lt;Caption&gt;Location&lt;/Caption&gt;&lt;DataMember&gt;Location_Dsc&lt;/DataMember&gt;&lt;Key&gt;Location_Dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;300&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Location_Type_Cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;Location_Type_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Type_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;/Column2&gt;&lt;Column3 ID="Location_Cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Cd&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Active_Flg"&gt;&lt;Caption&gt;Active&lt;/Caption&gt;&lt;TypeNameFalseValue&gt;System.String&lt;/TypeNameFalseValue&gt;&lt;CheckBoxFalseValue&gt;N&lt;/CheckBoxFalseValue&gt;&lt;TypeNameTrueValue&gt;System.String&lt;/TypeNameTrueValue&gt;&lt;CheckBoxTrueValue&gt;Y&lt;/CheckBoxTrueValue&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Active_Flg&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;HeaderAlignment&gt;Center&lt;/HeaderAlignment&gt;&lt;Key&gt;Active_Flg&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column4&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Location_Dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;Location_Cd&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbMoveType_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Selector"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Code&lt;/DataMember&gt;&lt;Key&gt;Selector&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="Code"&gt;&lt;Caption&gt;Move Type&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Code&lt;/DataMember&gt;&lt;Key&gt;Code&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;/Column1&gt;&lt;Column2 ID="Description"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataTypeCode&gt;String&lt;/DataTypeCode&gt;&lt;DataMember&gt;Description&lt;/DataMember&gt;&lt;Key&gt;Description&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;300&lt;/Width&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;Code&lt;/DisplayMember&gt;&lt;ValueMember&gt;Code&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkYx
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource1" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkYy
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource2" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkYz
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource3" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY0
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource4" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY1
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource5" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY2
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource6" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY3
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource7" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY4
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbMoveType.DropDownDataSource8" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAD1Db21tb24sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsDAMAAABJU3lzdGVtLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1
+        cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQUBAAAAF0NTMjAxMC5Db21t
+        b24uQ29tYm9JdGVtAwAAAAVfQ29kZQxfRGVzY3JpcHRpb24PUHJvcGVydHlDaGFuZ2VkAQEEMVN5c3Rl
+        bS5Db21wb25lbnRNb2RlbC5Qcm9wZXJ0eUNoYW5nZWRFdmVudEhhbmRsZXIDAAAAAgAAAAYEAAAAAkY5
+        CQQAAAAKCw==
+</value>
+  </data>
+  <data name="cmbVessel_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Vessel_Cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;Vessel_Cd&lt;/DataMember&gt;&lt;Key&gt;Vessel_Cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;Column1 ID="Vessel_Nm"&gt;&lt;Caption&gt;Name&lt;/Caption&gt;&lt;DataMember&gt;Vessel_Nm&lt;/DataMember&gt;&lt;Key&gt;Vessel_Nm&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;VESSEL_CDVESSEL_NM&lt;/DisplayMember&gt;&lt;ValueMember&gt;VESSEL_CD&lt;/ValueMember&gt;&lt;VisibleRows&gt;20&lt;/VisibleRows&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="tbrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 13</value>
+  </metadata>
+  <data name="grdMain_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="vessel_nm"&gt;&lt;Caption&gt;Vessel&lt;/Caption&gt;&lt;DataMember&gt;vessel_nm&lt;/DataMember&gt;&lt;Key&gt;vessel_nm&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;55&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="voyage_no"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;ColumnType&gt;Link&lt;/ColumnType&gt;&lt;DataMember&gt;voyage_no&lt;/DataMember&gt;&lt;Key&gt;voyage_no&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;66&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="pcfn"&gt;&lt;Caption&gt;PCFN&lt;/Caption&gt;&lt;ColumnType&gt;Link&lt;/ColumnType&gt;&lt;DataMember&gt;pcfn&lt;/DataMember&gt;&lt;Key&gt;pcfn&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;67&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="tcn"&gt;&lt;Caption&gt;TCN&lt;/Caption&gt;&lt;DataMember&gt;tcn&lt;/DataMember&gt;&lt;Key&gt;tcn&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;154&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="booking_no"&gt;&lt;Caption&gt;Booking#&lt;/Caption&gt;&lt;ColumnType&gt;Link&lt;/ColumnType&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="bol_no"&gt;&lt;Caption&gt;BL#&lt;/Caption&gt;&lt;DataMember&gt;bol_no&lt;/DataMember&gt;&lt;Key&gt;bol_no&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;121&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="move_type_cd"&gt;&lt;Caption&gt;Terms&lt;/Caption&gt;&lt;DataMember&gt;move_type_cd&lt;/DataMember&gt;&lt;Key&gt;move_type_cd&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;46&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="cargo_dsc"&gt;&lt;Caption&gt;Cargo Description&lt;/Caption&gt;&lt;DataMember&gt;cargo_dsc&lt;/DataMember&gt;&lt;Key&gt;cargo_dsc&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;195&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="length_nbr"&gt;&lt;Caption&gt;L&lt;/Caption&gt;&lt;DataMember&gt;length_nbr&lt;/DataMember&gt;&lt;FormatString&gt;f2&lt;/FormatString&gt;&lt;Key&gt;length_nbr&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="width_nbr"&gt;&lt;Caption&gt;W&lt;/Caption&gt;&lt;DataMember&gt;width_nbr&lt;/DataMember&gt;&lt;FormatString&gt;f2&lt;/FormatString&gt;&lt;Key&gt;width_nbr&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Width&gt;55&lt;/Width&gt;&lt;/Column9&gt;&lt;Column10 ID="height_nbr"&gt;&lt;Caption&gt;H&lt;/Caption&gt;&lt;DataMember&gt;height_nbr&lt;/DataMember&gt;&lt;FormatString&gt;f2&lt;/FormatString&gt;&lt;Key&gt;height_nbr&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Width&gt;59&lt;/Width&gt;&lt;/Column10&gt;&lt;Column11 ID="weight_nbr"&gt;&lt;Caption&gt;Grossweight&lt;/Caption&gt;&lt;DataMember&gt;weight_nbr&lt;/DataMember&gt;&lt;FormatString&gt;f0&lt;/FormatString&gt;&lt;Key&gt;weight_nbr&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Width&gt;76&lt;/Width&gt;&lt;/Column11&gt;&lt;Column12 ID="pol_location_cd"&gt;&lt;Caption&gt;POL&lt;/Caption&gt;&lt;DataMember&gt;pol_location_cd&lt;/DataMember&gt;&lt;Key&gt;pol_location_cd&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Width&gt;61&lt;/Width&gt;&lt;/Column12&gt;&lt;Column13 ID="pod_location_cd"&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;pod_location_cd&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;/Column13&gt;&lt;Column14 ID="pod_eta"&gt;&lt;Caption&gt;ETA&lt;/Caption&gt;&lt;DataMember&gt;pod_eta&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;pod_eta&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Width&gt;59&lt;/Width&gt;&lt;/Column14&gt;&lt;Column15 ID="plod_dsc"&gt;&lt;Caption&gt;PLOD&lt;/Caption&gt;&lt;DataMember&gt;plod_dsc&lt;/DataMember&gt;&lt;Key&gt;plod_dsc&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Width&gt;147&lt;/Width&gt;&lt;/Column15&gt;&lt;Column16 ID="rdd_dt"&gt;&lt;Caption&gt;RDD&lt;/Caption&gt;&lt;DataMember&gt;rdd_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;rdd_dt&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;Width&gt;74&lt;/Width&gt;&lt;/Column16&gt;&lt;Column17 ID="va_dt"&gt;&lt;Caption&gt;VA&lt;/Caption&gt;&lt;DataMember&gt;va_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;va_dt&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;Width&gt;67&lt;/Width&gt;&lt;/Column17&gt;&lt;Column18 ID="oa_dt"&gt;&lt;Caption&gt;OA&lt;/Caption&gt;&lt;DataMember&gt;oa_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;oa_dt&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;Width&gt;63&lt;/Width&gt;&lt;/Column18&gt;&lt;Column19 ID="x1_dt"&gt;&lt;Caption&gt;X1&lt;/Caption&gt;&lt;DataMember&gt;x1_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;x1_dt&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;Width&gt;68&lt;/Width&gt;&lt;/Column19&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>43</value>
+  </metadata>
+</root>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:ns0="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns1="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="UTOverTransport">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient" />
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" />
+      <xs:element name="LOBUpload">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ip_address" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="lobDetailRecords" nillable="true" type="ns1:ArrayOfLOBDetailRecord" />
+            <xs:element minOccurs="0" name="lobMaster" nillable="true" type="ns1:LOBMasterRecord" />
+            <xs:element minOccurs="0" name="system_id" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LOBResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="origUpload" nillable="true" type="ns1:LOBUpload" />
+            <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="validationResponses" nillable="true" type="ns1:ArrayOfLOBValidResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfLOBDetailRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="LOBDetailRecord" nillable="true" type="tns:LOBDetailRecord" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfLOBDetailRecord" nillable="true" type="tns:ArrayOfLOBDetailRecord" />
+      <xs:complexType name="LOBDetailRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="bookingNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cargoDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commVoydoc" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commentOne" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="commentTwo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="consigneeDODAAC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="consignorDODAAC" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="containerNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="cube" type="xs:float" />
+          <xs:element minOccurs="0" name="errorFlag" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="has315vd" type="xs:boolean" />
+          <xs:element minOccurs="0" name="hasSi" type="xs:boolean" />
+          <xs:element minOccurs="0" name="headID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="height" type="xs:float" />
+          <xs:element minOccurs="0" name="isBooked" type="xs:boolean" />
+          <xs:element minOccurs="0" name="isManifested" type="xs:boolean" />
+          <xs:element minOccurs="0" name="length" type="xs:float" />
+          <xs:element minOccurs="0" name="mton" type="xs:float" />
+          <xs:element minOccurs="0" name="pcfn" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="pod" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="recID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="revised" type="xs:boolean" />
+          <xs:element minOccurs="0" name="tcn" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vanType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vesselStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="weight" type="xs:float" />
+          <xs:element minOccurs="0" name="width" type="xs:float" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LOBDetailRecord" nillable="true" type="tns:LOBDetailRecord" />
+      <xs:complexType name="LOBMasterRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="metric" type="xs:boolean" />
+          <xs:element minOccurs="0" name="poe" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="sailDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="scac" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="vesselName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="voydoc" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LOBMasterRecord" nillable="true" type="tns:LOBMasterRecord" />
+      <xs:complexType name="LOBUpload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ip_address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="lobDetailRecords" nillable="true" type="tns:ArrayOfLOBDetailRecord" />
+          <xs:element minOccurs="0" name="lobMaster" nillable="true" type="tns:LOBMasterRecord" />
+          <xs:element minOccurs="0" name="system_id" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LOBUpload" nillable="true" type="tns:LOBUpload" />
+      <xs:complexType name="ArrayOfLOBValidResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="LOBValidResponse" nillable="true" type="tns:LOBValidResponse" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfLOBValidResponse" nillable="true" type="tns:ArrayOfLOBValidResponse" />
+      <xs:complexType name="LOBValidResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="msg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="valid" type="xs:boolean" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="LOBValidResponse" nillable="true" type="tns:LOBValidResponse" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="LOBUpload">
+    <wsdl:part name="parameters" element="tns:LOBUpload" />
+  </wsdl:message>
+  <wsdl:message name="LOBResponse">
+    <wsdl:part name="parameters" element="tns:LOBResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SurfacePatLOBServiceVersion1PortType">
+    <wsdl:operation name="UploadLOB">
+      <wsdl:input wsaw:Action="http://tempuri.org/LOB_PatWebServices_v1/UploadLOB" message="tns:LOBUpload" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LOB_PatWebServices_v1/UploadLOBResponse" message="tns:LOBResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLOBWarningsAndErrors">
+      <wsdl:input wsaw:Action="http://tempuri.org/LOB_PatWebServices_v1/GetLOBWarningsAndErrors" message="tns:LOBUpload" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LOB_PatWebServices_v1/GetLOBWarningsAndErrorsResponse" message="tns:LOBResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SurfacePatLOBServiceVersion1Soap11Binding" type="tns:SurfacePatLOBServiceVersion1PortType">
+    <wsp:PolicyReference URI="#UTOverTransport" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadLOB">
+      <soap:operation soapAction="http://tempuri.org/LOB_PatWebServices_v1/UploadLOB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLOBWarningsAndErrors">
+      <soap:operation soapAction="http://tempuri.org/LOB_PatWebServices_v1/GetLOBWarningsAndErrors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SurfacePatLOBServiceVersion1Soap12Binding" type="tns:SurfacePatLOBServiceVersion1PortType">
+    <wsp:PolicyReference URI="#UTOverTransport" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadLOB">
+      <soap12:operation soapAction="http://tempuri.org/LOB_PatWebServices_v1/UploadLOB" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLOBWarningsAndErrors">
+      <soap12:operation soapAction="http://tempuri.org/LOB_PatWebServices_v1/GetLOBWarningsAndErrors" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SurfacePatLOBServiceVersion1HttpBinding" type="tns:SurfacePatLOBServiceVersion1PortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="UploadLOB">
+      <http:operation location="UploadLOB" />
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLOBWarningsAndErrors">
+      <http:operation location="GetLOBWarningsAndErrors" />
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SurfacePatLOBServiceVersion1">
+    <wsdl:port name="SurfacePatLOBServiceVersion1HttpsSoap11Endpoint" binding="tns:SurfacePatLOBServiceVersion1Soap11Binding">
+      <soap:address location="https://esb.sddc.army.mil/services/SurfacePatLOBServiceVersion1.SurfacePatLOBServiceVersion1HttpsSoap11Endpoint" />
+    </wsdl:port>
+    <wsdl:port name="SurfacePatLOBServiceVersion1HttpsSoap12Endpoint" binding="tns:SurfacePatLOBServiceVersion1Soap12Binding">
+      <soap12:address location="https://esb.sddc.army.mil/services/SurfacePatLOBServiceVersion1.SurfacePatLOBServiceVersion1HttpsSoap12Endpoint" />
+    </wsdl:port>
+    <wsdl:port name="SurfacePatLOBServiceVersion1HttpsEndpoint" binding="tns:SurfacePatLOBServiceVersion1HttpBinding">
+      <http:address location="https://esb.sddc.army.mil/services/SurfacePatLOBServiceVersion1.SurfacePatLOBServiceVersion1HttpsEndpoint" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

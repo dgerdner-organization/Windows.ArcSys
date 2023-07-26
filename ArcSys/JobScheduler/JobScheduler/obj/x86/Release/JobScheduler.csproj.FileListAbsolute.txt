@@ -1,0 +1,9 @@
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\bin\Release\JobScheduler.exe.config
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\bin\Release\JobScheduler.exe
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\bin\Release\JobScheduler.pdb
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\ResolveAssemblyReference.cache
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\JobScheduler.frmMain.resources
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\GenerateResource.read.1.tlog
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\GenerateResource.write.1.tlog
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\JobScheduler.exe
+C:\ASL\CS-2010\ArcSys\JobScheduler\JobScheduler\obj\x86\Release\JobScheduler.pdb

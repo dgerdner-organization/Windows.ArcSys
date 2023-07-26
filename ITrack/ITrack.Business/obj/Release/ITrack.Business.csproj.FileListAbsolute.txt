@@ -1,0 +1,8 @@
+C:\ASL\CS-2010\ITrack\ITrack.Business\bin\Release\ITrack.Business.dll
+C:\ASL\CS-2010\ITrack\ITrack.Business\bin\Release\ITrack.Business.pdb
+C:\ASL\CS-2010\ITrack\ITrack.Business\bin\Release\Common.dll
+C:\ASL\CS-2010\ITrack\ITrack.Business\bin\Release\Common.pdb
+C:\ASL\CS-2010\ITrack\ITrack.Business\obj\Release\ResolveAssemblyReference.cache
+C:\ASL\CS-2010\ITrack\ITrack.Business\obj\Release\ITrack.Business.dll
+C:\ASL\CS-2010\ITrack\ITrack.Business\obj\Release\ITrack.Business.pdb
+C:\ASL\CS-2010\ITrack\ITrack.Business\bin\Release\DocumentFormat.OpenXml.dll

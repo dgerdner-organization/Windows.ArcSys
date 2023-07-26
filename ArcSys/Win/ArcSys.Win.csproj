@@ -1,0 +1,1714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA3BAA36-8147-4B19-8AC2-8CF10DC9DEA6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS2010.ArcSys.Win</RootNamespace>
+    <AssemblyName>ArcSys.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Business Objects\Common\4.0\managed\dotnet2\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Business Objects\Common\4.0\managed\dotnet2\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=12.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files\Business Objects\Common\4.0\managed\dotnet2\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinListBar.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinListView.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TMGDevelopment.PrintAdapters, Version=2.1.0.2, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+    <Reference Include="TMGDevelopment.Shared, Version=1.0.0.4, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACMS\frmDimsSynch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmDimsSynch.Designer.cs">
+      <DependentUpon>frmDimsSynch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmLOBAssembleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmLOBAssembleDetail.Designer.cs">
+      <DependentUpon>frmLOBAssembleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmLOBShowCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmLOBShowCompare.Designer.cs">
+      <DependentUpon>frmLOBShowCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmPATLoadDecision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmPATLoadDecision.Designer.cs">
+      <DependentUpon>frmPATLoadDecision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmPATLoadList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmPATLoadList.Designer.cs">
+      <DependentUpon>frmPATLoadList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmEDITransmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmEDITransmit.Designer.cs">
+      <DependentUpon>frmEDITransmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmRDDMissed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmRDDMissed.Designer.cs">
+      <DependentUpon>frmRDDMissed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmRDDReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmRDDReport.Designer.cs">
+      <DependentUpon>frmRDDReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditMiligaryVoyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditMiligaryVoyage.designer.cs">
+      <DependentUpon>frmEditMiligaryVoyage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditVesselBerthActivity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditVesselBerthActivity.designer.cs">
+      <DependentUpon>frmEditVesselBerthActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditVesselMilitaryVoyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmEditVesselMilitaryVoyage.designer.cs">
+      <DependentUpon>frmEditVesselMilitaryVoyage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmManageMilitaryVoyages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmManageMilitaryVoyages.designer.cs">
+      <DependentUpon>frmManageMilitaryVoyages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmPortOpsArriveDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmPortOpsArriveDepart.Designer.cs">
+      <DependentUpon>frmPortOpsArriveDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateArrDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateArrDep.designer.cs">
+      <DependentUpon>frmUpdateArrDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateMilitaryVoyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateMilitaryVoyage.designer.cs">
+      <DependentUpon>frmUpdateMilitaryVoyage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateVessel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVSS Scheduling\frmUpdateVessel.designer.cs">
+      <DependentUpon>frmUpdateVessel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsImporsonation.cs" />
+    <Compile Include="ConveyanceTracking\frmEasyMoveSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmEasyMoveSelect.Designer.cs">
+      <DependentUpon>frmEasyMoveSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmCompareBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmCompareBooking.Designer.cs">
+      <DependentUpon>frmCompareBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmEDITranslation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmEDITranslation.Designer.cs">
+      <DependentUpon>frmEDITranslation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmAPILog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmAPILog.Designer.cs">
+      <DependentUpon>frmAPILog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmEditIALDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmEditIALDetail.Designer.cs">
+      <DependentUpon>frmEditIALDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmIAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmIAL.Designer.cs">
+      <DependentUpon>frmIAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmOceanVoyages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmOceanVoyages.Designer.cs">
+      <DependentUpon>frmOceanVoyages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmSearchEDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmSearchEDI.Designer.cs">
+      <DependentUpon>frmSearchEDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmSearchAPInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmSearchAPInvoice.Designer.cs">
+      <DependentUpon>frmSearchAPInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmIALPOVTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmIALPOVTracking.designer.cs">
+      <DependentUpon>frmIALPOVTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmLHaulBillingExtract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmLHaulBillingExtract.Designer.cs">
+      <DependentUpon>frmLHaulBillingExtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmSDDCInvoicing2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmSDDCInvoicing2.Designer.cs">
+      <DependentUpon>frmSDDCInvoicing2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmEstimateInvestigate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmEstimateInvestigate.Designer.cs">
+      <DependentUpon>frmEstimateInvestigate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCustomerServiceLhaulCharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCustomerServiceLhaulCharges.designer.cs">
+      <DependentUpon>frmCustomerServiceLhaulCharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINE\frmTestVoyages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINE\frmTestVoyages.Designer.cs">
+      <DependentUpon>frmTestVoyages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINE\frmLINEQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINE\frmLINEQuery.Designer.cs">
+      <DependentUpon>frmLINEQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditPartnerEDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditPartnerEDI.Designer.cs">
+      <DependentUpon>frmEditPartnerEDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditTopsPorts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditTopsPorts.Designer.cs">
+      <DependentUpon>frmEditTopsPorts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmIALRecall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmIALRecall.Designer.cs">
+      <DependentUpon>frmIALRecall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmHtmlReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmHtmlReport.Designer.cs">
+      <DependentUpon>frmHtmlReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmNHTSARecall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmNHTSARecall.Designer.cs">
+      <DependentUpon>frmNHTSARecall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmNHTSARecallEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmNHTSARecallEdit.Designer.cs">
+      <DependentUpon>frmNHTSARecallEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stena\frmStenaSailings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stena\frmStenaSailings.Designer.cs">
+      <DependentUpon>frmStenaSailings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmCommodityDscEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmCommodityDscEdit.Designer.cs">
+      <DependentUpon>frmCommodityDscEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmCargoTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmCargoTypeEdit.Designer.cs">
+      <DependentUpon>frmCargoTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmMailListEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmMailListEdit.Designer.cs">
+      <DependentUpon>frmMailListEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmVesselEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmVesselEdit.Designer.cs">
+      <DependentUpon>frmVesselEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmVesselMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmVesselMaintenance.Designer.cs">
+      <DependentUpon>frmVesselMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationEdit.Designer.cs">
+      <DependentUpon>frmLocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationTerminalEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationTerminalEdit.Designer.cs">
+      <DependentUpon>frmLocationTerminalEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationTerminalMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\Reference Tables\frmLocationTerminalMaintenance.Designer.cs">
+      <DependentUpon>frmLocationTerminalMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualvsBudget\frmActualvsBudget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualvsBudget\frmActualvsBudget.Designer.cs">
+      <DependentUpon>frmActualvsBudget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArcNet\frmEditTerminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArcNet\frmEditTerminal.Designer.cs">
+      <DependentUpon>frmEditTerminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArcNet\frmSearchTerminals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArcNet\frmSearchTerminals.Designer.cs">
+      <DependentUpon>frmSearchTerminals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArcNet\frmSearchTerminalsOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArcNet\frmSearchTerminalsOptions.Designer.cs">
+      <DependentUpon>frmSearchTerminalsOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArcNet\frmTerminalAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArcNet\frmTerminalAddress.Designer.cs">
+      <DependentUpon>frmTerminalAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmManualITV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmManualITV.Designer.cs">
+      <DependentUpon>frmManualITV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmBatchEDICreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmBatchEDICreate.Designer.cs">
+      <DependentUpon>frmBatchEDICreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmEditTradingPartner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmEditTradingPartner.Designer.cs">
+      <DependentUpon>frmEditTradingPartner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmITVDiagnostics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmITVDiagnostics.Designer.cs">
+      <DependentUpon>frmITVDiagnostics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmSearchEDIHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmSearchEDIHistory.Designer.cs">
+      <DependentUpon>frmSearchEDIHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommericalEDI\frmArriveDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommericalEDI\frmArriveDepart.designer.cs">
+      <DependentUpon>frmArriveDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmConveyanceManagerAlt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmConveyanceManagerAlt.Designer.cs">
+      <DependentUpon>frmConveyanceManagerAlt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoTracking.Designer.cs">
+      <DependentUpon>frmCargoTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmDailyITV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmDailyITV.Designer.cs">
+      <DependentUpon>frmDailyITV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmAssignVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmAssignVendor.Designer.cs">
+      <DependentUpon>frmAssignVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmSearchCargoForMoves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmSearchCargoForMoves.Designer.cs">
+      <DependentUpon>frmSearchCargoForMoves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmActionUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmActionUpdate.Designer.cs">
+      <DependentUpon>frmActionUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActionDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActionDetail.Designer.cs">
+      <DependentUpon>frmCargoActionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActions.Designer.cs">
+      <DependentUpon>frmCargoActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActionsOLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmCargoActionsOLD.Designer.cs">
+      <DependentUpon>frmCargoActionsOLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmEditConveyance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmEditConveyance.Designer.cs">
+      <DependentUpon>frmEditConveyance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmEditVendorMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmEditVendorMove.Designer.cs">
+      <DependentUpon>frmEditVendorMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmConveyanceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmConveyanceManager.Designer.cs">
+      <DependentUpon>frmConveyanceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmSearchMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConveyanceTracking\frmSearchMove.Designer.cs">
+      <DependentUpon>frmSearchMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customs\frmCustomsSubInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customs\frmCustomsSubInfo.Designer.cs">
+      <DependentUpon>frmCustomsSubInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customs\frmCustomsSubmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customs\frmCustomsSubmission.Designer.cs">
+      <DependentUpon>frmCustomsSubmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\ClsOpenEDIFile.cs" />
+    <Compile Include="ACMS\frmAcceptBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmAcceptBooking.Designer.cs">
+      <DependentUpon>frmAcceptBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmACMSDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmACMSDashboard.Designer.cs">
+      <DependentUpon>frmACMSDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmACMSLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmACMSLogin.Designer.cs">
+      <DependentUpon>frmACMSLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmBookingCorrespondence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmBookingCorrespondence.Designer.cs">
+      <DependentUpon>frmBookingCorrespondence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmEDILog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmEDILog.Designer.cs">
+      <DependentUpon>frmEDILog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmRequestEDILog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmRequestEDILog.Designer.cs">
+      <DependentUpon>frmRequestEDILog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmSearchBookingRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmSearchBookingRequests.designer.cs">
+      <DependentUpon>frmSearchBookingRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmCreateITV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmCreateITV.designer.cs">
+      <DependentUpon>frmCreateITV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmEDIQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmEDIQuery.designer.cs">
+      <DependentUpon>frmEDIQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmRDDDoorMoves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmRDDDoorMoves.designer.cs">
+      <DependentUpon>frmRDDDoorMoves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmRDDPortMoves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmRDDPortMoves.designer.cs">
+      <DependentUpon>frmRDDPortMoves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmSDDCArriveDepart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmSDDCArriveDepart.designer.cs">
+      <DependentUpon>frmSDDCArriveDepart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmSearchVoyages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmSearchVoyages.Designer.cs">
+      <DependentUpon>frmSearchVoyages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmShippingInstructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmShippingInstructions.Designer.cs">
+      <DependentUpon>frmShippingInstructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmStenaUnbookedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmStenaUnbookedList.Designer.cs">
+      <DependentUpon>frmStenaUnbookedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmSterlingReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmSterlingReports.Designer.cs">
+      <DependentUpon>frmSterlingReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmSterlingReportsHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmSterlingReportsHelp.Designer.cs">
+      <DependentUpon>frmSterlingReportsHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmViewBookingRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmViewBookingRequest.Designer.cs">
+      <DependentUpon>frmViewBookingRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACMS\frmViewBookingUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACMS\frmViewBookingUnit.Designer.cs">
+      <DependentUpon>frmViewBookingUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\ClsVinMatch.cs" />
+    <Compile Include="EDI Monitor\EDIConfiguration.cs" />
+    <Compile Include="EDI Monitor\frmEDIInboundLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmEDIInboundLog.Designer.cs">
+      <DependentUpon>frmEDIInboundLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmScanFilesEDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmScanFilesEDI.designer.cs">
+      <DependentUpon>frmScanFilesEDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI Monitor\frmShowProtocol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI Monitor\frmShowProtocol.designer.cs">
+      <DependentUpon>frmShowProtocol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmGetInvoiceNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmGetInvoiceNo.Designer.cs">
+      <DependentUpon>frmGetInvoiceNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmSDDCInvoicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmSDDCInvoicing.designer.cs">
+      <DependentUpon>frmSDDCInvoicing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmProvisionalInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmProvisionalInvoice.designer.cs">
+      <DependentUpon>frmProvisionalInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finance\frmSurchargeCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance\frmSurchargeCodes.Designer.cs">
+      <DependentUpon>frmSurchargeCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmCreateMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmCreateMemo.Designer.cs">
+      <DependentUpon>frmCreateMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmDatabaseExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmDatabaseExceptions.Designer.cs">
+      <DependentUpon>frmDatabaseExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmImportExceptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmImportExceptions.Designer.cs">
+      <DependentUpon>frmImportExceptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmPortTypeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmPortTypeUpdate.designer.cs">
+      <DependentUpon>frmPortTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmSearchMemos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmSearchMemos.Designer.cs">
+      <DependentUpon>frmSearchMemos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmViewBookingLINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmViewBookingLINE.Designer.cs">
+      <DependentUpon>frmViewBookingLINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmEditEstimateAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmEditEstimateAR.Designer.cs">
+      <DependentUpon>frmEditEstimateAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmImportFromLINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmImportFromLINE.Designer.cs">
+      <DependentUpon>frmImportFromLINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINE\frmLINEWarehouseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINE\frmLINEWarehouseQuery.Designer.cs">
+      <DependentUpon>frmLINEWarehouseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmLINEImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmLINEImport.Designer.cs">
+      <DependentUpon>frmLINEImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmImportActuals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmImportActuals.Designer.cs">
+      <DependentUpon>frmImportActuals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchAccruals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchAccruals.Designer.cs">
+      <DependentUpon>frmSearchAccruals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmLINECharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmLINECharges.Designer.cs">
+      <DependentUpon>frmLINECharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmLINEChargesSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmLINEChargesSearch.Designer.cs">
+      <DependentUpon>frmLINEChargesSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSalesSummaryOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSalesSummaryOptions.Designer.cs">
+      <DependentUpon>frmSalesSummaryOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSalesSummary.Designer.cs">
+      <DependentUpon>frmSalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmViewAPInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmViewAPInvoice.Designer.cs">
+      <DependentUpon>frmViewAPInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmViewAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmViewAudit.Designer.cs">
+      <DependentUpon>frmViewAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmAssignContractMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmAssignContractMod.Designer.cs">
+      <DependentUpon>frmAssignContractMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchContractMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchContractMod.Designer.cs">
+      <DependentUpon>frmSearchContractMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateContractMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateContractMod.Designer.cs">
+      <DependentUpon>frmCreateContractMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmImportCargoUpdates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmImportCargoUpdates.Designer.cs">
+      <DependentUpon>frmImportCargoUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmUnassignedCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmUnassignedCargo.Designer.cs">
+      <DependentUpon>frmUnassignedCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmEditEstimateCharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmEditEstimateCharge.Designer.cs">
+      <DependentUpon>frmEditEstimateCharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmViewEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmViewEstimate.Designer.cs">
+      <DependentUpon>frmViewEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchEstimate.Designer.cs">
+      <DependentUpon>frmSearchEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchEstimateOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmSearchEstimateOptions.Designer.cs">
+      <DependentUpon>frmSearchEstimateOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateEstimate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateEstimate.Designer.cs">
+      <DependentUpon>frmCreateEstimate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateEstimateOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCreateEstimateOptions.Designer.cs">
+      <DependentUpon>frmCreateEstimateOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCargo.Designer.cs">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermodal\frmCargoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermodal\frmCargoSearch.Designer.cs">
+      <DependentUpon>frmCargoSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reference Tables Scheduling\frmEditBerth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditBerth.designer.cs">
+      <DependentUpon>frmEditBerth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditMiligaryVoyage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditMiligaryVoyage.designer.cs">
+      <DependentUpon>frmEditMiligaryVoyage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditPort.designer.cs">
+      <DependentUpon>frmEditPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditVessel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmEditVessel.designer.cs">
+      <DependentUpon>frmEditVessel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmSchedulingMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables Scheduling\frmSchedulingMaintenance.designer.cs">
+      <DependentUpon>frmSchedulingMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmShowUscRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmShowUscRates.Designer.cs">
+      <DependentUpon>frmShowUscRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditGeoRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditGeoRegion.Designer.cs">
+      <DependentUpon>frmEditGeoRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditCustomer.Designer.cs">
+      <DependentUpon>frmEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLevelUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLevelUnit.Designer.cs">
+      <DependentUpon>frmEditLevelUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditChargeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditChargeCategory.Designer.cs">
+      <DependentUpon>frmEditChargeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLevel.Designer.cs">
+      <DependentUpon>frmEditLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLocation.Designer.cs">
+      <DependentUpon>frmEditLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLocationType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditLocationType.Designer.cs">
+      <DependentUpon>frmEditLocationType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditChargeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditChargeType.Designer.cs">
+      <DependentUpon>frmEditChargeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditUnitType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditUnitType.Designer.cs">
+      <DependentUpon>frmEditUnitType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reference Tables\frmEditVendor.Designer.cs">
+      <DependentUpon>frmEditVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmMilitaryVoyages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmMilitaryVoyages.Designer.cs">
+      <DependentUpon>frmMilitaryVoyages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmEditGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmEditGroup.designer.cs">
+      <DependentUpon>frmEditGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmEditSecurityObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmEditSecurityObject.designer.cs">
+      <DependentUpon>frmEditSecurityObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmGetSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmGetSecurity.designer.cs">
+      <DependentUpon>frmGetSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmGetUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmGetUserGroup.designer.cs">
+      <DependentUpon>frmGetUserGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmViewSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmViewSecurity.designer.cs">
+      <DependentUpon>frmViewSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stena\frmViewStenaBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stena\frmViewStenaBookings.Designer.cs">
+      <DependentUpon>frmViewStenaBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stena\frmEditStenaRoutes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stena\frmEditStenaRoutes.Designer.cs">
+      <DependentUpon>frmEditStenaRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranshipmentReports\frmTranshipmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranshipmentReports\frmTranshipmentReport.Designer.cs">
+      <DependentUpon>frmTranshipmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window Managers\ClsLinkHandlerARC.cs" />
+    <Compile Include="Window Managers\SearchWindowManager.cs" />
+    <Compile Include="Window Managers\ViewWindowManager.cs" />
+    <None Include="ACMS\rptDockReceipt.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ACMS\rptDockDelivery.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ACMS\Copy of rptDockDelivery.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="ACMS\frmDimsSynch.resx">
+      <DependentUpon>frmDimsSynch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmLOBAssembleDetail.resx">
+      <DependentUpon>frmLOBAssembleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmLOBShowCompare.resx">
+      <DependentUpon>frmLOBShowCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmPATLoadDecision.resx">
+      <DependentUpon>frmPATLoadDecision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmPATLoadList.resx">
+      <DependentUpon>frmPATLoadList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmEDITransmit.resx">
+      <DependentUpon>frmEDITransmit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmRDDMissed.resx">
+      <DependentUpon>frmRDDMissed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmRDDReport.resx">
+      <DependentUpon>frmRDDReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmEditMiligaryVoyage.resx">
+      <DependentUpon>frmEditMiligaryVoyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmEditVesselBerthActivity.resx">
+      <DependentUpon>frmEditVesselBerthActivity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmEditVesselMilitaryVoyage.resx">
+      <DependentUpon>frmEditVesselMilitaryVoyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmManageMilitaryVoyages.resx">
+      <DependentUpon>frmManageMilitaryVoyages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmPortOpsArriveDepart.resx">
+      <DependentUpon>frmPortOpsArriveDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmUpdateArrDep.resx">
+      <DependentUpon>frmUpdateArrDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmUpdateMilitaryVoyage.resx">
+      <DependentUpon>frmUpdateMilitaryVoyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVSS Scheduling\frmUpdateVessel.resx">
+      <DependentUpon>frmUpdateVessel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmEasyMoveSelect.resx">
+      <DependentUpon>frmEasyMoveSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmCompareBooking.resx">
+      <DependentUpon>frmCompareBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmEDITranslation.resx">
+      <DependentUpon>frmEDITranslation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmAPILog.resx">
+      <DependentUpon>frmAPILog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmEditIALDetail.resx">
+      <DependentUpon>frmEditIALDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmIAL.resx">
+      <DependentUpon>frmIAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmOceanVoyages.resx">
+      <DependentUpon>frmOceanVoyages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmSearchEDI.resx">
+      <DependentUpon>frmSearchEDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmSearchAPInvoice.resx">
+      <DependentUpon>frmSearchAPInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmIALPOVTracking.resx">
+      <DependentUpon>frmIALPOVTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmLHaulBillingExtract.resx">
+      <DependentUpon>frmLHaulBillingExtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmSDDCInvoicing2.resx">
+      <DependentUpon>frmSDDCInvoicing2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmEstimateInvestigate.resx">
+      <DependentUpon>frmEstimateInvestigate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCustomerServiceLhaulCharges.resx">
+      <DependentUpon>frmCustomerServiceLhaulCharges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINE\frmTestVoyages.resx">
+      <DependentUpon>frmTestVoyages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINE\frmLINEQuery.resx">
+      <DependentUpon>frmLINEQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditPartnerEDI.resx">
+      <DependentUpon>frmEditPartnerEDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditTopsPorts.resx">
+      <DependentUpon>frmEditTopsPorts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmIALRecall.resx">
+      <DependentUpon>frmIALRecall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmHtmlReport.resx">
+      <DependentUpon>frmHtmlReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmNHTSARecall.resx">
+      <DependentUpon>frmNHTSARecall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmNHTSARecallEdit.resx">
+      <DependentUpon>frmNHTSARecallEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stena\frmStenaSailings.resx">
+      <DependentUpon>frmStenaSailings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmCommodityDscEdit.resx">
+      <DependentUpon>frmCommodityDscEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmCargoTypeEdit.resx">
+      <DependentUpon>frmCargoTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmMailListEdit.resx">
+      <DependentUpon>frmMailListEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmVesselEdit.resx">
+      <DependentUpon>frmVesselEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmVesselMaintenance.resx">
+      <DependentUpon>frmVesselMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmLocationEdit.resx">
+      <DependentUpon>frmLocationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmLocationTerminalEdit.resx">
+      <DependentUpon>frmLocationTerminalEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\Reference Tables\frmLocationTerminalMaintenance.resx">
+      <DependentUpon>frmLocationTerminalMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmArriveDepart.resx">
+      <DependentUpon>frmArriveDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmConveyanceManagerAlt.resx">
+      <DependentUpon>frmConveyanceManagerAlt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customs\frmCustomsSubInfo.resx">
+      <DependentUpon>frmCustomsSubInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customs\frmCustomsSubmission.resx">
+      <DependentUpon>frmCustomsSubmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmAcceptBooking.resx">
+      <DependentUpon>frmAcceptBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmACMSDashboard.resx">
+      <DependentUpon>frmACMSDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmACMSLogin.resx">
+      <DependentUpon>frmACMSLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmBookingCorrespondence.resx">
+      <DependentUpon>frmBookingCorrespondence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmEDILog.resx">
+      <DependentUpon>frmEDILog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmRequestEDILog.resx">
+      <DependentUpon>frmRequestEDILog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmSearchBookingRequests.resx">
+      <DependentUpon>frmSearchBookingRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmCreateITV.resx">
+      <DependentUpon>frmCreateITV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmEDIQuery.resx">
+      <DependentUpon>frmEDIQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmRDDDoorMoves.resx">
+      <DependentUpon>frmRDDDoorMoves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmRDDPortMoves.resx">
+      <DependentUpon>frmRDDPortMoves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmSDDCArriveDepart.resx">
+      <DependentUpon>frmSDDCArriveDepart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmSearchVoyages.resx">
+      <DependentUpon>frmSearchVoyages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmShippingInstructions.resx">
+      <DependentUpon>frmShippingInstructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmStenaUnbookedList.resx">
+      <DependentUpon>frmStenaUnbookedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmSterlingReports.resx">
+      <DependentUpon>frmSterlingReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmSterlingReportsHelp.resx">
+      <DependentUpon>frmSterlingReportsHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmViewBookingRequest.resx">
+      <DependentUpon>frmViewBookingRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACMS\frmViewBookingUnit.resx">
+      <DependentUpon>frmViewBookingUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ACMS\rptRDDPortMoves.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ACMS\rptRPTDoorOutilms.rpt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ACMS\rptShippingRequest.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="EDI Monitor\frmEDIInboundLog.resx">
+      <DependentUpon>frmEDIInboundLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmScanFilesEDI.resx">
+      <DependentUpon>frmScanFilesEDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI Monitor\frmShowProtocol.resx">
+      <DependentUpon>frmShowProtocol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmGetInvoiceNo.resx">
+      <DependentUpon>frmGetInvoiceNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmSDDCInvoicing.resx">
+      <DependentUpon>frmSDDCInvoicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmSurchargeCodes.resx">
+      <DependentUpon>frmSurchargeCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables Scheduling\frmEditBerth.resx">
+      <DependentUpon>frmEditBerth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables Scheduling\frmEditMiligaryVoyage.resx">
+      <DependentUpon>frmEditMiligaryVoyage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables Scheduling\frmEditPort.resx">
+      <DependentUpon>frmEditPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables Scheduling\frmEditVessel.resx">
+      <DependentUpon>frmEditVessel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables Scheduling\frmSchedulingMaintenance.resx">
+      <DependentUpon>frmSchedulingMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmMilitaryVoyages.resx">
+      <DependentUpon>frmMilitaryVoyages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stena\frmViewStenaBookings.resx">
+      <DependentUpon>frmViewStenaBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stena\frmEditStenaRoutes.resx">
+      <DependentUpon>frmEditStenaRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranshipmentReports\frmTranshipmentReport.resx">
+      <DependentUpon>frmTranshipmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ActualvsBudget\ActualVsBudget.rpt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="ActualvsBudget\frmActualvsBudget.resx">
+      <DependentUpon>frmActualvsBudget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArcNet\frmEditTerminal.resx">
+      <DependentUpon>frmEditTerminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArcNet\frmSearchTerminals.resx">
+      <DependentUpon>frmSearchTerminals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArcNet\frmSearchTerminalsOptions.resx">
+      <DependentUpon>frmSearchTerminalsOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArcNet\frmTerminalAddress.resx">
+      <DependentUpon>frmTerminalAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmManualITV.resx">
+      <DependentUpon>frmManualITV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmBatchEDICreate.resx">
+      <DependentUpon>frmBatchEDICreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmEditTradingPartner.resx">
+      <DependentUpon>frmEditTradingPartner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmITVDiagnostics.resx">
+      <DependentUpon>frmITVDiagnostics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommericalEDI\frmSearchEDIHistory.resx">
+      <DependentUpon>frmSearchEDIHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmCargoTracking.resx">
+      <DependentUpon>frmCargoTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmDailyITV.resx">
+      <DependentUpon>frmDailyITV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmAssignVendor.resx">
+      <DependentUpon>frmAssignVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmSearchCargoForMoves.resx">
+      <DependentUpon>frmSearchCargoForMoves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmActionUpdate.resx">
+      <DependentUpon>frmActionUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmCargoActionDetail.resx">
+      <DependentUpon>frmCargoActionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmCargoActions.resx">
+      <DependentUpon>frmCargoActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmCargoActionsOLD.resx">
+      <DependentUpon>frmCargoActionsOLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmEditConveyance.resx">
+      <DependentUpon>frmEditConveyance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmEditVendorMove.resx">
+      <DependentUpon>frmEditVendorMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmConveyanceManager.resx">
+      <DependentUpon>frmConveyanceManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConveyanceTracking\frmSearchMove.resx">
+      <DependentUpon>frmSearchMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance\frmProvisionalInvoice.resx">
+      <DependentUpon>frmProvisionalInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmCreateMemo.resx">
+      <DependentUpon>frmCreateMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmDatabaseExceptions.resx">
+      <DependentUpon>frmDatabaseExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmImportExceptions.resx">
+      <DependentUpon>frmImportExceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmPortTypeUpdate.resx">
+      <DependentUpon>frmPortTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmSearchMemos.resx">
+      <DependentUpon>frmSearchMemos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmViewBookingLINE.resx">
+      <DependentUpon>frmViewBookingLINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmEditEstimateAR.resx">
+      <DependentUpon>frmEditEstimateAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmImportFromLINE.resx">
+      <DependentUpon>frmImportFromLINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINE\frmLINEWarehouseQuery.resx">
+      <DependentUpon>frmLINEWarehouseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmLINEImport.resx">
+      <DependentUpon>frmLINEImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmImportActuals.resx">
+      <DependentUpon>frmImportActuals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSearchAccruals.resx">
+      <DependentUpon>frmSearchAccruals.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmLINECharges.resx">
+      <DependentUpon>frmLINECharges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmLINEChargesSearch.resx">
+      <DependentUpon>frmLINEChargesSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSalesSummaryOptions.resx">
+      <DependentUpon>frmSalesSummaryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSalesSummary.resx">
+      <DependentUpon>frmSalesSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmViewAPInvoice.resx">
+      <DependentUpon>frmViewAPInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmViewAudit.resx">
+      <DependentUpon>frmViewAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmAssignContractMod.resx">
+      <DependentUpon>frmAssignContractMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSearchContractMod.resx">
+      <DependentUpon>frmSearchContractMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCreateContractMod.resx">
+      <DependentUpon>frmCreateContractMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmImportCargoUpdates.resx">
+      <DependentUpon>frmImportCargoUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmUnassignedCargo.resx">
+      <DependentUpon>frmUnassignedCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmEditEstimateCharge.resx">
+      <DependentUpon>frmEditEstimateCharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmViewEstimate.resx">
+      <DependentUpon>frmViewEstimate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSearchEstimate.resx">
+      <DependentUpon>frmSearchEstimate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmSearchEstimateOptions.resx">
+      <DependentUpon>frmSearchEstimateOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCreateEstimate.resx">
+      <DependentUpon>frmCreateEstimate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCreateEstimateOptions.resx">
+      <DependentUpon>frmCreateEstimateOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCargo.resx">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermodal\frmCargoSearch.resx">
+      <DependentUpon>frmCargoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reference Tables\frmShowUscRates.resx">
+      <DependentUpon>frmShowUscRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditGeoRegion.resx">
+      <DependentUpon>frmEditGeoRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditCustomer.resx">
+      <DependentUpon>frmEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditLevelUnit.resx">
+      <DependentUpon>frmEditLevelUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditChargeCategory.resx">
+      <DependentUpon>frmEditChargeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditLevel.resx">
+      <DependentUpon>frmEditLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditUser.resx">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditLocation.resx">
+      <DependentUpon>frmEditLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditLocationType.resx">
+      <DependentUpon>frmEditLocationType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditChargeType.resx">
+      <DependentUpon>frmEditChargeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditUnitType.resx">
+      <DependentUpon>frmEditUnitType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reference Tables\frmEditVendor.resx">
+      <DependentUpon>frmEditVendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmEditGroup.resx">
+      <DependentUpon>frmEditGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmEditSecurityObject.resx">
+      <DependentUpon>frmEditSecurityObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmGetSecurity.resx">
+      <DependentUpon>frmGetSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmGetUserGroup.resx">
+      <DependentUpon>frmGetUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmViewSecurity.resx">
+      <DependentUpon>frmViewSecurity.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Documentation\ILMS Cargo Tracking.doc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AVSS.Business\AVSS.Business.csproj">
+      <Project>{AD376B52-CEF0-4BF6-AF23-0469B4C28085}</Project>
+      <Name>AVSS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AVSS.WinCtrls\AVSS.WinCtrls.csproj">
+      <Project>{2709724A-D056-4AC5-9830-9C622B27CB8E}</Project>
+      <Name>AVSS.WinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonReports\CommonReports.csproj">
+      <Project>{43665965-F145-4E38-BD26-557815D73E57}</Project>
+      <Name>CommonReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonSecurity\CommonSecurity.csproj">
+      <Project>{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}</Project>
+      <Name>CommonSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonWinCtrls\CommonWinCtrls.csproj">
+      <Project>{053112CA-AD80-4C5C-8593-001BEB316E0D}</Project>
+      <Name>CommonWinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{41277667-E5CF-421E-BFF0-E2E82D06CE54}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDISqlTools\EDISqlTools.csproj">
+      <Project>{9586CEE5-2AD2-48EA-8074-C658CFE4C6A5}</Project>
+      <Name>EDISqlTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ITrack\ITrack.Business\ITrack.Business.csproj">
+      <Project>{D23A6A5C-A4CF-43F1-AD61-4B96D173B972}</Project>
+      <Name>ITrack.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ITrack\ITrack.WinCtrls\ITrack.WinCtrls.csproj">
+      <Project>{7DBE8525-CD6E-4392-9140-499CD851BF78}</Project>
+      <Name>ITrack.WinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\STENA\STENA.csproj">
+      <Project>{61EC71B3-128E-4FFE-95F3-05F8BC86E8A4}</Project>
+      <Name>STENA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACMS\ACMS.WinCtrls\ACMS.WinCtrls.csproj">
+      <Project>{7E8E132C-0B58-47AD-A136-35CB67FEA5EA}</Project>
+      <Name>ACMS.WinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business\ArcSys.Business.csproj">
+      <Project>{12113523-D76F-4555-B678-4E712A4F7C9B}</Project>
+      <Name>ArcSys.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LINE.Business\LINE.Business.csproj">
+      <Project>{8EED0F68-E258-4AB4-BF2E-489B07C17EC3}</Project>
+      <Name>LINE.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinCtrls\ArcSys.WinCtrls.csproj">
+      <Project>{9EEAF718-FB7A-4F66-BFB7-E6D7C4E19379}</Project>
+      <Name>ArcSys.WinCtrls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ARC.png" />
+    <Content Include="RadioActive.jpg" />
+    <Content Include="Resources\Delete.ico" />
+    <Content Include="Resources\Email send.ico" />
+    <Content Include="Resources\new.ico" />
+    <Content Include="Resources\save.ico" />
+    <None Include="Resources\126_Edit.ico" />
+    <None Include="Resources\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EDI Monitor\NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

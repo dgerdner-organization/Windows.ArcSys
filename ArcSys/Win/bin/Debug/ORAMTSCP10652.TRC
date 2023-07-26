@@ -1,0 +1,6 @@
+
+OCI Connection Pool Trace: Date - 3/26/2015 Time - 13:45:40:251
+[03/26/2015-13:45:40:251][000030b8] kpntdisp::init() - entering.
+[03/26/2015-13:45:40:251][000030b8] kpntdisp::init() - exiting.
+[03/26/2015-13:47:33:063][00002fe8] kpntsvcdeinit() - entering
+[03/26/2015-13:47:33:063][00002fe8] kpntsvcdeinit() - exiting

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSecurity", "CommonSecurity.csproj", "{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[Common Reference]", "[Common Reference]", "{695DD6E3-76CB-4C33-A57C-62E6E66E6AA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{41277667-E5CF-421E-BFF0-E2E82D06CE54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonWinCtrls", "..\CommonWinCtrls\CommonWinCtrls.csproj", "{053112CA-AD80-4C5C-8593-001BEB316E0D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = ..\\Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName0 = CommonSecurity.sln
+		SccProjectName0 = \u0022$/CS-2010/Common\u0022,\u0020WBPAAAAA
+		SccLocalPath0 = ..\\Common
+		SccProjectUniqueName1 = ..\\CommonWinCtrls\\CommonWinCtrls.csproj
+		SccProjectTopLevelParentUniqueName1 = CommonSecurity.sln
+		SccProjectName1 = \u0022$/CS-2010/CommonWinCtrls\u0022,\u0020TCPAAAAA
+		SccLocalPath1 = ..\\CommonWinCtrls
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = CommonSecurity.csproj
+		SccLocalPath3 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54} = {695DD6E3-76CB-4C33-A57C-62E6E66E6AA8}
+		{053112CA-AD80-4C5C-8593-001BEB316E0D} = {695DD6E3-76CB-4C33-A57C-62E6E66E6AA8}
+	EndGlobalSection
+EndGlobal

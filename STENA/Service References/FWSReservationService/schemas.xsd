@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:q16="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:tns="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q3="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q8="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q6="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q22="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q13="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q14="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q15="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q1="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q26="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q10="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q11="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q12="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q9="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q27="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q7="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q23="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q24="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q25="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q5="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q2="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q18="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q19="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q20="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q21="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q17="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q4="http://www.stenaline.com/freightlink/ws/2008/02/" elementFormDefault="qualified" targetNamespace="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\www.stenaline.com.freightlink.ws.2008.02.xsd" namespace="http://www.stenaline.com/freightlink/ws/2008/02/" />
+  <xs:element name="GetBookingRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:BookingID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Booking" />
+        <xs:element minOccurs="0" ref="q4:Messages" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Booking">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:BookingStatus" />
+      <xs:element minOccurs="0" name="IsReadOnly" nillable="true" type="xs:boolean" />
+      <xs:element name="CustomerNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="CustomerReference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerReferenceTelephoneNumber" nillable="true" type="xs:string" />
+      <xs:element name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element name="DepartureDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VehicleRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrailerRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element name="VehicleTypeCode" nillable="true" type="xs:string" />
+      <xs:element name="Length" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:int" />
+      <xs:element name="Height" type="xs:decimal" />
+      <xs:element name="Width" type="xs:decimal" />
+      <xs:element name="NumberOfDrivers" type="xs:int" />
+      <xs:element name="HazardousGoods" type="xs:boolean" />
+      <xs:element name="Livestock" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Plugin" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CheckinMessage" nillable="true" type="xs:string" />
+      <xs:element name="Addresses" nillable="true" type="tns:ArrayOfAddress" />
+      <xs:element name="Drivers" nillable="true" type="tns:ArrayOfDriver" />
+      <xs:element name="Goods" nillable="true" type="tns:ArrayOfGoods" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Booking" nillable="true" type="tns:Booking" />
+  <xs:simpleType name="BookingStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BlockBooking" />
+      <xs:enumeration value="ConfirmedBooking" />
+      <xs:enumeration value="WaitingListBooking" />
+      <xs:enumeration value="CheckedIn_AwaitingShipment" />
+      <xs:enumeration value="CheckedIn_WaitingList" />
+      <xs:enumeration value="VehicleShipped" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="NoShow" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BookingStatus" nillable="true" type="tns:BookingStatus" />
+  <xs:complexType name="ArrayOfAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="tns:Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddress" nillable="true" type="tns:ArrayOfAddress" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element name="Type" type="tns:AddressType" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Postcode" nillable="true" type="xs:string" />
+      <xs:element name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:simpleType name="AddressType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Owner" />
+      <xs:enumeration value="Receiver" />
+      <xs:enumeration value="Sender" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AddressType" nillable="true" type="tns:AddressType" />
+  <xs:complexType name="ArrayOfDriver">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Driver" nillable="true" type="tns:Driver" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDriver" nillable="true" type="tns:ArrayOfDriver" />
+  <xs:complexType name="Driver">
+    <xs:sequence>
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="Gender" type="tns:GenderType" />
+      <xs:element name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element name="AgeGroup" type="tns:AgeGroupCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Driver" nillable="true" type="tns:Driver" />
+  <xs:simpleType name="GenderType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Male" />
+      <xs:enumeration value="Female" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="GenderType" nillable="true" type="tns:GenderType" />
+  <xs:simpleType name="AgeGroupCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Adult" />
+      <xs:enumeration value="Child" />
+      <xs:enumeration value="Infant" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AgeGroupCode" nillable="true" type="tns:AgeGroupCode" />
+  <xs:complexType name="ArrayOfGoods">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Goods" nillable="true" type="tns:Goods" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGoods" nillable="true" type="tns:ArrayOfGoods" />
+  <xs:complexType name="Goods">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element name="Weight" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Goods" nillable="true" type="tns:Goods" />
+  <xs:complexType name="ArrayOfMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessage" nillable="true" type="tns:ArrayOfMessage" />
+  <xs:complexType name="Message">
+    <xs:sequence>
+      <xs:element name="Severity" type="tns:SeverityLevel" />
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Message" nillable="true" type="tns:Message" />
+  <xs:simpleType name="SeverityLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Information" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SeverityLevel" nillable="true" type="tns:SeverityLevel" />
+  <xs:complexType name="ServiceFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessFaults" nillable="true" type="tns:ArrayOfBusinessFault" />
+      <xs:element minOccurs="0" name="ErrorNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStamp" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceFault" nillable="true" type="tns:ServiceFault" />
+  <xs:complexType name="ArrayOfBusinessFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BusinessFault" nillable="true" type="tns:BusinessFault" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBusinessFault" nillable="true" type="tns:ArrayOfBusinessFault" />
+  <xs:complexType name="BusinessFault">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BusinessFault" nillable="true" type="tns:BusinessFault" />
+  <xs:element name="CancelBookingRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:BookingID" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Messages" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmBookingRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Booking" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmBookingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Booking" />
+        <xs:element minOccurs="0" ref="q4:Messages" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchBookingsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Criteria" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="BookingSearchCriteria">
+    <xs:sequence>
+      <xs:element name="FromDate" type="xs:dateTime" />
+      <xs:element name="ToDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartureTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerReference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VehicleRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrailerRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VehicleTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookingID" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusCode" nillable="true" type="tns:BookingStatus" />
+      <xs:element minOccurs="0" name="CustomerNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingSearchCriteria" nillable="true" type="tns:BookingSearchCriteria" />
+  <xs:element name="SearchBookingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:BookingList" />
+        <xs:element minOccurs="0" ref="q4:Messages" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfBookingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookingInfo" nillable="true" type="tns:BookingInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookingInfo" nillable="true" type="tns:ArrayOfBookingInfo" />
+  <xs:complexType name="BookingInfo">
+    <xs:sequence>
+      <xs:element name="BookingID" type="xs:int" />
+      <xs:element name="StatusCode" type="tns:BookingStatus" />
+      <xs:element name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element name="DepartureDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="WaitingDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReferenceBookingID" type="xs:int" />
+      <xs:element minOccurs="0" name="VehicleRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrailerRegistrationNumber" nillable="true" type="xs:string" />
+      <xs:element name="VehicleTypeCode" nillable="true" type="xs:string" />
+      <xs:element name="Length" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:int" />
+      <xs:element name="Height" type="xs:decimal" />
+      <xs:element name="Width" type="xs:decimal" />
+      <xs:element name="NumberOfDrivers" type="xs:int" />
+      <xs:element name="HazardousGoods" type="xs:boolean" />
+      <xs:element name="Livestock" type="xs:boolean" />
+      <xs:element name="PlugIn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PlugInTemperature" nillable="true" type="xs:string" />
+      <xs:element name="CustomerNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="CustomerReference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VatCountryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VatInternationalNumber" nillable="true" type="xs:string" />
+      <xs:element name="TotalWeight" type="xs:int" />
+      <xs:element minOccurs="0" name="DateCancelled" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LoadStatusDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeckZoneDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParkingSectorDescription" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookingInfo" nillable="true" type="tns:BookingInfo" />
+  <xs:element name="ListCodesRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Type" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="CodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Route" />
+      <xs:enumeration value="Goods" />
+      <xs:enumeration value="Country" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CodeType" nillable="true" type="tns:CodeType" />
+  <xs:element name="ListCodesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Codes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfCodeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CodeInfo" nillable="true" type="tns:CodeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCodeInfo" nillable="true" type="tns:ArrayOfCodeInfo" />
+  <xs:complexType name="CodeInfo">
+    <xs:sequence>
+      <xs:element name="Type" type="tns:CodeType" />
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CodeInfo" nillable="true" type="tns:CodeInfo" />
+  <xs:element name="ListSailingsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:RouteCode" />
+        <xs:element minOccurs="0" ref="q4:DepartureDate" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListSailingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Sailings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSailing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sailing" nillable="true" type="tns:Sailing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSailing" nillable="true" type="tns:ArrayOfSailing" />
+  <xs:complexType name="Sailing">
+    <xs:sequence>
+      <xs:element name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element name="DepartureDateTime" type="xs:dateTime" />
+      <xs:element name="Ship" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sailing" nillable="true" type="tns:Sailing" />
+  <xs:element name="ListVehicleTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:VehicleTypes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVehicleType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleType" nillable="true" type="tns:VehicleType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleType" nillable="true" type="tns:ArrayOfVehicleType" />
+  <xs:complexType name="VehicleType">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+      <xs:element name="MinLength" type="xs:decimal" />
+      <xs:element name="MaxLength" type="xs:decimal" />
+      <xs:element name="Height" type="xs:decimal" />
+      <xs:element name="Width" type="xs:decimal" />
+      <xs:element name="Weight" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleType" nillable="true" type="tns:VehicleType" />
+  <xs:element name="ListSectorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Sectors" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSector">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Sector" nillable="true" type="tns:Sector" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSector" nillable="true" type="tns:ArrayOfSector" />
+  <xs:complexType name="Sector">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sector" nillable="true" type="tns:Sector" />
+  <xs:element name="ListBulletinsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:SectorCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListBulletinsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Bulletins" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfBulletin">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Bulletin" nillable="true" type="tns:Bulletin" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBulletin" nillable="true" type="tns:ArrayOfBulletin" />
+  <xs:complexType name="Bulletin">
+    <xs:sequence>
+      <xs:element name="Info" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Bulletin" nillable="true" type="tns:Bulletin" />
+  <xs:element name="ListContactsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:ContactCountries" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="tns:Contact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContact" nillable="true" type="tns:ArrayOfContact" />
+  <xs:complexType name="Contact">
+    <xs:sequence>
+      <xs:element name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element name="CountryName" nillable="true" type="xs:string" />
+      <xs:element name="Companies" nillable="true" type="tns:ArrayOfCompany" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contact" nillable="true" type="tns:Contact" />
+  <xs:complexType name="ArrayOfCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Company" nillable="true" type="tns:Company" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompany" nillable="true" type="tns:ArrayOfCompany" />
+  <xs:complexType name="Company">
+    <xs:sequence>
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxNumber" nillable="true" type="xs:string" />
+      <xs:element name="Offices" nillable="true" type="tns:ArrayOfOffice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company" nillable="true" type="tns:Company" />
+  <xs:complexType name="ArrayOfOffice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Office" nillable="true" type="tns:Office" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOffice" nillable="true" type="tns:ArrayOfOffice" />
+  <xs:complexType name="Office">
+    <xs:sequence>
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Office" nillable="true" type="tns:Office" />
+  <xs:element name="ListRoutesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Codes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchTimeTableRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:DepartureDateFrom" />
+        <xs:element minOccurs="0" ref="q4:DepartureDateTo" />
+        <xs:element minOccurs="0" ref="q4:RouteCodes" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="RouteCodeCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RouteCodes" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RouteCodeCollection" nillable="true" type="tns:RouteCodeCollection" />
+  <xs:element name="SearchTimeTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:TimeTables" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfTimeTableSailing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TimeTableSailing" nillable="true" type="tns:TimeTableSailing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTimeTableSailing" nillable="true" type="tns:ArrayOfTimeTableSailing" />
+  <xs:complexType name="TimeTableSailing">
+    <xs:sequence>
+      <xs:element name="RouteCode" nillable="true" type="xs:string" />
+      <xs:element name="DepartureDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RealDepartureDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="ArrivalDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EstimatedArrivalDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="SailingStatus" type="tns:SailingStatusType" />
+      <xs:element name="ShipName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TimeTableSailing" nillable="true" type="tns:TimeTableSailing" />
+  <xs:simpleType name="SailingStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Open" />
+      <xs:enumeration value="Departed" />
+      <xs:enumeration value="Cancelled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SailingStatusType" nillable="true" type="tns:SailingStatusType" />
+  <xs:element name="ListCustomersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="q4:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomer" nillable="true" type="tns:ArrayOfCustomer" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element name="Number" type="xs:int" />
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+</xs:schema>

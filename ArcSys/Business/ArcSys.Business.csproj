@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12113523-D76F-4555-B678-4E712A4F7C9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS2010.ArcSys.Business</RootNamespace>
+    <AssemblyName>ArcSys.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TMGDevelopment.PrintAdapters, Version=2.1.0.2, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+    <Reference Include="TMGDevelopment.Shared, Version=1.0.0.4, Culture=neutral, PublicKeyToken=cb51e09df98aa227" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACMSObjects\ClsAcmsStatus.cs" />
+    <Compile Include="ACMSObjects\ClsAcmsStatus.User.cs" />
+    <Compile Include="ACMSObjects\ClsBooking.cs" />
+    <Compile Include="ACMSObjects\ClsBooking.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingActivityReceived.cs" />
+    <Compile Include="ACMSObjects\ClsBookingCorrespondence.cs" />
+    <Compile Include="ACMSObjects\ClsBookingcorrespondence.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingDimRemove.cs" />
+    <Compile Include="ACMSObjects\ClsBookingItv.cs" />
+    <Compile Include="ACMSObjects\ClsBookingItv.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingParty.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRdd.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRdd.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequest.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequest.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequestError.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequestError.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequestNote.cs" />
+    <Compile Include="ACMSObjects\ClsBookingRequestNote.User.cs" />
+    <Compile Include="ACMSObjects\ClsBookingUnit.cs" />
+    <Compile Include="ACMSObjects\ClsBookingUnit.User.cs" />
+    <Compile Include="ACMSObjects\ClsCargoCode.cs" />
+    <Compile Include="ACMSObjects\ClsCargoCode.User.cs" />
+    <Compile Include="ACMSObjects\ClsCommodityDsc.cs" />
+    <Compile Include="ACMSObjects\ClsCorrespondenceType.cs" />
+    <Compile Include="ACMSObjects\ClsEdi304Queue.cs" />
+    <Compile Include="ACMSObjects\ClsEdi304Queue.User.cs" />
+    <Compile Include="ACMSObjects\ClsEdiActivityFtp.cs" />
+    <Compile Include="ACMSObjects\ClsEdiActivityFtp.User.cs" />
+    <Compile Include="ACMSObjects\ClsFtpHistory.cs" />
+    <Compile Include="ACMSObjects\ClsLocation.cs" />
+    <Compile Include="ACMSObjects\ClsLocationTerminal.cs" />
+    <Compile Include="ACMSObjects\ClsPartnerEmail.cs" />
+    <Compile Include="ACMSObjects\ClsPartnerEmail.User.cs" />
+    <Compile Include="ACMSObjects\ClsPartnerEmailList.cs" />
+    <Compile Include="ACMSObjects\ClsRevenueCode.cs" />
+    <Compile Include="ACMSObjects\ClsTradingPartner.cs" />
+    <Compile Include="ACMSObjects\ClsVArcsysMismatch.cs" />
+    <Compile Include="ACMSObjects\ClsVArcsysMismatch.User.cs" />
+    <Compile Include="ACMSObjects\ClsVessel.cs" />
+    <Compile Include="ACMSObjects\ClsVNitelyPortBerthMismatch.cs" />
+    <Compile Include="ACMSObjects\ClsVNitelyPortBerthMismatch.User.cs" />
+    <Compile Include="ACMSObjects\ClsVShippingInstructionList.cs" />
+    <Compile Include="ACMSObjects\ClsVShippingInstructionList.User.cs" />
+    <Compile Include="ACMSObjects\ClsVVoyage.cs" />
+    <Compile Include="ACMSObjects\ClsVVoyage.User.cs" />
+    <Compile Include="ACMSObjects\ClsLocation.User.cs" />
+    <Compile Include="ACMSObjects\ClsLocationTerminal.User.cs" />
+    <Compile Include="ACMSObjects\ClsVessel.User.cs" />
+    <Compile Include="ACMS\ClsACMSQueries.cs" />
+    <Compile Include="ACMS\ClsACMSUtil.cs" />
+    <Compile Include="ACMS\ClsBaseFormControl.cs" />
+    <Compile Include="ACMS\ClsBookingRequestEditControl.cs" />
+    <Compile Include="ACMS\ClsDropDowns.cs" />
+    <Compile Include="ACMS\ClsMapsAndFTP.cs" />
+    <Compile Include="ACMS\ClsPATLoadList.cs" />
+    <Compile Include="ACMS\ClsSearchRequestControl.cs" />
+    <Compile Include="ActualvsBudget\manager_actual_vs_budget.cs" />
+    <Compile Include="ActualvsBudget\sql_line_actual_vs_budget.cs" />
+    <Compile Include="ActualvsBudget\sql_line_service.cs" />
+    <Compile Include="ActualvsBudget\sql_nhtsa_recall.cs" />
+    <Compile Include="ActualvsBudget\sql_wwl_actual_vs_budget.cs" />
+    <Compile Include="Cargo Tracking\ClsCargoTracking.cs" />
+    <Compile Include="ClsBookingParty.User.cs" />
+    <Compile Include="ClsBookingUnit.User.cs" />
+    <Compile Include="ClsCargoMove.User.cs" />
+    <Compile Include="Cargo Tracking\ClsCargoMoveSearch.User.cs" />
+    <Compile Include="Cargo Tracking\manager_cargo_actions.cs" />
+    <Compile Include="Cargo Tracking\sql_cargo_actions_cargo.cs" />
+    <Compile Include="Cargo Tracking\sql_cargo_actions_conveyance.cs" />
+    <Compile Include="Cargo Tracking\sql_moves.cs" />
+    <Compile Include="ClsArcSysConfig.cs" />
+    <Compile Include="ClsAuditTrail.User.cs" />
+    <Compile Include="ClsCargoActivity.User.cs" />
+    <Compile Include="ClsCargoLine.User.cs" />
+    <Compile Include="ClsConveyance.User.cs" />
+    <Compile Include="ClsEDIInboundLog.User.cs" />
+    <Compile Include="ClsEdiOutboundBol.User.cs" />
+    <Compile Include="ClsExtensions.cs" />
+    <Compile Include="ClsIALEDI.cs" />
+    <Compile Include="ClsImporsonation.cs" />
+    <Compile Include="ClsImportActualColumn.cs" />
+    <Compile Include="ClsOceanSystem.cs" />
+    <Compile Include="ClsStenaRouteSailing.User.cs" />
+    <Compile Include="ClsVsddcItvList.User.cs" />
+    <Compile Include="ClsVStenaUnbooked.User.cs" />
+    <Compile Include="CommercialEDI\ClsITV.User.cs" />
+    <Compile Include="CommercialEDI\ClsItvActivityCode.User.cs" />
+    <Compile Include="ConveyanceTracking\ClsCargoDetail.cs" />
+    <Compile Include="Customs\ClsCustomsSubmission.User.cs" />
+    <Compile Include="Customs\ClsUscbpExportAes.User.cs" />
+    <Compile Include="EDI\ClsEDIUtilities.cs" />
+    <Compile Include="General\ClsArcSysEmail.cs" />
+    <Compile Include="General\ClsConfigurationTable.cs" />
+    <Compile Include="General\ClsGlobalMethods.cs" />
+    <Compile Include="General\ClsLine300Schedule.User.cs" />
+    <Compile Include="General\ClsLineSQL.cs" />
+    <Compile Include="CommercialEDI\ClsCommercialEDICreate.cs" />
+    <Compile Include="CommercialEDI\ClsCommercialEDIQueries.cs" />
+    <Compile Include="CommercialEDI\ClsTradingPartner.User.cs" />
+    <Compile Include="CommercialEDI\ClsTradingPartnerEDI.User.cs" />
+    <Compile Include="ConveyanceTracking\ClsCargoMove.User.cs" />
+    <Compile Include="ConveyanceTracking\ClsMove.User.cs" />
+    <Compile Include="ConveyanceTracking\ClsVendorMove.User.cs" />
+    <Compile Include="General\ClsMemo.User.cs" />
+    <Compile Include="General\ClsDatabaseExceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated Code\ClsApiLog.cs" />
+    <Compile Include="Generated Code\ClsApiLog.User.cs" />
+    <Compile Include="Generated Code\ClsBookingLine.User.cs" />
+    <Compile Include="Generated Code\ClsBookingParty.cs" />
+    <Compile Include="Generated Code\ClsCargoExtend.cs" />
+    <Compile Include="Generated Code\ClsCargoExtend.User.cs" />
+    <Compile Include="Generated Code\ClsConfiguration.cs" />
+    <Compile Include="Generated Code\ClsCustomsSubmission.cs" />
+    <Compile Include="Generated Code\ClsEdi300.cs" />
+    <Compile Include="Generated Code\ClsEdi300Cargo.cs" />
+    <Compile Include="Generated Code\ClsEdi300Party.cs" />
+    <Compile Include="Generated Code\ClsEdi301.cs" />
+    <Compile Include="Generated Code\ClsEdi301Cargo.cs" />
+    <Compile Include="Generated Code\ClsEdi301Party.cs" />
+    <Compile Include="Generated Code\ClsEdi303.cs" />
+    <Compile Include="Generated Code\ClsEdi304.cs" />
+    <Compile Include="Generated Code\ClsEdi304.User.cs" />
+    <Compile Include="Generated Code\ClsEdi310.cs" />
+    <Compile Include="Generated Code\ClsEdi315.cs" />
+    <Compile Include="Generated Code\ClsEdi322.cs" />
+    <Compile Include="Generated Code\ClsEdi323.cs" />
+    <Compile Include="Generated Code\ClsEdiCodeTranslation.cs" />
+    <Compile Include="Generated Code\ClsEdiCodeTranslation.User.cs" />
+    <Compile Include="Generated Code\ClsEdiField.cs" />
+    <Compile Include="Generated Code\ClsEdiiftmcs.cs" />
+    <Compile Include="Generated Code\ClsEdiiftmcs.User.cs" />
+    <Compile Include="Generated Code\ClsEdiInbound322.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundDetail.cs" />
+    <Compile Include="Generated Code\ClsEDIInboundDetail.User.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundLog.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundOverht.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundRemove.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundRemove.User.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundSi.cs" />
+    <Compile Include="Generated Code\ClsEdiInboundSi.User.cs" />
+    <Compile Include="Generated Code\ClsEdiInterface.cs" />
+    <Compile Include="Generated Code\ClsEdiOutboundBol.cs" />
+    <Compile Include="Generated Code\ClsEstimateChargeDtl.User.cs" />
+    <Compile Include="Generated Code\ClsEuCustomsIcs.cs" />
+    <Compile Include="Generated Code\ClsEuCustomsIcs.User.cs" />
+    <Compile Include="Generated Code\ClsIsa.cs" />
+    <Compile Include="Generated Code\ClsIsaLog.cs" />
+    <Compile Include="Generated Code\ClsJobError.cs" />
+    <Compile Include="Generated Code\ClsJobError.User.cs" />
+    <Compile Include="Generated Code\ClsLine300Schedule.cs" />
+    <Compile Include="Generated Code\ClsLobDetail.cs" />
+    <Compile Include="Generated Code\ClsLobDetail.User.cs" />
+    <Compile Include="Generated Code\ClsLobHeader.cs" />
+    <Compile Include="Generated Code\ClsLobHeader.User.cs" />
+    <Compile Include="Generated Code\ClsNhtsaRecall.cs" />
+    <Compile Include="Generated Code\ClsNhtsaRecallHistory.cs" />
+    <Compile Include="Generated Code\ClsOceanCargoActivity.cs" />
+    <Compile Include="Generated Code\ClsOceanCargoActivity.User.cs" />
+    <Compile Include="Generated Code\ClsOceanExportQueue.cs" />
+    <Compile Include="Generated Code\ClsOceanExportQueue.User.cs" />
+    <Compile Include="Generated Code\ClsRecall.cs" />
+    <Compile Include="Generated Code\ClsRecall.User.cs" />
+    <Compile Include="Generated Code\ClsRecallKeyword.cs" />
+    <Compile Include="Generated Code\ClsRecallRisk.cs" />
+    <Compile Include="Generated Code\ClsRecallStatus.cs" />
+    <Compile Include="Generated Code\ClsRecallVin.cs" />
+    <Compile Include="Generated Code\ClsSddcSurcharge.cs" />
+    <Compile Include="Generated Code\ClsShippingInstructionsQueue.cs" />
+    <Compile Include="Generated Code\ClsStenaBooking.cs" />
+    <Compile Include="Generated Code\ClsStenaBookingAudit.cs" />
+    <Compile Include="Generated Code\ClsStenaRoute.cs" />
+    <Compile Include="Generated Code\ClsStenaRouteSailing.cs" />
+    <Compile Include="Generated Code\ClsStenaRouteSailing.User.cs" />
+    <Compile Include="Generated Code\ClsStenaVehicleType.cs" />
+    <Compile Include="Generated Code\ClsTradingPartnerEdi.User.cs" />
+    <Compile Include="Generated Code\ClsUscbpExportAes.cs" />
+    <Compile Include="Generated Code\ClsUscbpExportAes.User.cs" />
+    <Compile Include="Generated Code\ClsUscOceanBb.cs" />
+    <Compile Include="Generated Code\ClsUscOceanCtr.cs" />
+    <Compile Include="Generated Code\ClsUscOceanRoute.cs" />
+    <Compile Include="Generated Code\ClsVBookingCargoLine.cs" />
+    <Compile Include="Generated Code\ClsVBookingCargoLine.User.cs" />
+    <Compile Include="Generated Code\ClsVIalBolOut.cs" />
+    <Compile Include="Generated Code\ClsVIalItvOut.cs" />
+    <Compile Include="Generated Code\ClsVSddcItvList.cs" />
+    <Compile Include="Generated Code\ClsVStenaUnbooked.cs" />
+    <Compile Include="Generated Code\ClsVVoyage.cs" />
+    <Compile Include="Generated Code\ClsVVoyage.User.cs" />
+    <Compile Include="Intermodal\sql_lhaul_charges.cs" />
+    <Compile Include="LOB\clsLOB.cs" />
+    <Compile Include="LOB\clsLobExtract.cs" />
+    <Compile Include="LOB\LobDetailExtract.cs" />
+    <Compile Include="LOB\LobHeader.cs" />
+    <Compile Include="LOB\mgrLOB.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolCargo.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolCargo.User.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolContact.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolContact.User.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolHeader.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBolHeader.User.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingCargo.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingCargo.User.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingCargoActivity.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingCargoActivity.User.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingContact.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingHeader.cs" />
+    <Compile Include="Ocean Objects\ClsVwArcBookingHeader.User.cs" />
+    <Compile Include="Reference Tables\ClsArcSysDropDowns.cs" />
+    <Compile Include="Reference Tables\ClsRecall.User.cs" />
+    <Compile Include="Reference Tables\ClsRecallVin.User.cs" />
+    <Compile Include="Reports\AvssMilitaryParams.cs" />
+    <Compile Include="Reports\ClsNhtsaRecall.cs" />
+    <Compile Include="Reports\sql_avss_military_voyages.cs" />
+    <Compile Include="Reports\sql_avss_ports.cs" />
+    <Compile Include="Reports\sql_avss_vessels.cs" />
+    <Compile Include="Service References\FWSReservationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PATP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PAT\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TranshipmentReports\conTranshipmentReport.cs" />
+    <Compile Include="TranshipmentReports\modTranshipmentReport.cs" />
+    <Compile Include="TranshipmentReports\sql_transhipment_bol.cs" />
+    <Compile Include="TranshipmentReports\sql_transhipment_booking.cs" />
+    <Compile Include="USC\ClsUscMgr.cs" />
+    <Compile Include="Generated Code\ClsAction.cs" />
+    <Compile Include="Generated Code\ClsApChargeDtl.cs" />
+    <Compile Include="Generated Code\ClsApInvoice.cs" />
+    <Compile Include="Generated Code\ClsArCharge.cs" />
+    <Compile Include="Generated Code\ClsArChargeDtl.cs" />
+    <Compile Include="Generated Code\ClsArInvoice.cs" />
+    <Compile Include="Generated Code\ClsBolLine.cs" />
+    <Compile Include="Generated Code\ClsBookingLine.cs" />
+    <Compile Include="Generated Code\ClsCargoAccrual.cs" />
+    <Compile Include="Generated Code\ClsCargoAction.cs" />
+    <Compile Include="Generated Code\ClsCargoChange.cs" />
+    <Compile Include="Generated Code\ClsCargoLine.cs" />
+    <Compile Include="Generated Code\ClsCargoMove.cs" />
+    <Compile Include="Generated Code\ClsCargoStatus.cs" />
+    <Compile Include="Generated Code\ClsChargeCategory.cs" />
+    <Compile Include="Generated Code\ClsConveyanceType.cs" />
+    <Compile Include="Generated Code\ClsCustomer.cs" />
+    <Compile Include="Generated Code\ClsEdiOutboundLog.cs" />
+    <Compile Include="Generated Code\ClsEstimateNote.cs" />
+    <Compile Include="Generated Code\ClsEstimateStatus.cs" />
+    <Compile Include="Generated Code\ClsGeoRegion.cs" />
+    <Compile Include="Generated Code\ClsItv.cs" />
+    <Compile Include="Generated Code\ClsItvActivityCode.cs" />
+    <Compile Include="Generated Code\ClsLevelUnit.cs" />
+    <Compile Include="Generated Code\ClsMemo.cs" />
+    <Compile Include="Generated Code\ClsMemoAttachment.cs" />
+    <Compile Include="Generated Code\ClsMove.cs" />
+    <Compile Include="Generated Code\ClsTerminal.cs" />
+    <Compile Include="Generated Code\ClsTerminalAddress.cs" />
+    <Compile Include="Generated Code\ClsTerminalContact.cs" />
+    <Compile Include="Generated Code\ClsTerminalLink.cs" />
+    <Compile Include="Generated Code\ClsTerminalSection.cs" />
+    <Compile Include="Generated Code\ClsTradingPartner.cs" />
+    <Compile Include="Generated Code\ClsTradingPartnerCustomer.cs" />
+    <Compile Include="Generated Code\ClsTradingPartnerEdi.cs" />
+    <Compile Include="Generated Code\ClsUscAssessorial.cs" />
+    <Compile Include="Generated Code\ClsUscInlandBb.cs" />
+    <Compile Include="Generated Code\ClsUscMileage.cs" />
+    <Compile Include="Generated Code\ClsVendorGeoRegion.cs" />
+    <Compile Include="Generated Code\ClsVendorMove.cs" />
+    <Compile Include="Intermodal\ClsApChargeDtl.User.cs" />
+    <Compile Include="Intermodal\ClsApInvoice.User.cs" />
+    <Compile Include="Intermodal\ClsBolLine.User.cs" />
+    <Compile Include="Intermodal\ClsBooking.User.cs" />
+    <Compile Include="Intermodal\ClsBookingLine.User.cs" />
+    <Compile Include="Intermodal\ClsCargoAccrualSearch.cs" />
+    <Compile Include="Intermodal\ClsEstimateCharge.User.cs" />
+    <Compile Include="Intermodal\ClsContractMod.User.cs" />
+    <Compile Include="Intermodal\ClsEstimateChargeDtl.User.cs" />
+    <Compile Include="Intermodal\ClsCargoAccrual.User.cs" />
+    <Compile Include="Intermodal\ClsImportLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Intermodal\ClsLineCharges.cs" />
+    <Compile Include="Intermodal\ClsLINEWarehouseSearch.cs" />
+    <Compile Include="Intermodal\ClsLocationType.User.cs" />
+    <Compile Include="Intermodal\ClsMoveType.User.cs" />
+    <Compile Include="Intermodal\ClsSalesSummary.cs" />
+    <Compile Include="Intermodal\ClsImportLineWarehouse.cs" />
+    <Compile Include="Intermodal\ClsArCharge.User.cs" />
+    <Compile Include="Intermodal\ClsArChargeDtl.User.cs" />
+    <Compile Include="Intermodal\ClsArInvoiceSearch.cs" />
+    <Compile Include="Intermodal\ClsArInvoice.User.cs" />
+    <Compile Include="Reference Tables\ArcNet\ClsTerminal.User.cs" />
+    <Compile Include="Reference Tables\ArcNet\ClsTerminalAddress.User.cs" />
+    <Compile Include="Reference Tables\ArcNet\ClsTerminalContact.User.cs" />
+    <Compile Include="Reference Tables\ArcNet\ClsTerminalLink.User.cs" />
+    <Compile Include="Reference Tables\ArcNet\ClsTerminalSearch.User.cs" />
+    <Compile Include="Reference Tables\ClsUser.User.cs" />
+    <Compile Include="Generated Code\ClsBooking.cs" />
+    <Compile Include="Generated Code\ClsCargo.cs" />
+    <Compile Include="Generated Code\ClsCargoActivity.cs" />
+    <Compile Include="Generated Code\ClsChargeType.cs" />
+    <Compile Include="Generated Code\ClsContractMod.cs" />
+    <Compile Include="Generated Code\ClsConveyance.cs" />
+    <Compile Include="Generated Code\ClsEstimate.cs" />
+    <Compile Include="Generated Code\ClsEstimateCharge.cs" />
+    <Compile Include="Generated Code\ClsEstimateChargeDtl.cs" />
+    <Compile Include="Generated Code\ClsFinance.cs" />
+    <Compile Include="Generated Code\ClsLevel.cs" />
+    <Compile Include="Generated Code\ClsLocation.cs" />
+    <Compile Include="Generated Code\ClsLocationType.cs" />
+    <Compile Include="Generated Code\ClsMoveType.cs" />
+    <Compile Include="Generated Code\ClsUnitType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated Code\ClsUser.cs" />
+    <Compile Include="Generated Code\ClsVendor.cs" />
+    <Compile Include="Generated Code\ClsVessel.cs" />
+    <Compile Include="Intermodal\clsCargoSearch.cs" />
+    <Compile Include="Intermodal\ClsEstimate.User.cs" />
+    <Compile Include="Intermodal\ClsEstimateSearch.User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClsCargo.User.cs" />
+    <Compile Include="Reference Tables\ClsChargeType.User.cs" />
+    <Compile Include="Reference Tables\ClsLocation.User.cs" />
+    <Compile Include="Reference Tables\ClsLocationType.User.cs" />
+    <Compile Include="Reference Tables\ClsUnitType.User.cs" />
+    <Compile Include="Reference Tables\ClsVessel.User.cs" />
+    <Compile Include="Reference Tables\ClsVendor.User.cs" />
+    <Compile Include="Reference Tables\ClsFinance.User.cs" />
+    <Compile Include="Reference Tables\ClsLevel.User.cs" />
+    <Compile Include="Reference Tables\ClsMoveType.User.cs" />
+    <Compile Include="Reference Tables\ClsChargeCategory.User.cs" />
+    <Compile Include="Reference Tables\ClsLevelUnit.User.cs" />
+    <Compile Include="Reference Tables\ClsEstimateStatus.User.cs" />
+    <Compile Include="Reference Tables\ClsCustomer.User.cs" />
+    <Compile Include="Reference Tables\ClsCargoStatus.User.cs" />
+    <Compile Include="Reference Tables\ClsGeoRegion.User.cs" />
+    <Compile Include="Reference Tables\ClsVendorGeoRegion.User.cs" />
+    <Compile Include="USC\ClsUscInlandBb.User.cs" />
+    <Compile Include="USC\ClsUscAssessorial.User.cs" />
+    <Compile Include="USC\ClsUscMileage.User.cs" />
+    <Compile Include="USC\ClsUscOceanBb.User.cs" />
+    <Compile Include="USC\ClsUscOceanCtr.User.cs" />
+    <Compile Include="USC\ClsUscOceanRoute.User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{41277667-E5CF-421E-BFF0-E2E82D06CE54}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDISqlTools\EDISqlTools.csproj">
+      <Project>{9586CEE5-2AD2-48EA-8074-C658CFE4C6A5}</Project>
+      <Name>EDISqlTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Booking.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.BookingInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Bulletin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.CodeInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Contact.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Message.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Sailing.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.Sector.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.TimeTableSailing.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\CS2010.ArcSys.Business.FWSReservationService.VehicleType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FWSReservationService\schemas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FWSReservationService\www.wsdl" />
+    <None Include="Service References\FWSReservationService\www.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PATP\CS2010.ArcSys.Business.PATP.LOBUpload.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PATP\CS2010.ArcSys.Business.PATP.LOBValidResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PATP\SurfacePatLOBServiceVersion1.wsdl" />
+    <None Include="Service References\PAT\CS2010.ArcSys.Business.PAT.UploadLOBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PAT\PatLOB.wsdl" />
+    <None Include="Service References\PAT\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PAT\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PAT\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FWSReservationService\" />
+    <WCFMetadataStorage Include="Service References\PATP\" />
+    <WCFMetadataStorage Include="Service References\PAT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FWSReservationService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FWSReservationService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FWSReservationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LINEObjects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PAT\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PAT\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PAT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PATP\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PATP\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\PATP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

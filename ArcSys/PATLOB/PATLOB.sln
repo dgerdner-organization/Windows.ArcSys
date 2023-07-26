@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PATLOB", "PATLOB\PATLOB.csproj", "{E08EAE20-7E77-4D16-9157-1D7A22FA6404}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = PATLOB\\PATLOB.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = PATLOB\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E08EAE20-7E77-4D16-9157-1D7A22FA6404}.Debug|x86.ActiveCfg = Debug|x86
+		{E08EAE20-7E77-4D16-9157-1D7A22FA6404}.Debug|x86.Build.0 = Debug|x86
+		{E08EAE20-7E77-4D16-9157-1D7A22FA6404}.Release|x86.ActiveCfg = Release|x86
+		{E08EAE20-7E77-4D16-9157-1D7A22FA6404}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

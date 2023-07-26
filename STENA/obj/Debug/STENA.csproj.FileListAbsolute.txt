@@ -1,0 +1,12 @@
+C:\ASL\CS-2010\STENA\obj\Debug\ResolveAssemblyReference.cache
+C:\ASL\CS-2010\STENA\bin\Debug\STENA.dll
+C:\ASL\CS-2010\STENA\bin\Debug\STENA.pdb
+C:\ASL\CS-2010\STENA\bin\Debug\ArcSys.Business.dll
+C:\ASL\CS-2010\STENA\bin\Debug\Common.dll
+C:\ASL\CS-2010\STENA\bin\Debug\EDISqlTools.dll
+C:\ASL\CS-2010\STENA\bin\Debug\DocumentFormat.OpenXml.dll
+C:\ASL\CS-2010\STENA\bin\Debug\ArcSys.Business.pdb
+C:\ASL\CS-2010\STENA\bin\Debug\Common.pdb
+C:\ASL\CS-2010\STENA\bin\Debug\EDISqlTools.pdb
+C:\ASL\CS-2010\STENA\obj\Debug\STENA.dll
+C:\ASL\CS-2010\STENA\obj\Debug\STENA.pdb

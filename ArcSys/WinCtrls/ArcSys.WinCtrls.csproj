@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9EEAF718-FB7A-4F66-BFB7-E6D7C4E19379}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CS2010.ArcSys.WinCtrls</RootNamespace>
+    <AssemblyName>ArcSys.WinCtrls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Data.v3" />
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ucVoyageCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVoyageCheckboxCombo.Designer.cs">
+      <DependentUpon>ucVoyageCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRecallStatusCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucRecallStatusCombo.Designer.cs">
+      <DependentUpon>ucRecallStatusCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRecallRiskCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucRecallRiskCombo.Designer.cs">
+      <DependentUpon>ucRecallRiskCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCommodityCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucCommodityCombo.Designer.cs">
+      <DependentUpon>ucCommodityCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLobHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLobHeader.Designer.cs">
+      <DependentUpon>ucLobHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVoyageLocationCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVoyageLocationCombo.Designer.cs">
+      <DependentUpon>ucVoyageLocationCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLineServiceCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLineServiceCheckboxCombo.Designer.cs">
+      <DependentUpon>ucLineServiceCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGeoRegionCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucGeoRegionCheckboxCombo.Designer.cs">
+      <DependentUpon>ucGeoRegionCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucGeoRegionCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucGeoRegionCombo.Designer.cs">
+      <DependentUpon>ucGeoRegionCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCargoStatusCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucCargoStatusCheckboxCombo.Designer.cs">
+      <DependentUpon>ucCargoStatusCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCargoStatusCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucCargoStatusCombo.Designer.cs">
+      <DependentUpon>ucCargoStatusCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocationCargoTrackingCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLocationCargoTrackingCombo.Designer.cs">
+      <DependentUpon>ucLocationCargoTrackingCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUscRates.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUscRates.Designer.cs">
+      <DependentUpon>ucUscRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVendorMoveCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVendorMoveCombo.Designer.cs">
+      <DependentUpon>ucVendorMoveCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucConveyanceCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucConveyanceCombo.Designer.cs">
+      <DependentUpon>ucConveyanceCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucConveyanceTypeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucConveyanceTypeCombo.Designer.cs">
+      <DependentUpon>ucConveyanceTypeCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMoveCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucMoveCombo.Designer.cs">
+      <DependentUpon>ucMoveCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucActionCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucActionCombo.Designer.cs">
+      <DependentUpon>ucActionCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCustomerCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucCustomerCheckboxCombo.Designer.cs">
+      <DependentUpon>ucCustomerCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCustomerCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucCustomerCombo.Designer.cs">
+      <DependentUpon>ucCustomerCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucContractMod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucContractMod.Designer.cs">
+      <DependentUpon>ucContractMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLevelUnitCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLevelUnitCombo.Designer.cs">
+      <DependentUpon>ucLevelUnitCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChargeCategoryCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucChargeCategoryCheckboxCombo.Designer.cs">
+      <DependentUpon>ucChargeCategoryCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChargeCategoryCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucChargeCategoryCombo.Designer.cs">
+      <DependentUpon>ucChargeCategoryCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFinanceCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucFinanceCombo.Designer.cs">
+      <DependentUpon>ucFinanceCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLevelCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLevelCheckboxCombo.Designer.cs">
+      <DependentUpon>ucLevelCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLevelCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLevelCombo.Designer.cs">
+      <DependentUpon>ucLevelCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocationTypeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLocationTypeCombo.Designer.cs">
+      <DependentUpon>ucLocationTypeCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucMoveTypeCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucMoveTypeCheckboxCombo.Designer.cs">
+      <DependentUpon>ucMoveTypeCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTerminalContactsGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTerminalContactsGrid.Designer.cs">
+      <DependentUpon>ucTerminalContactsGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTerminalLinksGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTerminalLinksGrid.Designer.cs">
+      <DependentUpon>ucTerminalLinksGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUserCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucUserCheckboxCombo.Designer.cs">
+      <DependentUpon>ucUserCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUserCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucUserCombo.Designer.cs">
+      <DependentUpon>ucUserCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVendorCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVendorCheckboxCombo.Designer.cs">
+      <DependentUpon>ucVendorCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVendorCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVendorCombo.Designer.cs">
+      <DependentUpon>ucVendorCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocationCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLocationCheckboxCombo.Designer.cs">
+      <DependentUpon>ucLocationCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocationCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucLocationCombo.Designer.cs">
+      <DependentUpon>ucLocationCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUnitTypeCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucUnitTypeCheckboxCombo.Designer.cs">
+      <DependentUpon>ucUnitTypeCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUnitTypeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucUnitTypeCombo.Designer.cs">
+      <DependentUpon>ucUnitTypeCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChargeTypeCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucChargeTypeCheckboxCombo.Designer.cs">
+      <DependentUpon>ucChargeTypeCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVesselCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVesselCombo.Designer.cs">
+      <DependentUpon>ucVesselCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucChargeTypeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucChargeTypeCombo.Designer.cs">
+      <DependentUpon>ucChargeTypeCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVesselCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ucVesselCheckboxCombo.Designer.cs">
+      <DependentUpon>ucVesselCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ucVoyageCheckboxCombo.resx">
+      <DependentUpon>ucVoyageCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRecallStatusCombo.resx">
+      <DependentUpon>ucRecallStatusCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRecallRiskCombo.resx">
+      <DependentUpon>ucRecallRiskCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCommodityCombo.resx">
+      <DependentUpon>ucCommodityCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVoyageLocationCombo.resx">
+      <DependentUpon>ucVoyageLocationCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLineServiceCheckboxCombo.resx">
+      <DependentUpon>ucLineServiceCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGeoRegionCheckboxCombo.resx">
+      <DependentUpon>ucGeoRegionCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucGeoRegionCombo.resx">
+      <DependentUpon>ucGeoRegionCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCargoStatusCheckboxCombo.resx">
+      <DependentUpon>ucCargoStatusCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCargoStatusCombo.resx">
+      <DependentUpon>ucCargoStatusCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocationCargoTrackingCombo.resx">
+      <DependentUpon>ucLocationCargoTrackingCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUscRates.resx">
+      <DependentUpon>ucUscRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVendorMoveCombo.resx">
+      <DependentUpon>ucVendorMoveCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConveyanceCombo.resx">
+      <DependentUpon>ucConveyanceCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucConveyanceTypeCombo.resx">
+      <DependentUpon>ucConveyanceTypeCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMoveCombo.resx">
+      <DependentUpon>ucMoveCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucActionCombo.resx">
+      <DependentUpon>ucActionCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCustomerCheckboxCombo.resx">
+      <DependentUpon>ucCustomerCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCustomerCombo.resx">
+      <DependentUpon>ucCustomerCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucContractMod.resx">
+      <DependentUpon>ucContractMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLevelUnitCombo.resx">
+      <DependentUpon>ucLevelUnitCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChargeCategoryCheckboxCombo.resx">
+      <DependentUpon>ucChargeCategoryCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChargeCategoryCombo.resx">
+      <DependentUpon>ucChargeCategoryCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFinanceCombo.resx">
+      <DependentUpon>ucFinanceCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLevelCheckboxCombo.resx">
+      <DependentUpon>ucLevelCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLevelCombo.resx">
+      <DependentUpon>ucLevelCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocationTypeCombo.resx">
+      <DependentUpon>ucLocationTypeCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMoveTypeCheckboxCombo.resx">
+      <DependentUpon>ucMoveTypeCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTerminalContactsGrid.resx">
+      <DependentUpon>ucTerminalContactsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTerminalLinksGrid.resx">
+      <DependentUpon>ucTerminalLinksGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserCheckboxCombo.resx">
+      <DependentUpon>ucUserCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserCombo.resx">
+      <DependentUpon>ucUserCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVendorCheckboxCombo.resx">
+      <DependentUpon>ucVendorCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVendorCombo.resx">
+      <DependentUpon>ucVendorCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocationCheckboxCombo.resx">
+      <DependentUpon>ucLocationCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocationCombo.resx">
+      <DependentUpon>ucLocationCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUnitTypeCheckboxCombo.resx">
+      <DependentUpon>ucUnitTypeCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUnitTypeCombo.resx">
+      <DependentUpon>ucUnitTypeCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChargeTypeCheckboxCombo.resx">
+      <DependentUpon>ucChargeTypeCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVesselCombo.resx">
+      <DependentUpon>ucVesselCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ucChargeTypeCombo.resx">
+      <DependentUpon>ucChargeTypeCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVesselCheckboxCombo.resx">
+      <DependentUpon>ucVesselCheckboxCombo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonSecurity\CommonSecurity.csproj">
+      <Project>{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}</Project>
+      <Name>CommonSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonWinCtrls\CommonWinCtrls.csproj">
+      <Project>{053112CA-AD80-4C5C-8593-001BEB316E0D}</Project>
+      <Name>CommonWinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{41277667-E5CF-421E-BFF0-E2E82D06CE54}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business\ArcSys.Business.csproj">
+      <Project>{12113523-D76F-4555-B678-4E712A4F7C9B}</Project>
+      <Name>ArcSys.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

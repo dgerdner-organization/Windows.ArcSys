@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="grdResults_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;GroupTotals&gt;Always&lt;/GroupTotals&gt;&lt;Key&gt;Terminal&lt;/Key&gt;&lt;Caption&gt;Terminal Info&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Location_Cd"&gt;&lt;Caption&gt;Port&lt;/Caption&gt;&lt;DataMember&gt;Location_Cd&lt;/DataMember&gt;&lt;Key&gt;Location_Cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;160&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="Location_Dsc"&gt;&lt;Caption&gt;Port&lt;/Caption&gt;&lt;DataMember&gt;Location_Dsc&lt;/DataMember&gt;&lt;Key&gt;Location_Dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;160&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="Create_User"&gt;&lt;Caption&gt;Created by&lt;/Caption&gt;&lt;DataMember&gt;Create_User&lt;/DataMember&gt;&lt;Key&gt;Create_User&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;120&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="Create_Dt"&gt;&lt;Caption&gt;Created on&lt;/Caption&gt;&lt;DataMember&gt;Create_Dt&lt;/DataMember&gt;&lt;Key&gt;Create_Dt&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;95&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="Terminal_Cd"&gt;&lt;Caption&gt;Terminal Code&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Cd&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;/Column4&gt;&lt;Column5 ID="Terminal_Dsc"&gt;&lt;Caption&gt;Terminal&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Dsc&lt;/DataMember&gt;&lt;Key&gt;Terminal_Dsc&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="Excluded_Vessels"&gt;&lt;Caption&gt;ARC Vessels Excluded&lt;/Caption&gt;&lt;DataMember&gt;Excluded_Vessels&lt;/DataMember&gt;&lt;Key&gt;Excluded_Vessels&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;125&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="Max_Draft"&gt;&lt;Caption&gt;Max Draft&lt;/Caption&gt;&lt;DataMember&gt;Max_Draft&lt;/DataMember&gt;&lt;Key&gt;Max_Draft&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;/Column7&gt;&lt;Column8 ID="Tidal_Variance"&gt;&lt;Caption&gt;Tidal Variance&lt;/Caption&gt;&lt;DataMember&gt;Tidal_Variance&lt;/DataMember&gt;&lt;Key&gt;Tidal_Variance&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;/Column8&gt;&lt;Column9 ID="Lock_Issues"&gt;&lt;Caption&gt;Lock Issues&lt;/Caption&gt;&lt;DataMember&gt;Lock_Issues&lt;/DataMember&gt;&lt;Key&gt;Lock_Issues&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;/Column9&gt;&lt;Column10 ID="LOA"&gt;&lt;Caption&gt;LOA&lt;/Caption&gt;&lt;DataMember&gt;LOA&lt;/DataMember&gt;&lt;Key&gt;LOA&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;/Column10&gt;&lt;Column11 ID="Beam"&gt;&lt;Caption&gt;Beam&lt;/Caption&gt;&lt;DataMember&gt;Beam&lt;/DataMember&gt;&lt;Key&gt;Beam&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;/Column11&gt;&lt;Column12 ID="Air_Draft"&gt;&lt;Caption&gt;Airdraft&lt;/Caption&gt;&lt;DataMember&gt;Air_Draft&lt;/DataMember&gt;&lt;Key&gt;Air_Draft&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;/Column12&gt;&lt;Column13 ID="Pilotage_Time"&gt;&lt;Caption&gt;Pilotage Time&lt;/Caption&gt;&lt;DataMember&gt;Pilotage_Time&lt;/DataMember&gt;&lt;Key&gt;Pilotage_Time&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;/Column13&gt;&lt;Column14 ID="Berths"&gt;&lt;Caption&gt;Berths&lt;/Caption&gt;&lt;DataMember&gt;Berths&lt;/DataMember&gt;&lt;Key&gt;Berths&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;/Column14&gt;&lt;Column15 ID="Max_Draft_Berth"&gt;&lt;Caption&gt;Max Draft - Berth&lt;/Caption&gt;&lt;DataMember&gt;Max_Draft_Berth&lt;/DataMember&gt;&lt;Key&gt;Max_Draft_Berth&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;/Column15&gt;&lt;/Columns&gt;&lt;ChildTables Collection="true" ElementName="Table"&gt;&lt;Table0 ID="TerminalAddress"&gt;&lt;DataMember&gt;TerminalAddress&lt;/DataMember&gt;&lt;Key&gt;TerminalAddress&lt;/Key&gt;&lt;Caption&gt;Addresses&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Terminal_Address_ID"&gt;&lt;Caption&gt;Addr ID&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Address_ID&lt;/DataMember&gt;&lt;Key&gt;Terminal_Address_ID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Terminal_Cd"&gt;&lt;Caption&gt;Terminal CD&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="Terminal_Section_Cd"&gt;&lt;Caption&gt;Sect Cd&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="Terminal_Section_Dsc"&gt;&lt;Caption&gt;Section&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Dsc&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Dsc&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Addressee_Nm"&gt;&lt;Caption&gt;Addressee&lt;/Caption&gt;&lt;DataMember&gt;Addressee_Nm&lt;/DataMember&gt;&lt;Key&gt;Addressee_Nm&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="Addr_One_Line"&gt;&lt;Caption&gt;Address&lt;/Caption&gt;&lt;DataMember&gt;Addr_One_Line&lt;/DataMember&gt;&lt;Key&gt;Addr_One_Line&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;742&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="Addr1"&gt;&lt;Caption&gt;Addr1&lt;/Caption&gt;&lt;DataMember&gt;Addr1&lt;/DataMember&gt;&lt;Key&gt;Addr1&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;250&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="Addr2"&gt;&lt;Caption&gt;Addr2&lt;/Caption&gt;&lt;DataMember&gt;Addr2&lt;/DataMember&gt;&lt;Key&gt;Addr2&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column7&gt;&lt;Column8 ID="Addr3"&gt;&lt;Caption&gt;Addr3&lt;/Caption&gt;&lt;DataMember&gt;Addr3&lt;/DataMember&gt;&lt;Key&gt;Addr3&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column8&gt;&lt;Column9 ID="City"&gt;&lt;Caption&gt;City&lt;/Caption&gt;&lt;DataMember&gt;City&lt;/DataMember&gt;&lt;Key&gt;City&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="State_Prov_Cd"&gt;&lt;Caption&gt;State&lt;/Caption&gt;&lt;DataMember&gt;State_Prov_Cd&lt;/DataMember&gt;&lt;Key&gt;State_Prov_Cd&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Postal_Cd"&gt;&lt;Caption&gt;Postal Code&lt;/Caption&gt;&lt;DataMember&gt;Postal_Cd&lt;/DataMember&gt;&lt;Key&gt;Postal_Cd&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="Country_Cd"&gt;&lt;Caption&gt;Country&lt;/Caption&gt;&lt;DataMember&gt;Country_Cd&lt;/DataMember&gt;&lt;Key&gt;Country_Cd&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/Table0&gt;&lt;Table1 ID="TerminalContact"&gt;&lt;DataMember&gt;TerminalContact&lt;/DataMember&gt;&lt;Key&gt;TerminalContact&lt;/Key&gt;&lt;Caption&gt;Contacts&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Terminal_Contact_ID"&gt;&lt;Caption&gt;Contact ID&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Contact_ID&lt;/DataMember&gt;&lt;Key&gt;Terminal_Contact_ID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Terminal_Cd"&gt;&lt;Caption&gt;Terminal CD&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="Terminal_Section_Cd"&gt;&lt;Caption&gt;Sect Cd&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="Terminal_Section_Dsc"&gt;&lt;Caption&gt;Section&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Dsc&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Dsc&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Sequence_Nbr"&gt;&lt;Caption&gt;#&lt;/Caption&gt;&lt;DataMember&gt;Sequence_Nbr&lt;/DataMember&gt;&lt;Key&gt;Sequence_Nbr&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="Phone_Dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;Phone_Dsc&lt;/DataMember&gt;&lt;Key&gt;Phone_Dsc&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="Phone"&gt;&lt;Caption&gt;Phone&lt;/Caption&gt;&lt;DataMember&gt;Phone&lt;/DataMember&gt;&lt;Key&gt;Phone&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;175&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="Phone_Ext"&gt;&lt;Caption&gt;Ext&lt;/Caption&gt;&lt;DataMember&gt;Phone_Ext&lt;/DataMember&gt;&lt;Key&gt;Phone_Ext&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="Contact_Nm"&gt;&lt;Caption&gt;Contact Name&lt;/Caption&gt;&lt;DataMember&gt;Contact_Nm&lt;/DataMember&gt;&lt;Key&gt;Contact_Nm&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;192&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="Active_Flg"&gt;&lt;Caption&gt;Active&lt;/Caption&gt;&lt;TypeNameFalseValue&gt;System.String&lt;/TypeNameFalseValue&gt;&lt;CheckBoxFalseValue&gt;N&lt;/CheckBoxFalseValue&gt;&lt;TypeNameTrueValue&gt;System.String&lt;/TypeNameTrueValue&gt;&lt;CheckBoxTrueValue&gt;Y&lt;/CheckBoxTrueValue&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Active_Flg&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;HeaderAlignment&gt;Center&lt;/HeaderAlignment&gt;&lt;Key&gt;Active_Flg&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;Width&gt;55&lt;/Width&gt;&lt;CellStyle&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;/CellStyle&gt;&lt;HeaderStyle&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;/HeaderStyle&gt;&lt;/Column9&gt;&lt;Column10 ID="Create_Dt"&gt;&lt;Caption&gt;Create_Dt&lt;/Caption&gt;&lt;DataMember&gt;Create_Dt&lt;/DataMember&gt;&lt;Key&gt;Create_Dt&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Create_User"&gt;&lt;Caption&gt;Create_User&lt;/Caption&gt;&lt;DataMember&gt;Create_User&lt;/DataMember&gt;&lt;Key&gt;Create_User&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;Column12 ID="Modify_Dt"&gt;&lt;Caption&gt;Modify_Dt&lt;/Caption&gt;&lt;DataMember&gt;Modify_Dt&lt;/DataMember&gt;&lt;Key&gt;Modify_Dt&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column12&gt;&lt;Column13 ID="Modify_User"&gt;&lt;Caption&gt;Modify_User&lt;/Caption&gt;&lt;DataMember&gt;Modify_User&lt;/DataMember&gt;&lt;Key&gt;Modify_User&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column13&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/Table1&gt;&lt;Table2 ID="TerminalLink"&gt;&lt;DataMember&gt;TerminalLink&lt;/DataMember&gt;&lt;Key&gt;TerminalLink&lt;/Key&gt;&lt;Caption&gt;Links&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Terminal_Link_ID"&gt;&lt;Caption&gt;Link ID&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Link_ID&lt;/DataMember&gt;&lt;Key&gt;Terminal_Link_ID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="Terminal_Cd"&gt;&lt;Caption&gt;Terminal Cd&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column1&gt;&lt;Column2 ID="Terminal_Section_Cd"&gt;&lt;Caption&gt;Sect Cd&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Cd&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column2&gt;&lt;Column3 ID="Terminal_Section_Dsc"&gt;&lt;Caption&gt;Section&lt;/Caption&gt;&lt;DataMember&gt;Terminal_Section_Dsc&lt;/DataMember&gt;&lt;Key&gt;Terminal_Section_Dsc&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;/Column3&gt;&lt;Column4 ID="Sequence_Nbr"&gt;&lt;Caption&gt;#&lt;/Caption&gt;&lt;DataMember&gt;Sequence_Nbr&lt;/DataMember&gt;&lt;Key&gt;Sequence_Nbr&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="Link_Dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;Link_Dsc&lt;/DataMember&gt;&lt;Key&gt;Link_Dsc&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="Link_Url"&gt;&lt;Caption&gt;Website URL&lt;/Caption&gt;&lt;DataMember&gt;Link_Url&lt;/DataMember&gt;&lt;Key&gt;Link_Url&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;516&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="Active_Flg"&gt;&lt;Caption&gt;Active&lt;/Caption&gt;&lt;TypeNameFalseValue&gt;System.String&lt;/TypeNameFalseValue&gt;&lt;CheckBoxFalseValue&gt;N&lt;/CheckBoxFalseValue&gt;&lt;TypeNameTrueValue&gt;System.String&lt;/TypeNameTrueValue&gt;&lt;CheckBoxTrueValue&gt;Y&lt;/CheckBoxTrueValue&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;DataMember&gt;Active_Flg&lt;/DataMember&gt;&lt;EditType&gt;CheckBox&lt;/EditType&gt;&lt;HeaderAlignment&gt;Center&lt;/HeaderAlignment&gt;&lt;Key&gt;Active_Flg&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;Width&gt;55&lt;/Width&gt;&lt;CellStyle&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;/CellStyle&gt;&lt;HeaderStyle&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;/HeaderStyle&gt;&lt;/Column7&gt;&lt;Column8 ID="Create_Dt"&gt;&lt;Caption&gt;Create_Dt&lt;/Caption&gt;&lt;DataMember&gt;Create_Dt&lt;/DataMember&gt;&lt;Key&gt;Create_Dt&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column8&gt;&lt;Column9 ID="Create_User"&gt;&lt;Caption&gt;Create_User&lt;/Caption&gt;&lt;DataMember&gt;Create_User&lt;/DataMember&gt;&lt;Key&gt;Create_User&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column9&gt;&lt;Column10 ID="Modify_Dt"&gt;&lt;Caption&gt;Modify_Dt&lt;/Caption&gt;&lt;DataMember&gt;Modify_Dt&lt;/DataMember&gt;&lt;Key&gt;Modify_Dt&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column10&gt;&lt;Column11 ID="Modify_User"&gt;&lt;Caption&gt;Modify_User&lt;/Caption&gt;&lt;DataMember&gt;Modify_User&lt;/DataMember&gt;&lt;Key&gt;Modify_User&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column11&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/Table2&gt;&lt;/ChildTables&gt;&lt;GroupCondition /&gt;&lt;TotalRow&gt;True&lt;/TotalRow&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="sbrChild.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <metadata name="tbrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

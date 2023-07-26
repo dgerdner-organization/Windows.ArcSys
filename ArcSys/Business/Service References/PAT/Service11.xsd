@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://pat.staging.sddc.army.mil/LOB_PatWebServices/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" />
+  <xs:element name="LOBUpload">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ip_address" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" minOccurs="0" name="lobDetailRecords" nillable="true" type="q1:ArrayOfLOBDetailRecord" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" minOccurs="0" name="lobMaster" nillable="true" type="q2:LOBMasterRecord" />
+        <xs:element minOccurs="0" name="system_id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LOBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" minOccurs="0" name="origUpload" nillable="true" type="q3:LOBUpload" />
+        <xs:element minOccurs="0" name="response" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" minOccurs="0" name="validationResponses" nillable="true" type="q4:ArrayOfLOBValidResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

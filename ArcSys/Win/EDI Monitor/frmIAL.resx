@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="grdLINEVins_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="vin"&gt;&lt;AggregateFunction&gt;Count&lt;/AggregateFunction&gt;&lt;Caption&gt;LINE Vins&lt;/Caption&gt;&lt;DataMember&gt;vin&lt;/DataMember&gt;&lt;Key&gt;vin&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;163&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="cr1_ecstatus"&gt;&lt;Caption&gt;Status&lt;/Caption&gt;&lt;DataMember&gt;cr1_ecstatus&lt;/DataMember&gt;&lt;Key&gt;cr1_ecstatus&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;58&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;0&lt;/ColIndex&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;/Groups&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdIALVins_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="vin"&gt;&lt;AggregateFunction&gt;Count&lt;/AggregateFunction&gt;&lt;Caption&gt;IAL VINs&lt;/Caption&gt;&lt;DataMember&gt;vin&lt;/DataMember&gt;&lt;Key&gt;vin&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;165&lt;/Width&gt;&lt;UseHeaderSelector&gt;False&lt;/UseHeaderSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="processed_flg"&gt;&lt;DataMember&gt;processed_flg&lt;/DataMember&gt;&lt;Key&gt;processed_flg&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;30&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;0&lt;/ColIndex&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;/Groups&gt;&lt;TotalRow&gt;True&lt;/TotalRow&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdShippingInstructions_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column1"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;HideWhenGrouped&gt;False&lt;/HideWhenGrouped&gt;&lt;Key&gt;Column1&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;21&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="vehicle_type_cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;vehicle_type_cd&lt;/DataMember&gt;&lt;Key&gt;vehicle_type_cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;62&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="booking_no"&gt;&lt;Caption&gt;Booking#&lt;/Caption&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;105&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="vin"&gt;&lt;Caption&gt;VIN&lt;/Caption&gt;&lt;DataMember&gt;vin&lt;/DataMember&gt;&lt;Key&gt;vin&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;137&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="last_nm"&gt;&lt;Caption&gt;Last Name&lt;/Caption&gt;&lt;DataMember&gt;last_nm&lt;/DataMember&gt;&lt;Key&gt;last_nm&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;98&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="final_msg"&gt;&lt;Caption&gt;Message&lt;/Caption&gt;&lt;DataMember&gt;final_msg&lt;/DataMember&gt;&lt;Key&gt;final_msg&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;299&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="cargo_rcvd_dt"&gt;&lt;Caption&gt;Received Date&lt;/Caption&gt;&lt;DataMember&gt;cargo_rcvd_dt&lt;/DataMember&gt;&lt;Key&gt;cargo_rcvd_dt&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;/Column6&gt;&lt;Column7 ID="cargo_rcvd_flg"&gt;&lt;Caption&gt;Cargo Received?&lt;/Caption&gt;&lt;DataMember&gt;cargo_rcvd_flg&lt;/DataMember&gt;&lt;Key&gt;cargo_rcvd_flg&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;/Column7&gt;&lt;Column8 ID="line_car_cnt"&gt;&lt;Caption&gt;Line Car#&lt;/Caption&gt;&lt;DataMember&gt;line_car_cnt&lt;/DataMember&gt;&lt;Key&gt;line_car_cnt&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;/Column8&gt;&lt;Column9 ID="line_van_cnt"&gt;&lt;Caption&gt;LINE Van#&lt;/Caption&gt;&lt;DataMember&gt;line_van_cnt&lt;/DataMember&gt;&lt;Key&gt;line_van_cnt&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;/Column9&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;5&lt;/ColIndex&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;GroupHeaderTotals Collection="true" ElementName="GroupHeaderTotal"&gt;&lt;GroupHeaderTotal0 ID="GroupHeaderTotal1"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;AggregateFunction&gt;Count&lt;/AggregateFunction&gt;&lt;Key&gt;GroupHeaderTotal1&lt;/Key&gt;&lt;/GroupHeaderTotal0&gt;&lt;/GroupHeaderTotals&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdQueue_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="booking_no"&gt;&lt;Caption&gt;304 Queue&lt;/Caption&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdSISummary_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column1"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;HideWhenGrouped&gt;False&lt;/HideWhenGrouped&gt;&lt;Key&gt;Column1&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;SelectableCells&gt;GroupTotalRowCells&lt;/SelectableCells&gt;&lt;ShowInFieldChooser&gt;False&lt;/ShowInFieldChooser&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;20&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="booking_no"&gt;&lt;Caption&gt;Booking&lt;/Caption&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column1&gt;&lt;Column2 ID="pol_location_cd"&gt;&lt;Caption&gt;POL&lt;/Caption&gt;&lt;DataMember&gt;pol_location_cd&lt;/DataMember&gt;&lt;Key&gt;pol_location_cd&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;51&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="pod_location_cd"&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;pod_location_cd&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;49&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="voyage_no"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;DataMember&gt;voyage_no&lt;/DataMember&gt;&lt;Key&gt;voyage_no&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;58&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="vehicle_type_cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;vehicle_type_cd&lt;/DataMember&gt;&lt;Key&gt;vehicle_type_cd&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;59&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="ial_count"&gt;&lt;Caption&gt;IAL Count&lt;/Caption&gt;&lt;DataMember&gt;ial_count&lt;/DataMember&gt;&lt;Key&gt;ial_count&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="line_count"&gt;&lt;Caption&gt;LINE Count&lt;/Caption&gt;&lt;DataMember&gt;line_count&lt;/DataMember&gt;&lt;Key&gt;line_count&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;68&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="rcvd_count"&gt;&lt;Caption&gt;Received&lt;/Caption&gt;&lt;DataMember&gt;rcvd_count&lt;/DataMember&gt;&lt;Key&gt;rcvd_count&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;59&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="invalid_cargo_type"&gt;&lt;Caption&gt;BD Error ?&lt;/Caption&gt;&lt;DataMember&gt;invalid_cargo_type&lt;/DataMember&gt;&lt;Key&gt;invalid_cargo_type&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;74&lt;/Width&gt;&lt;/Column9&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;/Groups&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdUnprocessedDetail_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column1"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;Key&gt;Column1&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;20&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="booking_no"&gt;&lt;Caption&gt;Booking&lt;/Caption&gt;&lt;ColumnType&gt;Link&lt;/ColumnType&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;94&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="vin"&gt;&lt;Caption&gt;VIN&lt;/Caption&gt;&lt;DataMember&gt;vin&lt;/DataMember&gt;&lt;Key&gt;vin&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;132&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="vehicle_type_cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;vehicle_type_cd&lt;/DataMember&gt;&lt;Key&gt;vehicle_type_cd&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;64&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="Process_msg"&gt;&lt;Caption&gt;Message&lt;/Caption&gt;&lt;DataMember&gt;Process_msg&lt;/DataMember&gt;&lt;Key&gt;Process_msg&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="processed_flg"&gt;&lt;Caption&gt;Processed&lt;/Caption&gt;&lt;DataMember&gt;processed_flg&lt;/DataMember&gt;&lt;Key&gt;processed_flg&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="height_nbr"&gt;&lt;Caption&gt;Height&lt;/Caption&gt;&lt;DataMember&gt;height_nbr&lt;/DataMember&gt;&lt;Key&gt;height_nbr&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="customer_order_no"&gt;&lt;Caption&gt;IAL#&lt;/Caption&gt;&lt;DataMember&gt;customer_order_no&lt;/DataMember&gt;&lt;Key&gt;customer_order_no&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;56&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="Make"&gt;&lt;Caption&gt;Make&lt;/Caption&gt;&lt;DataMember&gt;Make&lt;/DataMember&gt;&lt;Key&gt;Make&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;62&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="Model"&gt;&lt;Caption&gt;Model&lt;/Caption&gt;&lt;DataMember&gt;Model&lt;/DataMember&gt;&lt;Key&gt;Model&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Width&gt;73&lt;/Width&gt;&lt;/Column9&gt;&lt;Column10 ID="create_dt"&gt;&lt;Caption&gt;File Rcvd&lt;/Caption&gt;&lt;DataMember&gt;create_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;create_dt&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Width&gt;60&lt;/Width&gt;&lt;/Column10&gt;&lt;Column11 ID="source_file"&gt;&lt;Caption&gt;source_file&lt;/Caption&gt;&lt;DataMember&gt;source_file&lt;/DataMember&gt;&lt;Key&gt;source_file&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Width&gt;310&lt;/Width&gt;&lt;/Column11&gt;&lt;Column12 ID="cr1_vin"&gt;&lt;Caption&gt;LINE&lt;/Caption&gt;&lt;DataMember&gt;cr1_vin&lt;/DataMember&gt;&lt;Key&gt;cr1_vin&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Width&gt;122&lt;/Width&gt;&lt;/Column12&gt;&lt;Column13 ID="cr1_modelname"&gt;&lt;Caption&gt;LINE MODEL&lt;/Caption&gt;&lt;DataMember&gt;cr1_modelname&lt;/DataMember&gt;&lt;Key&gt;cr1_modelname&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Width&gt;136&lt;/Width&gt;&lt;/Column13&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;Group1 ID="Group1"&gt;&lt;ColIndex&gt;3&lt;/ColIndex&gt;&lt;/Group1&gt;&lt;/Groups&gt;&lt;GroupHeaderTotals Collection="true" ElementName="GroupHeaderTotal"&gt;&lt;GroupHeaderTotal0 ID="GroupHeaderTotal1"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;AggregateFunction&gt;Count&lt;/AggregateFunction&gt;&lt;Key&gt;GroupHeaderTotal1&lt;/Key&gt;&lt;/GroupHeaderTotal0&gt;&lt;/GroupHeaderTotals&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdUnprocessedSI_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column1"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;HideWhenGrouped&gt;False&lt;/HideWhenGrouped&gt;&lt;Key&gt;Column1&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;21&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="vehicle_type_cd"&gt;&lt;Caption&gt;Type&lt;/Caption&gt;&lt;DataMember&gt;vehicle_type_cd&lt;/DataMember&gt;&lt;Key&gt;vehicle_type_cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;62&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="booking_no"&gt;&lt;Caption&gt;Booking#&lt;/Caption&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;78&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="vin"&gt;&lt;Caption&gt;VIN&lt;/Caption&gt;&lt;DataMember&gt;vin&lt;/DataMember&gt;&lt;Key&gt;vin&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;112&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="last_nm"&gt;&lt;Caption&gt;Last Name&lt;/Caption&gt;&lt;DataMember&gt;last_nm&lt;/DataMember&gt;&lt;Key&gt;last_nm&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="processed_flg"&gt;&lt;Caption&gt;Processed?&lt;/Caption&gt;&lt;DataMember&gt;processed_flg&lt;/DataMember&gt;&lt;Key&gt;processed_flg&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;77&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="final_msg"&gt;&lt;Caption&gt;Message&lt;/Caption&gt;&lt;DataMember&gt;final_msg&lt;/DataMember&gt;&lt;Key&gt;final_msg&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;299&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="create_dt"&gt;&lt;Caption&gt;File Rcvd&lt;/Caption&gt;&lt;DataMember&gt;create_dt&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;create_dt&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;/Column7&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;6&lt;/ColIndex&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;SortOrder&gt;Descending&lt;/SortOrder&gt;&lt;/Group0&gt;&lt;Group1 ID="Group1"&gt;&lt;ColIndex&gt;1&lt;/ColIndex&gt;&lt;/Group1&gt;&lt;/Groups&gt;&lt;GroupHeaderTotals Collection="true" ElementName="GroupHeaderTotal"&gt;&lt;GroupHeaderTotal0 ID="GroupHeaderTotal1"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;AggregateFunction&gt;Count&lt;/AggregateFunction&gt;&lt;Key&gt;GroupHeaderTotal1&lt;/Key&gt;&lt;/GroupHeaderTotal0&gt;&lt;/GroupHeaderTotals&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdDownloadResults_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="FileName"&gt;&lt;ButtonDisplayMode&gt;CurrentRow&lt;/ButtonDisplayMode&gt;&lt;ButtonText&gt;Reprocess&lt;/ButtonText&gt;&lt;ButtonStyle&gt;TextButton&lt;/ButtonStyle&gt;&lt;Caption&gt;FileName&lt;/Caption&gt;&lt;DataMember&gt;FileName&lt;/DataMember&gt;&lt;Key&gt;FileName&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;556&lt;/Width&gt;&lt;AutoSizeMode&gt;AllCellsAndHeader&lt;/AutoSizeMode&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;0&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdBatteryDisconnect_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="BOOKING_NO"&gt;&lt;Caption&gt;Booking #&lt;/Caption&gt;&lt;DataMember&gt;BOOKING_NO&lt;/DataMember&gt;&lt;Key&gt;BOOKING_NO&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column0&gt;&lt;Column1 ID="VIN"&gt;&lt;Caption&gt;VIN&lt;/Caption&gt;&lt;DataMember&gt;VIN&lt;/DataMember&gt;&lt;Key&gt;VIN&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="VESSEL"&gt;&lt;Caption&gt;Vessel&lt;/Caption&gt;&lt;DataMember&gt;VESSEL&lt;/DataMember&gt;&lt;Key&gt;VESSEL&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column2&gt;&lt;Column3 ID="VOYAGE"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;DataMember&gt;VOYAGE&lt;/DataMember&gt;&lt;Key&gt;VOYAGE&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column3&gt;&lt;Column4 ID="POL"&gt;&lt;Caption&gt;POL&lt;/Caption&gt;&lt;DataMember&gt;POL&lt;/DataMember&gt;&lt;Key&gt;POL&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column4&gt;&lt;Column5 ID="POD"&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;POD&lt;/DataMember&gt;&lt;Key&gt;POD&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column5&gt;&lt;Column6 ID="BOL_NO"&gt;&lt;Caption&gt;Bill of Lading&lt;/Caption&gt;&lt;DataMember&gt;BOL_NO&lt;/DataMember&gt;&lt;Key&gt;BOL_NO&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;Width&gt;150&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="CARGO_TYPE"&gt;&lt;Caption&gt;Cargo Type&lt;/Caption&gt;&lt;DataMember&gt;CARGO_TYPE&lt;/DataMember&gt;&lt;Key&gt;CARGO_TYPE&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column7&gt;&lt;Column8 ID="CREATE_DT"&gt;&lt;Caption&gt;Create Date&lt;/Caption&gt;&lt;DataMember&gt;CREATE_DT&lt;/DataMember&gt;&lt;FormatString&gt;yyy-MM-dd&lt;/FormatString&gt;&lt;Key&gt;CREATE_DT&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Selectable&gt;False&lt;/Selectable&gt;&lt;/Column8&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="grdOverheight_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="voyage_no"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;DataMember&gt;voyage_no&lt;/DataMember&gt;&lt;Key&gt;voyage_no&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="BOOKING_NO"&gt;&lt;Caption&gt;Booking #&lt;/Caption&gt;&lt;DataMember&gt;BOOKING_NO&lt;/DataMember&gt;&lt;Key&gt;BOOKING_NO&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;85&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="VIN"&gt;&lt;Caption&gt;VIN&lt;/Caption&gt;&lt;DataMember&gt;VIN&lt;/DataMember&gt;&lt;Key&gt;VIN&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;86&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="length_nbr"&gt;&lt;Caption&gt;Length (cm)&lt;/Caption&gt;&lt;DataMember&gt;length_nbr&lt;/DataMember&gt;&lt;Key&gt;length_nbr&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;84&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="width_nbr"&gt;&lt;Caption&gt;Width&lt;/Caption&gt;&lt;DataMember&gt;width_nbr&lt;/DataMember&gt;&lt;Key&gt;width_nbr&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;68&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="height_nbr"&gt;&lt;Caption&gt;Height&lt;/Caption&gt;&lt;DataMember&gt;height_nbr&lt;/DataMember&gt;&lt;Key&gt;height_nbr&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="detail_rcvd_dt"&gt;&lt;Caption&gt;Detail Received&lt;/Caption&gt;&lt;DataMember&gt;detail_rcvd_dt&lt;/DataMember&gt;&lt;Key&gt;detail_rcvd_dt&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="reviewed_dt"&gt;&lt;Caption&gt;Reviewed&lt;/Caption&gt;&lt;DataMember&gt;reviewed_dt&lt;/DataMember&gt;&lt;Key&gt;reviewed_dt&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;66&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="reviewer"&gt;&lt;Caption&gt;Reviewed By&lt;/Caption&gt;&lt;DataMember&gt;reviewer&lt;/DataMember&gt;&lt;Key&gt;reviewer&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;66&lt;/Width&gt;&lt;/Column8&gt;&lt;Column9 ID="processed_flg"&gt;&lt;Caption&gt;Reviewed?&lt;/Caption&gt;&lt;DataMember&gt;processed_flg&lt;/DataMember&gt;&lt;Key&gt;processed_flg&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Width&gt;87&lt;/Width&gt;&lt;/Column9&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;4&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="bgwDownloads.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

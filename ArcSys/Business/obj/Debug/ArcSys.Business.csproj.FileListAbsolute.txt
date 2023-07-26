@@ -1,0 +1,17 @@
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\ArcSys.Business.dll.config
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\ArcSys.Business.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\ArcSys.Business.pdb
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Common.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\EDISqlTools.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Data.v3.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Windows.CalendarCombo.v3.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Windows.Common.v3.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Windows.GridEX.v3.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\DocumentFormat.OpenXml.dll
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Common.pdb
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\EDISqlTools.pdb
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Windows.CalendarCombo.v3.xml
+C:\ASL\CS-2010\ArcSys\Business\bin\Debug\Janus.Windows.GridEX.v3.xml
+C:\ASL\CS-2010\ArcSys\Business\obj\Debug\ResolveAssemblyReference.cache
+C:\ASL\CS-2010\ArcSys\Business\obj\Debug\ArcSys.Business.dll
+C:\ASL\CS-2010\ArcSys\Business\obj\Debug\ArcSys.Business.pdb

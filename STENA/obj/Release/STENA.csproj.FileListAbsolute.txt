@@ -1,0 +1,12 @@
+C:\ASL\CS-2010\STENA\bin\Release\STENA.dll
+C:\ASL\CS-2010\STENA\bin\Release\STENA.pdb
+C:\ASL\CS-2010\STENA\bin\Release\ArcSys.Business.dll
+C:\ASL\CS-2010\STENA\bin\Release\Common.dll
+C:\ASL\CS-2010\STENA\bin\Release\ArcSys.Business.pdb
+C:\ASL\CS-2010\STENA\bin\Release\Common.pdb
+C:\ASL\CS-2010\STENA\obj\Release\ResolveAssemblyReference.cache
+C:\ASL\CS-2010\STENA\obj\Release\STENA.dll
+C:\ASL\CS-2010\STENA\obj\Release\STENA.pdb
+C:\ASL\CS-2010\STENA\bin\Release\DocumentFormat.OpenXml.dll
+C:\ASL\CS-2010\STENA\bin\Release\EDISqlTools.dll
+C:\ASL\CS-2010\STENA\bin\Release\EDISqlTools.pdb

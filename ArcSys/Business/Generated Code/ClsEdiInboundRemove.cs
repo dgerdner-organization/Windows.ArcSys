@@ -1,0 +1,506 @@
+using System;
+using System.Data;
+using System.Text;
+using System.Data.Common;
+using System.Collections.Generic;
+using CS2010.Common;
+
+namespace CS2010.ArcSys.Business
+{
+	public partial class ClsEdiInboundRemove : ClsBaseTable
+	{
+		#region Connection Manager
+
+		protected static ClsConnection Connection
+		{
+			get { return ClsConMgr.Manager["ArcSys"]; }
+		}
+		#endregion		// #region Connection Manager
+
+		#region Table Constants
+
+		public const string TableName = "T_EDI_INBOUND_REMOVE";
+		public const int PrimaryKeyCount = 1;
+		public static bool HasPrimaryKey
+		{
+			get { return PrimaryKeyCount > 0; }
+		}
+		public static string[] GetPrimaryKeys()
+		{
+			return new string[PrimaryKeyCount] { "EDI_INBOUND_REMOVE_ID" };
+		}
+
+		public const string SelectSQL = "SELECT * FROM T_EDI_INBOUND_REMOVE";
+
+		#endregion	// #region Table Constants
+
+		#region Column Length Constants
+	
+		public const int Create_UserMax = 30;
+		public const int Modify_UserMax = 30;
+		public const int Booking_NoMax = 20;
+		public const int VinMax = 30;
+		public const int Processed_FlgMax = 1;
+		public const int Process_MsgMax = 200;
+		public const int Source_FileMax = 200;
+
+		#endregion	// #region Column Length Constants
+
+		#region Column Fields
+
+		protected Int64? _Edi_Inbound_Remove_ID;
+		protected string _Create_User;
+		protected DateTime? _Create_Dt;
+		protected string _Modify_User;
+		protected DateTime? _Modify_Dt;
+		protected string _Booking_No;
+		protected string _Vin;
+		protected string _Processed_Flg;
+		protected string _Process_Msg;
+		protected string _Source_File;
+
+		#endregion	// #region Column Fields
+
+		#region Column Properties
+
+		public Int64? Edi_Inbound_Remove_ID
+		{
+			get { return _Edi_Inbound_Remove_ID; }
+			set
+			{
+				if( _Edi_Inbound_Remove_ID == value ) return;
+		
+				_Edi_Inbound_Remove_ID = value;
+				_IsDirty = true;
+				NotifyPropertyChanged("Edi_Inbound_Remove_ID");
+			}
+		}
+		public string Create_User
+		{
+			get { return _Create_User; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Create_User, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Create_UserMax )
+					_Create_User = val.Substring(0, (int)Create_UserMax);
+				else
+					_Create_User = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Create_User");
+			}
+		}
+		public DateTime? Create_Dt
+		{
+			get { return _Create_Dt; }
+			set
+			{
+				if( _Create_Dt == value ) return;
+		
+				_Create_Dt = value;
+				_IsDirty = true;
+				NotifyPropertyChanged("Create_Dt");
+			}
+		}
+		public string Modify_User
+		{
+			get { return _Modify_User; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Modify_User, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Modify_UserMax )
+					_Modify_User = val.Substring(0, (int)Modify_UserMax);
+				else
+					_Modify_User = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Modify_User");
+			}
+		}
+		public DateTime? Modify_Dt
+		{
+			get { return _Modify_Dt; }
+			set
+			{
+				if( _Modify_Dt == value ) return;
+		
+				_Modify_Dt = value;
+				_IsDirty = true;
+				NotifyPropertyChanged("Modify_Dt");
+			}
+		}
+		public string Booking_No
+		{
+			get { return _Booking_No; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Booking_No, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Booking_NoMax )
+					_Booking_No = val.Substring(0, (int)Booking_NoMax);
+				else
+					_Booking_No = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Booking_No");
+			}
+		}
+		public string Vin
+		{
+			get { return _Vin; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Vin, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > VinMax )
+					_Vin = val.Substring(0, (int)VinMax);
+				else
+					_Vin = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Vin");
+			}
+		}
+		public string Processed_Flg
+		{
+			get { return _Processed_Flg; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Processed_Flg, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Processed_FlgMax )
+					_Processed_Flg = val.Substring(0, (int)Processed_FlgMax);
+				else
+					_Processed_Flg = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Processed_Flg");
+			}
+		}
+		public string Process_Msg
+		{
+			get { return _Process_Msg; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Process_Msg, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Process_MsgMax )
+					_Process_Msg = val.Substring(0, (int)Process_MsgMax);
+				else
+					_Process_Msg = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Process_Msg");
+			}
+		}
+		public string Source_File
+		{
+			get { return _Source_File; }
+			set
+			{
+				string val = ( string.IsNullOrEmpty(value) == false )
+					? value.Trim() : null;
+		
+				if( string.IsNullOrEmpty(val) == true ) val = null;
+		
+				if( string.Compare(_Source_File, val, false) == 0 ) return;
+		
+				if( val != null && val.Length > Source_FileMax )
+					_Source_File = val.Substring(0, (int)Source_FileMax);
+				else
+					_Source_File = val;
+		
+				_IsDirty = true;
+				NotifyPropertyChanged("Source_File");
+			}
+		}
+
+		#endregion	// #region Column Properties
+
+		#region Foreign Key Fields
+
+
+
+		#endregion	// #region Foreign Key Fields
+
+		#region Foreign Key Properties
+
+
+
+		#endregion	// #region Foreign Key Properties
+
+		#region Constructors
+
+		public ClsEdiInboundRemove() : base() {}
+		public ClsEdiInboundRemove(DataRow dr) : base(dr) {}
+		public ClsEdiInboundRemove(ClsEdiInboundRemove src) { CopyFrom(src); }
+
+		#endregion		// #region Constructors
+
+		#region Init methods
+
+		public override void ResetColumns()
+		{
+			Edi_Inbound_Remove_ID = null;
+			Create_User = null;
+			Create_Dt = null;
+			Modify_User = null;
+			Modify_Dt = null;
+			Booking_No = null;
+			Vin = null;
+			Processed_Flg = null;
+			Process_Msg = null;
+			Source_File = null;
+		}
+
+		public void CopyFrom(ClsEdiInboundRemove src)
+		{
+			Edi_Inbound_Remove_ID = src._Edi_Inbound_Remove_ID;
+			Create_User = src._Create_User;
+			Create_Dt = src._Create_Dt;
+			Modify_User = src._Modify_User;
+			Modify_Dt = src._Modify_Dt;
+			Booking_No = src._Booking_No;
+			Vin = src._Vin;
+			Processed_Flg = src._Processed_Flg;
+			Process_Msg = src._Process_Msg;
+			Source_File = src._Source_File;
+		}
+
+		public override bool ReloadFromDB()
+		{
+			ClsEdiInboundRemove tmp = ClsEdiInboundRemove.GetUsingKey(Edi_Inbound_Remove_ID.Value);
+			if( tmp != null ) CopyFrom(tmp);
+
+			ResetFKs();
+			OnReload();
+
+			return ( tmp != null );
+		}
+
+		public override void ResetFKs()
+		{
+
+		}
+		#endregion		// #region Init methods
+
+		#region Insert, Update, Delete
+
+		public override int Insert()
+		{
+
+			DbParameter[] p = new DbParameter[10];
+
+			p[0] = Connection.GetParameter
+				("@BOOKING_NO", Booking_No);
+			p[1] = Connection.GetParameter
+				("@VIN", Vin);
+			p[2] = Connection.GetParameter
+				("@PROCESSED_FLG", Processed_Flg);
+			p[3] = Connection.GetParameter
+				("@PROCESS_MSG", Process_Msg);
+			p[4] = Connection.GetParameter
+				("@SOURCE_FILE", Source_File);
+			p[5] = Connection.GetParameter
+				("@EDI_INBOUND_REMOVE_ID", Edi_Inbound_Remove_ID, ParameterDirection.Output, DbType.Int64, 0);
+			p[6] = Connection.GetParameter
+				("@CREATE_USER", Create_User, ParameterDirection.Output, DbType.AnsiStringFixedLength, Create_UserMax);
+			p[7] = Connection.GetParameter
+				("@CREATE_DT", Create_Dt, ParameterDirection.Output, DbType.DateTime, 0);
+			p[8] = Connection.GetParameter
+				("@MODIFY_USER", Modify_User, ParameterDirection.Output, DbType.AnsiStringFixedLength, Modify_UserMax);
+			p[9] = Connection.GetParameter
+				("@MODIFY_DT", Modify_Dt, ParameterDirection.Output, DbType.DateTime, 0);
+
+			const string sql = @"
+				INSERT INTO T_EDI_INBOUND_REMOVE
+					(EDI_INBOUND_REMOVE_ID, BOOKING_NO, VIN,
+					PROCESSED_FLG, PROCESS_MSG, SOURCE_FILE)
+				VALUES
+					(EDI_INBOUND_REMOVE_ID_SEQ.NEXTVAL, @BOOKING_NO, @VIN,
+					@PROCESSED_FLG, @PROCESS_MSG, @SOURCE_FILE)
+				RETURNING
+					EDI_INBOUND_REMOVE_ID, CREATE_USER, CREATE_DT,
+					MODIFY_USER, MODIFY_DT
+				INTO
+					@EDI_INBOUND_REMOVE_ID, @CREATE_USER, @CREATE_DT,
+					@MODIFY_USER, @MODIFY_DT";
+			int ret = Connection.RunSQL(sql, p);
+
+			Edi_Inbound_Remove_ID = ClsConvert.ToInt64Nullable(p[5].Value);
+			Create_User = ClsConvert.ToString(p[6].Value);
+			Create_Dt = ClsConvert.ToDateTimeNullable(p[7].Value);
+			Modify_User = ClsConvert.ToString(p[8].Value);
+			Modify_Dt = ClsConvert.ToDateTimeNullable(p[9].Value);
+			return ret;
+		}
+		public override int Update()
+		{
+			DbParameter[] p = new DbParameter[8];
+
+			p[0] = Connection.GetParameter
+				("@MODIFY_DT", Modify_Dt, ParameterDirection.InputOutput, DbType.DateTime, 0);
+			p[1] = Connection.GetParameter
+				("@BOOKING_NO", Booking_No);
+			p[2] = Connection.GetParameter
+				("@VIN", Vin);
+			p[3] = Connection.GetParameter
+				("@PROCESSED_FLG", Processed_Flg);
+			p[4] = Connection.GetParameter
+				("@PROCESS_MSG", Process_Msg);
+			p[5] = Connection.GetParameter
+				("@SOURCE_FILE", Source_File);
+			p[6] = Connection.GetParameter
+				("@EDI_INBOUND_REMOVE_ID", Edi_Inbound_Remove_ID);
+			p[7] = Connection.GetParameter
+				("@MODIFY_USER", Modify_User, ParameterDirection.Output, DbType.AnsiStringFixedLength, Modify_UserMax);
+
+			const string sql = @"
+				UPDATE T_EDI_INBOUND_REMOVE SET
+					MODIFY_DT = @MODIFY_DT,
+					BOOKING_NO = @BOOKING_NO,
+					VIN = @VIN,
+					PROCESSED_FLG = @PROCESSED_FLG,
+					PROCESS_MSG = @PROCESS_MSG,
+					SOURCE_FILE = @SOURCE_FILE
+				WHERE
+					EDI_INBOUND_REMOVE_ID = @EDI_INBOUND_REMOVE_ID
+				RETURNING
+					MODIFY_USER, MODIFY_DT
+				INTO
+					@MODIFY_USER, @MODIFY_DT";
+			int ret = Connection.RunSQL(sql, p);
+
+			Modify_Dt = ClsConvert.ToDateTimeNullable(p[0].Value);
+			Modify_User = ClsConvert.ToString(p[7].Value);
+			return ret;
+		}
+		public override int Delete()
+		{
+			DbParameter[] p = new DbParameter[0];
+
+			if( p.Length == 0 )
+				throw new Exception
+					("Cannot delete rows from this table");
+
+			return -1;
+		}
+		#endregion		// #region Insert, Update, Delete
+
+		#region Conversion methods
+
+		public override void LoadFromDataReader(DbDataReader dr)
+		{
+			if( dr == null )
+				throw new ArgumentException
+					("LoadFromDataReader: DataReader parameter was null");
+
+			Edi_Inbound_Remove_ID = ClsConvert.ToInt64Nullable(dr["EDI_INBOUND_REMOVE_ID"]);
+			Create_User = ClsConvert.ToString(dr["CREATE_USER"]);
+			Create_Dt = ClsConvert.ToDateTimeNullable(dr["CREATE_DT"]);
+			Modify_User = ClsConvert.ToString(dr["MODIFY_USER"]);
+			Modify_Dt = ClsConvert.ToDateTimeNullable(dr["MODIFY_DT"]);
+			Booking_No = ClsConvert.ToString(dr["BOOKING_NO"]);
+			Vin = ClsConvert.ToString(dr["VIN"]);
+			Processed_Flg = ClsConvert.ToString(dr["PROCESSED_FLG"]);
+			Process_Msg = ClsConvert.ToString(dr["PROCESS_MSG"]);
+			Source_File = ClsConvert.ToString(dr["SOURCE_FILE"]);
+		}
+
+		public override void LoadFromDataRow(DataRow dr)
+		{
+			if( dr == null )
+				throw new ArgumentException
+					("LoadFromDataRow: DataRow parameter was null");
+
+			DataRowVersion v = ( dr.RowState == DataRowState.Deleted )
+				? DataRowVersion.Original : DataRowVersion.Current;
+
+			Edi_Inbound_Remove_ID = ClsConvert.ToInt64Nullable(dr["EDI_INBOUND_REMOVE_ID", v]);
+			Create_User = ClsConvert.ToString(dr["CREATE_USER", v]);
+			Create_Dt = ClsConvert.ToDateTimeNullable(dr["CREATE_DT", v]);
+			Modify_User = ClsConvert.ToString(dr["MODIFY_USER", v]);
+			Modify_Dt = ClsConvert.ToDateTimeNullable(dr["MODIFY_DT", v]);
+			Booking_No = ClsConvert.ToString(dr["BOOKING_NO", v]);
+			Vin = ClsConvert.ToString(dr["VIN", v]);
+			Processed_Flg = ClsConvert.ToString(dr["PROCESSED_FLG", v]);
+			Process_Msg = ClsConvert.ToString(dr["PROCESS_MSG", v]);
+			Source_File = ClsConvert.ToString(dr["SOURCE_FILE", v]);
+		}
+
+		public override void CopyToDataRow(DataRow dr)
+		{
+			if( dr == null )
+				throw new ArgumentException
+					("CopyToDataRow: DataRow parameter was null");
+
+			dr["EDI_INBOUND_REMOVE_ID"] = ClsConvert.ToDbObject(Edi_Inbound_Remove_ID);
+			dr["CREATE_USER"] = ClsConvert.ToDbObject(Create_User);
+			dr["CREATE_DT"] = ClsConvert.ToDbObject(Create_Dt);
+			dr["MODIFY_USER"] = ClsConvert.ToDbObject(Modify_User);
+			dr["MODIFY_DT"] = ClsConvert.ToDbObject(Modify_Dt);
+			dr["BOOKING_NO"] = ClsConvert.ToDbObject(Booking_No);
+			dr["VIN"] = ClsConvert.ToDbObject(Vin);
+			dr["PROCESSED_FLG"] = ClsConvert.ToDbObject(Processed_Flg);
+			dr["PROCESS_MSG"] = ClsConvert.ToDbObject(Process_Msg);
+			dr["SOURCE_FILE"] = ClsConvert.ToDbObject(Source_File);
+		}
+		#endregion		// #region Conversion methods
+
+		#region Static Methods
+
+		public static DataTable GetAll()
+		{
+			return Connection.GetTable(TableName);
+		}
+
+		public static DataTable GetAll(bool withJoins)
+		{
+			if( withJoins == false ) return Connection.GetTable(TableName);
+
+			return Connection.GetDataTable(SelectSQL);
+		}
+
+		public static ClsEdiInboundRemove GetUsingKey(Int64 Edi_Inbound_Remove_ID)
+		{
+			object[] vals = new object[] {Edi_Inbound_Remove_ID};
+			DataRow dr = Connection.GetDataRowUsingKey
+				(TableName, GetPrimaryKeys(), vals);
+			return ( dr == null ) ? null : new ClsEdiInboundRemove(dr);
+		}
+
+		#endregion		// #region Static Methods
+	}
+}

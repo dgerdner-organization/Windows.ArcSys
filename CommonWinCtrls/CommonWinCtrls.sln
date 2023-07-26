@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[Common Reference]", "[Common Reference]", "{F61EFFD3-BC3A-4FA8-AFBB-17E96126F4EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonWinCtrls", "CommonWinCtrls.csproj", "{053112CA-AD80-4C5C-8593-001BEB316E0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{41277667-E5CF-421E-BFF0-E2E82D06CE54}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\Common\\Common.csproj
+		SccProjectTopLevelParentUniqueName0 = CommonWinCtrls.sln
+		SccProjectName0 = \u0022$/CS-2010/Common\u0022,\u0020WBPAAAAA
+		SccLocalPath0 = ..\\Common
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = CommonWinCtrls.csproj
+		SccLocalPath2 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053112CA-AD80-4C5C-8593-001BEB316E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41277667-E5CF-421E-BFF0-E2E82D06CE54} = {F61EFFD3-BC3A-4FA8-AFBB-17E96126F4EC}
+	EndGlobalSection
+EndGlobal

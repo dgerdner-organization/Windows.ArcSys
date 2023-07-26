@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DBE8525-CD6E-4392-9140-499CD851BF78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ASL.ITrack.WinCtrls</RootNamespace>
+    <AssemblyName>ITrack.WinCtrls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.Misc.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v10.3, Version=10.3.20103.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Janus.Data.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsIssueNotifier.cs" />
+    <Compile Include="ClsITrackConfig.cs" />
+    <Compile Include="Custom Controls\ucGroupCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucGroupCombo.Designer.cs">
+      <DependentUpon>ucGroupCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIssueTrackingAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIssueTrackingAdd.Designer.cs">
+      <DependentUpon>frmIssueTrackingAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchIssuesOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchIssuesOptions.Designer.cs">
+      <DependentUpon>frmSearchIssuesOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIssueTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIssueTracking.Designer.cs">
+      <DependentUpon>frmIssueTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCreateIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCreateIssue.Designer.cs">
+      <DependentUpon>frmCreateIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditIssue.Designer.cs">
+      <DependentUpon>frmEditIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEditNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEditNote.Designer.cs">
+      <DependentUpon>frmEditNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIssueRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIssueRelease.Designer.cs">
+      <DependentUpon>frmIssueRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSearchIssues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSearchIssues.Designer.cs">
+      <DependentUpon>frmSearchIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIssueTrackingOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIssueTrackingOptions.Designer.cs">
+      <DependentUpon>frmIssueTrackingOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetPriority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetPriority.Designer.cs">
+      <DependentUpon>frmSetPriority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetPrioritySequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetPrioritySequence.Designer.cs">
+      <DependentUpon>frmSetPrioritySequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUpdateIssues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUpdateIssues.Designer.cs">
+      <DependentUpon>frmUpdateIssues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmViewIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmViewIssue.Designer.cs">
+      <DependentUpon>frmViewIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Custom Controls\ucCategoryCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucCategoryCheckboxCombo.Designer.cs">
+      <DependentUpon>ucCategoryCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucCategoryCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucCategoryCombo.Designer.cs">
+      <DependentUpon>ucCategoryCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucPriorityCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucPriorityCheckboxCombo.Designer.cs">
+      <DependentUpon>ucPriorityCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucPriorityCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucPriorityCombo.Designer.cs">
+      <DependentUpon>ucPriorityCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucProjectCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucProjectCheckboxCombo.Designer.cs">
+      <DependentUpon>ucProjectCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucProjectCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucProjectCombo.Designer.cs">
+      <DependentUpon>ucProjectCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucReleaseCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucReleaseCombo.Designer.cs">
+      <DependentUpon>ucReleaseCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucStatusCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucStatusCheckboxCombo.Designer.cs">
+      <DependentUpon>ucStatusCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucStatusCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucStatusCombo.Designer.cs">
+      <DependentUpon>ucStatusCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucUserCheckboxCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucUserCheckboxCombo.Designer.cs">
+      <DependentUpon>ucUserCheckboxCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Controls\ucUserCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom Controls\ucUserCombo.Designer.cs">
+      <DependentUpon>ucUserCombo.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Custom Controls\ucGroupCombo.resx">
+      <DependentUpon>ucGroupCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIssueTrackingAdd.resx">
+      <DependentUpon>frmIssueTrackingAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchIssuesOptions.resx">
+      <DependentUpon>frmSearchIssuesOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIssueTracking.resx">
+      <DependentUpon>frmIssueTracking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCreateIssue.resx">
+      <DependentUpon>frmCreateIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditIssue.resx">
+      <DependentUpon>frmEditIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEditNote.resx">
+      <DependentUpon>frmEditNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIssueRelease.resx">
+      <DependentUpon>frmIssueRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSearchIssues.resx">
+      <DependentUpon>frmSearchIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIssueTrackingOptions.resx">
+      <DependentUpon>frmIssueTrackingOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetPriority.resx">
+      <DependentUpon>frmSetPriority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetPrioritySequence.resx">
+      <DependentUpon>frmSetPrioritySequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUpdateIssues.resx">
+      <DependentUpon>frmUpdateIssues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmViewIssue.resx">
+      <DependentUpon>frmViewIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Custom Controls\ucCategoryCheckboxCombo.resx">
+      <DependentUpon>ucCategoryCheckboxCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucCategoryCombo.resx">
+      <DependentUpon>ucCategoryCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucPriorityCheckboxCombo.resx">
+      <DependentUpon>ucPriorityCheckboxCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucPriorityCombo.resx">
+      <DependentUpon>ucPriorityCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucProjectCheckboxCombo.resx">
+      <DependentUpon>ucProjectCheckboxCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucProjectCombo.resx">
+      <DependentUpon>ucProjectCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucReleaseCombo.resx">
+      <DependentUpon>ucReleaseCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucStatusCheckboxCombo.resx">
+      <DependentUpon>ucStatusCheckboxCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucStatusCombo.resx">
+      <DependentUpon>ucStatusCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucUserCheckboxCombo.resx">
+      <DependentUpon>ucUserCheckboxCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom Controls\ucUserCombo.resx">
+      <DependentUpon>ucUserCombo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonSecurity\CommonSecurity.csproj">
+      <Project>{5E9C9200-9334-483C-8DB4-2C9C02D56E7F}</Project>
+      <Name>CommonSecurity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonWinCtrls\CommonWinCtrls.csproj">
+      <Project>{053112CA-AD80-4C5C-8593-001BEB316E0D}</Project>
+      <Name>CommonWinCtrls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{41277667-E5CF-421E-BFF0-E2E82D06CE54}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITrack.Business\ITrack.Business.csproj">
+      <Project>{D23A6A5C-A4CF-43F1-AD61-4B96D173B972}</Project>
+      <Name>ITrack.Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

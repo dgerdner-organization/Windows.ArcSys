@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.stenaline.com/freightlink/ws/2008/02/Imports">
+      <xsd:import schemaLocation=".\schemas.stenaline.com.freightlink.ws.2008.02.xsd" namespace="http://schemas.stenaline.com/freightlink/ws/2008/02/" />
+      <xsd:import schemaLocation=".\www.stenaline.com.freightlink.ws.2008.02.xsd" namespace="http://www.stenaline.com/freightlink/ws/2008/02/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBookingRequest">
+    <wsdl:part xmlns:q1="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q1:GetBookingRequest" />
+  </wsdl:message>
+  <wsdl:message name="GetBookingResponse">
+    <wsdl:part xmlns:q2="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q2:GetBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBooking_GetBooking_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="CancelBookingRequest">
+    <wsdl:part xmlns:q3="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q3:CancelBookingRequest" />
+  </wsdl:message>
+  <wsdl:message name="CancelBookingResponse">
+    <wsdl:part xmlns:q4="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q4:CancelBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBooking_CancelBooking_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmBookingRequest">
+    <wsdl:part xmlns:q5="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q5:ConfirmBookingRequest" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmBookingResponse">
+    <wsdl:part xmlns:q6="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q6:ConfirmBookingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBooking_ConfirmBooking_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="SearchBookingsRequest">
+    <wsdl:part xmlns:q7="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q7:SearchBookingsRequest" />
+  </wsdl:message>
+  <wsdl:message name="SearchBookingsResponse">
+    <wsdl:part xmlns:q8="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q8:SearchBookingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBooking_SearchBookings_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ListCodesRequest">
+    <wsdl:part xmlns:q9="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q9:ListCodesRequest" />
+  </wsdl:message>
+  <wsdl:message name="ListCodesResponse">
+    <wsdl:part xmlns:q10="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q10:ListCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingMetadata_ListCodes_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ListSailingsRequest">
+    <wsdl:part xmlns:q11="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q11:ListSailingsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ListSailingsResponse">
+    <wsdl:part xmlns:q12="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q12:ListSailingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingMetadata_ListSailings_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IBookingMetadata_ListVehicleTypes_InputMessage" />
+  <wsdl:message name="ListVehicleTypesResponse">
+    <wsdl:part xmlns:q13="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q13:ListVehicleTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBookingMetadata_ListVehicleTypes_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IBulletins_ListSectors_InputMessage" />
+  <wsdl:message name="ListSectorsResponse">
+    <wsdl:part xmlns:q14="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q14:ListSectorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBulletins_ListSectors_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ListBulletinsRequest">
+    <wsdl:part xmlns:q15="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q15:ListBulletinsRequest" />
+  </wsdl:message>
+  <wsdl:message name="ListBulletinsResponse">
+    <wsdl:part xmlns:q16="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q16:ListBulletinsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBulletins_ListBulletins_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IMetadata_ListContacts_InputMessage" />
+  <wsdl:message name="ListContactsResponse">
+    <wsdl:part xmlns:q17="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q17:ListContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMetadata_ListContacts_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ITimeTable_ListRoutes_InputMessage" />
+  <wsdl:message name="ListRoutesResponse">
+    <wsdl:part xmlns:q18="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q18:ListRoutesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITimeTable_ListRoutes_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="SearchTimeTableRequest">
+    <wsdl:part xmlns:q19="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q19:SearchTimeTableRequest" />
+  </wsdl:message>
+  <wsdl:message name="SearchTimeTableResponse">
+    <wsdl:part xmlns:q20="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q20:SearchTimeTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITimeTable_SearchTimeTable_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfo_ListCustomers_InputMessage" />
+  <wsdl:message name="ListCustomersResponse">
+    <wsdl:part xmlns:q21="http://schemas.stenaline.com/freightlink/ws/2008/02/" name="parameters" element="q21:ListCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUserInfo_ListCustomers_ServiceFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ServiceFault" />
+  </wsdl:message>
+  <wsdl:portType name="IBooking">
+    <wsdl:operation name="GetBooking">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/GetBooking" name="GetBookingRequest" message="tns:GetBookingRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/GetBookingResponse" name="GetBookingResponse" message="tns:GetBookingResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/GetBookingServiceFault" name="ServiceFault" message="tns:IBooking_GetBooking_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/CancelBooking" name="CancelBookingRequest" message="tns:CancelBookingRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/CancelBookingResponse" name="CancelBookingResponse" message="tns:CancelBookingResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/CancelBookingServiceFault" name="ServiceFault" message="tns:IBooking_CancelBooking_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmBooking">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/ConfirmBooking" name="ConfirmBookingRequest" message="tns:ConfirmBookingRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/ConfirmBookingResponse" name="ConfirmBookingResponse" message="tns:ConfirmBookingResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/ConfirmBookingServiceFault" name="ServiceFault" message="tns:IBooking_ConfirmBooking_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchBookings">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/SearchBookings" name="SearchBookingsRequest" message="tns:SearchBookingsRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/SearchBookingsResponse" name="SearchBookingsResponse" message="tns:SearchBookingsResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/SearchBookingsServiceFault" name="ServiceFault" message="tns:IBooking_SearchBookings_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IBookingMetadata">
+    <wsdl:operation name="ListCodes">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListCodes" name="ListCodesRequest" message="tns:ListCodesRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListCodesResponse" name="ListCodesResponse" message="tns:ListCodesResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListCodesServiceFault" name="ServiceFault" message="tns:IBookingMetadata_ListCodes_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSailings">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListSailings" name="ListSailingsRequest" message="tns:ListSailingsRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListSailingsResponse" name="ListSailingsResponse" message="tns:ListSailingsResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListSailingsServiceFault" name="ServiceFault" message="tns:IBookingMetadata_ListSailings_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListVehicleTypes">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListVehicleTypes" message="tns:IBookingMetadata_ListVehicleTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListVehicleTypesResponse" name="ListVehicleTypesResponse" message="tns:ListVehicleTypesResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListVehicleTypesServiceFault" name="ServiceFault" message="tns:IBookingMetadata_ListVehicleTypes_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IBulletins">
+    <wsdl:operation name="ListSectors">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListSectors" message="tns:IBulletins_ListSectors_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListSectorsResponse" name="ListSectorsResponse" message="tns:ListSectorsResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListSectorsServiceFault" name="ServiceFault" message="tns:IBulletins_ListSectors_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListBulletins">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListBulletins" name="ListBulletinsRequest" message="tns:ListBulletinsRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListBulletinsResponse" name="ListBulletinsResponse" message="tns:ListBulletinsResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListBulletinsServiceFault" name="ServiceFault" message="tns:IBulletins_ListBulletins_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IMetadata">
+    <wsdl:operation name="ListContacts">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IMetadata/ListContacts" message="tns:IMetadata_ListContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IMetadata/ListContactsResponse" name="ListContactsResponse" message="tns:ListContactsResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IMetadata/ListContactsServiceFault" name="ServiceFault" message="tns:IMetadata_ListContacts_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ITimeTable">
+    <wsdl:operation name="ListRoutes">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/ListRoutes" message="tns:ITimeTable_ListRoutes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/ListRoutesResponse" name="ListRoutesResponse" message="tns:ListRoutesResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/ListRoutesServiceFault" name="ServiceFault" message="tns:ITimeTable_ListRoutes_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTimeTable">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/SearchTimeTable" name="SearchTimeTableRequest" message="tns:SearchTimeTableRequest" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/SearchTimeTableResponse" name="SearchTimeTableResponse" message="tns:SearchTimeTableResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/SearchTimeTableServiceFault" name="ServiceFault" message="tns:ITimeTable_SearchTimeTable_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IUserInfo">
+    <wsdl:operation name="ListCustomers">
+      <wsdl:input wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IUserInfo/ListCustomers" message="tns:IUserInfo_ListCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IUserInfo/ListCustomersResponse" name="ListCustomersResponse" message="tns:ListCustomersResponse" />
+      <wsdl:fault wsaw:Action="http://www.stenaline.com/freightlink/ws/2008/02/IUserInfo/ListCustomersServiceFault" name="ServiceFault" message="tns:IUserInfo_ListCustomers_ServiceFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DefaultBinding_IBooking" type="tns:IBooking">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBooking">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/GetBooking" style="document" />
+      <wsdl:input name="GetBookingRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetBookingResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CancelBooking">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/CancelBooking" style="document" />
+      <wsdl:input name="CancelBookingRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CancelBookingResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmBooking">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/ConfirmBooking" style="document" />
+      <wsdl:input name="ConfirmBookingRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ConfirmBookingResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchBookings">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBooking/SearchBookings" style="document" />
+      <wsdl:input name="SearchBookingsRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SearchBookingsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DefaultBinding_IBookingMetadata" type="tns:IBookingMetadata">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListCodes">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListCodes" style="document" />
+      <wsdl:input name="ListCodesRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListCodesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListSailings">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListSailings" style="document" />
+      <wsdl:input name="ListSailingsRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListSailingsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListVehicleTypes">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBookingMetadata/ListVehicleTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListVehicleTypesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DefaultBinding_IBulletins" type="tns:IBulletins">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListSectors">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListSectors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListSectorsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListBulletins">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IBulletins/ListBulletins" style="document" />
+      <wsdl:input name="ListBulletinsRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListBulletinsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DefaultBinding_IMetadata" type="tns:IMetadata">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListContacts">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IMetadata/ListContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListContactsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DefaultBinding_ITimeTable" type="tns:ITimeTable">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListRoutes">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/ListRoutes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListRoutesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTimeTable">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/ITimeTable/SearchTimeTable" style="document" />
+      <wsdl:input name="SearchTimeTableRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="SearchTimeTableResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DefaultBinding_IUserInfo" type="tns:IUserInfo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListCustomers">
+      <soap:operation soapAction="http://www.stenaline.com/freightlink/ws/2008/02/IUserInfo/ListCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ListCustomersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ServiceFault">
+        <soap:fault use="literal" name="ServiceFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

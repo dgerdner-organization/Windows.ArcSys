@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:q4="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q8="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q10="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q15="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q5="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q1="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q9="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q14="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q6="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q2="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q11="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q13="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q7="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q3="http://schemas.stenaline.com/freightlink/ws/2008/02/" xmlns:q12="http://schemas.stenaline.com/freightlink/ws/2008/02/" elementFormDefault="qualified" targetNamespace="http://www.stenaline.com/freightlink/ws/2008/02/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation=".\schemas.stenaline.com.freightlink.ws.2008.02.xsd" namespace="http://schemas.stenaline.com/freightlink/ws/2008/02/" />
+  <xs:element name="BookingID" type="xs:int" />
+  <xs:element name="Booking" nillable="true" type="q12:Booking" />
+  <xs:element name="Messages" nillable="true" type="q12:ArrayOfMessage" />
+  <xs:element name="ServiceFault" nillable="true" type="q12:ServiceFault" />
+  <xs:element name="Criteria" nillable="true" type="q12:BookingSearchCriteria" />
+  <xs:element name="BookingList" nillable="true" type="q12:ArrayOfBookingInfo" />
+  <xs:element name="Type" type="q12:CodeType" />
+  <xs:element name="Codes" nillable="true" type="q12:ArrayOfCodeInfo" />
+  <xs:element name="RouteCode" nillable="true" type="xs:string" />
+  <xs:element name="DepartureDate" type="xs:dateTime" />
+  <xs:element name="Sailings" nillable="true" type="q12:ArrayOfSailing" />
+  <xs:element name="VehicleTypes" nillable="true" type="q12:ArrayOfVehicleType" />
+  <xs:element name="Sectors" nillable="true" type="q12:ArrayOfSector" />
+  <xs:element name="SectorCode" nillable="true" type="xs:string" />
+  <xs:element name="Bulletins" nillable="true" type="q12:ArrayOfBulletin" />
+  <xs:element name="ContactCountries" nillable="true" type="q12:ArrayOfContact" />
+  <xs:element name="DepartureDateFrom" type="xs:dateTime" />
+  <xs:element name="DepartureDateTo" type="xs:dateTime" />
+  <xs:element name="RouteCodes" nillable="true" type="q12:RouteCodeCollection" />
+  <xs:element name="TimeTables" nillable="true" type="q12:ArrayOfTimeTableSailing" />
+  <xs:element name="Customers" nillable="true" type="q12:ArrayOfCustomer" />
+</xs:schema>

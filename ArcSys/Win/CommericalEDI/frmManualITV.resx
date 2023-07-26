@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sbrChild.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 13</value>
+  </metadata>
+  <data name="cmbPartner_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="trading_partner_cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;trading_partner_cd&lt;/DataMember&gt;&lt;Key&gt;trading_partner_cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="partner_dsc"&gt;&lt;Caption&gt;Name&lt;/Caption&gt;&lt;DataMember&gt;partner_dsc&lt;/DataMember&gt;&lt;Key&gt;partner_dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;partner_dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;trading_partner_cd&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbTerminal_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="terminal_cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;terminal_cd&lt;/DataMember&gt;&lt;Key&gt;terminal_cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="terminal_dsc"&gt;&lt;Caption&gt;Name&lt;/Caption&gt;&lt;DataMember&gt;terminal_dsc&lt;/DataMember&gt;&lt;Key&gt;terminal_dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;ValueMember&gt;terminal_cd&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbLocation_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="location_cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;location_cd&lt;/DataMember&gt;&lt;Key&gt;location_cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="location_dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;location_dsc&lt;/DataMember&gt;&lt;Key&gt;location_dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;location_dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;location_cd&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="cmbStatusCodes_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="activity_cd"&gt;&lt;Caption&gt;Code&lt;/Caption&gt;&lt;DataMember&gt;activity_cd&lt;/DataMember&gt;&lt;Key&gt;activity_cd&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;40&lt;/Width&gt;&lt;/Column0&gt;&lt;Column1 ID="activity_dsc"&gt;&lt;Caption&gt;Description&lt;/Caption&gt;&lt;DataMember&gt;activity_dsc&lt;/DataMember&gt;&lt;Key&gt;activity_dsc&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;200&lt;/Width&gt;&lt;/Column1&gt;&lt;/Columns&gt;&lt;ColumnSets Collection="true" ElementName="ColumnSet"&gt;&lt;ColumnSet0 ID="full_dsc"&gt;&lt;Key&gt;full_dsc&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;ColumnWidth0&gt;100&lt;/ColumnWidth0&gt;&lt;ColumnWidth1&gt;100&lt;/ColumnWidth1&gt;&lt;/ColumnSet0&gt;&lt;/ColumnSets&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;DisplayMember&gt;activity_dsc&lt;/DisplayMember&gt;&lt;ValueMember&gt;activity_cd&lt;/ValueMember&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="tbrMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>18, 13</value>
+  </metadata>
+  <data name="grdMain_DesignTimeLayout.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column1"&gt;&lt;BoundMode&gt;UnboundFetch&lt;/BoundMode&gt;&lt;ColumnType&gt;CheckBox&lt;/ColumnType&gt;&lt;HideWhenGrouped&gt;False&lt;/HideWhenGrouped&gt;&lt;Key&gt;Column1&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Width&gt;20&lt;/Width&gt;&lt;ActAsSelector&gt;True&lt;/ActAsSelector&gt;&lt;/Column0&gt;&lt;Column1 ID="vessel_cd"&gt;&lt;Caption&gt;Vessel&lt;/Caption&gt;&lt;DataMember&gt;vessel_cd&lt;/DataMember&gt;&lt;Key&gt;vessel_cd&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;48&lt;/Width&gt;&lt;/Column1&gt;&lt;Column2 ID="voyage_no"&gt;&lt;Caption&gt;Voyage&lt;/Caption&gt;&lt;DataMember&gt;voyage_no&lt;/DataMember&gt;&lt;Key&gt;voyage_no&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;51&lt;/Width&gt;&lt;/Column2&gt;&lt;Column3 ID="booking_no"&gt;&lt;Caption&gt;Booking&lt;/Caption&gt;&lt;DataMember&gt;booking_no&lt;/DataMember&gt;&lt;Key&gt;booking_no&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;Width&gt;93&lt;/Width&gt;&lt;/Column3&gt;&lt;Column4 ID="customer_ref"&gt;&lt;Caption&gt;PCFN&lt;/Caption&gt;&lt;DataMember&gt;customer_ref&lt;/DataMember&gt;&lt;Key&gt;customer_ref&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;Width&gt;63&lt;/Width&gt;&lt;/Column4&gt;&lt;Column5 ID="move_type_cd"&gt;&lt;DataMember&gt;move_type_cd&lt;/DataMember&gt;&lt;Key&gt;move_type_cd&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;Width&gt;34&lt;/Width&gt;&lt;/Column5&gt;&lt;Column6 ID="serial_no"&gt;&lt;Caption&gt;Serial&lt;/Caption&gt;&lt;DataMember&gt;serial_no&lt;/DataMember&gt;&lt;Key&gt;serial_no&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;Width&gt;145&lt;/Width&gt;&lt;/Column6&gt;&lt;Column7 ID="wDate"&gt;&lt;Caption&gt;Pickup&lt;/Caption&gt;&lt;DataMember&gt;wDate&lt;/DataMember&gt;&lt;Key&gt;wDate&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;Width&gt;59&lt;/Width&gt;&lt;/Column7&gt;&lt;Column8 ID="iDate"&gt;&lt;Caption&gt;InGate&lt;/Caption&gt;&lt;DataMember&gt;iDate&lt;/DataMember&gt;&lt;Key&gt;iDate&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;UpDownMaximum&gt;1&lt;/UpDownMaximum&gt;&lt;/Column8&gt;&lt;Column9 ID="aeDate"&gt;&lt;Caption&gt;Loaded&lt;/Caption&gt;&lt;DataMember&gt;aeDate&lt;/DataMember&gt;&lt;Key&gt;aeDate&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column9&gt;&lt;Column10 ID="vdDate"&gt;&lt;Caption&gt;Depart&lt;/Caption&gt;&lt;DataMember&gt;vdDate&lt;/DataMember&gt;&lt;Key&gt;vdDate&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column10&gt;&lt;Column11 ID="vaDate"&gt;&lt;Caption&gt;Arrive&lt;/Caption&gt;&lt;DataMember&gt;vaDate&lt;/DataMember&gt;&lt;Key&gt;vaDate&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column11&gt;&lt;Column12 ID="uvDate"&gt;&lt;Caption&gt;Discharge&lt;/Caption&gt;&lt;DataMember&gt;uvDate&lt;/DataMember&gt;&lt;Key&gt;uvDate&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;Width&gt;76&lt;/Width&gt;&lt;/Column12&gt;&lt;Column13 ID="oaDate"&gt;&lt;Caption&gt;OutGate&lt;/Caption&gt;&lt;DataMember&gt;oaDate&lt;/DataMember&gt;&lt;Key&gt;oaDate&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;Width&gt;82&lt;/Width&gt;&lt;/Column13&gt;&lt;Column14 ID="avDate"&gt;&lt;Caption&gt;Available&lt;/Caption&gt;&lt;DataMember&gt;avDate&lt;/DataMember&gt;&lt;Key&gt;avDate&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column14&gt;&lt;Column15 ID="x1Date"&gt;&lt;Caption&gt;Delivered&lt;/Caption&gt;&lt;DataMember&gt;x1Date&lt;/DataMember&gt;&lt;Key&gt;x1Date&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;Width&gt;70&lt;/Width&gt;&lt;/Column15&gt;&lt;Column16 ID="plor_location_cd"&gt;&lt;Caption&gt;PLOR&lt;/Caption&gt;&lt;DataMember&gt;plor_location_cd&lt;/DataMember&gt;&lt;Key&gt;plor_location_cd&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;Width&gt;53&lt;/Width&gt;&lt;/Column16&gt;&lt;Column17 ID="POL_location_cd"&gt;&lt;Caption&gt;POL&lt;/Caption&gt;&lt;DataMember&gt;POL_location_cd&lt;/DataMember&gt;&lt;Key&gt;POL_location_cd&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;Width&gt;55&lt;/Width&gt;&lt;/Column17&gt;&lt;Column18 ID="pod_location_cd"&gt;&lt;Caption&gt;POD&lt;/Caption&gt;&lt;DataMember&gt;pod_location_cd&lt;/DataMember&gt;&lt;Key&gt;pod_location_cd&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;Width&gt;51&lt;/Width&gt;&lt;/Column18&gt;&lt;Column19 ID="plod_location_cd"&gt;&lt;Caption&gt;PLOD&lt;/Caption&gt;&lt;DataMember&gt;plod_location_cd&lt;/DataMember&gt;&lt;Key&gt;plod_location_cd&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;Width&gt;50&lt;/Width&gt;&lt;/Column19&gt;&lt;Column20 ID="pol_ets"&gt;&lt;Caption&gt;ETS&lt;/Caption&gt;&lt;DataMember&gt;pol_ets&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;pol_ets&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;Width&gt;66&lt;/Width&gt;&lt;/Column20&gt;&lt;Column21 ID="pod_eta"&gt;&lt;Caption&gt;ETA&lt;/Caption&gt;&lt;DataMember&gt;pod_eta&lt;/DataMember&gt;&lt;FormatString&gt;d&lt;/FormatString&gt;&lt;Key&gt;pod_eta&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;Width&gt;65&lt;/Width&gt;&lt;/Column21&gt;&lt;Column22 ID="tariff_cd"&gt;&lt;Caption&gt;Tariff&lt;/Caption&gt;&lt;DataMember&gt;tariff_cd&lt;/DataMember&gt;&lt;Key&gt;tariff_cd&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;Width&gt;56&lt;/Width&gt;&lt;/Column22&gt;&lt;Column23 ID="item_no"&gt;&lt;Caption&gt;Item#&lt;/Caption&gt;&lt;DataMember&gt;item_no&lt;/DataMember&gt;&lt;Key&gt;item_no&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;Width&gt;40&lt;/Width&gt;&lt;/Column23&gt;&lt;Column24 ID="seq_no"&gt;&lt;Caption&gt;#&lt;/Caption&gt;&lt;DataMember&gt;seq_no&lt;/DataMember&gt;&lt;Key&gt;seq_no&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;Width&gt;27&lt;/Width&gt;&lt;/Column24&gt;&lt;Column25 ID="trading_partner_cd"&gt;&lt;Caption&gt;Partner&lt;/Caption&gt;&lt;DataMember&gt;trading_partner_cd&lt;/DataMember&gt;&lt;Key&gt;trading_partner_cd&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;Width&gt;46&lt;/Width&gt;&lt;/Column25&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;Groups Collection="true" ElementName="Group"&gt;&lt;Group0 ID="Group0"&gt;&lt;ColIndex&gt;3&lt;/ColIndex&gt;&lt;/Group0&gt;&lt;/Groups&gt;&lt;/RootTable&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>43</value>
+  </metadata>
+</root>

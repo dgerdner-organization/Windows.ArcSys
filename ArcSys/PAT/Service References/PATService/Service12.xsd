@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LOB_PatWebServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLOBDetailRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LOBDetailRecord" nillable="true" type="tns:LOBDetailRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLOBDetailRecord" nillable="true" type="tns:ArrayOfLOBDetailRecord" />
+  <xs:complexType name="LOBDetailRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bookingNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargoDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="commVoydoc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="commentOne" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="commentTwo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="consigneeDODAAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="consignorDODAAC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="containerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cube" type="xs:float" />
+      <xs:element minOccurs="0" name="errorFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="has315vd" type="xs:boolean" />
+      <xs:element minOccurs="0" name="hasSi" type="xs:boolean" />
+      <xs:element minOccurs="0" name="headID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="height" type="xs:float" />
+      <xs:element minOccurs="0" name="isBooked" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isManifested" type="xs:boolean" />
+      <xs:element minOccurs="0" name="length" type="xs:float" />
+      <xs:element minOccurs="0" name="mton" type="xs:float" />
+      <xs:element minOccurs="0" name="pcfn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="revised" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tcn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vanType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vesselStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="weight" type="xs:float" />
+      <xs:element minOccurs="0" name="width" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LOBDetailRecord" nillable="true" type="tns:LOBDetailRecord" />
+  <xs:complexType name="LOBMasterRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="metric" type="xs:boolean" />
+      <xs:element minOccurs="0" name="poe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sailDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="scac" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vesselName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="voydoc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LOBMasterRecord" nillable="true" type="tns:LOBMasterRecord" />
+  <xs:complexType name="LOBUpload">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ip_address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lobDetailRecords" nillable="true" type="tns:ArrayOfLOBDetailRecord" />
+      <xs:element minOccurs="0" name="lobMaster" nillable="true" type="tns:LOBMasterRecord" />
+      <xs:element minOccurs="0" name="system_id" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LOBUpload" nillable="true" type="tns:LOBUpload" />
+  <xs:complexType name="ArrayOfLOBValidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LOBValidResponse" nillable="true" type="tns:LOBValidResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLOBValidResponse" nillable="true" type="tns:ArrayOfLOBValidResponse" />
+  <xs:complexType name="LOBValidResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="msg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="valid" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LOBValidResponse" nillable="true" type="tns:LOBValidResponse" />
+</xs:schema>
